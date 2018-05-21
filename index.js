@@ -1,3 +1,6 @@
+var getAllIssues = require('./lib/getAllIssues')
+var getAllPullRequests = require('./lib/getAllPullRequests')
+
 module.exports = (robot) => {
   robot.log('Yay, the app was loaded!')
   const supportedEvents = [
