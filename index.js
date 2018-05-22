@@ -1,5 +1,5 @@
-var getAllIssues = require('./lib/getAllIssues')
-var getAllPullRequests = require('./lib/getAllPullRequests')
+const getAllIssues = require('./lib/getAllIssues')
+const getAllPullRequests = require('./lib/getAllPullRequests')
 
 module.exports = (robot) => {
   robot.log('Yay, the app was loaded!')
