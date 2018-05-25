@@ -1,22 +1,24 @@
 const getAllIssues = require('./lib/getAllIssues')
 const getAllPullRequests = require('./lib/getAllPullRequests')
 
+const postWeeklyDigest = require('./lib/postWeeklyDigest')
+
 module.exports = (robot) => {
   robot.log('Yay, the app was loaded!')
-  const supportedEvents = [
-    'pull_request',
-    'issues'
-  ]
-  robot.on(supportedEvents, async context => {
-    const event = context.event
-    const action = context.payload.action
-    robot.log('Event: ' + event + ((typeof action === 'undefined' || action === null) ? '' : (', Action: ' + action)))
-    if (event === 'pull_request' && action === 'opened') {
-      // do something with proposed pull request
-    } else if (event === 'issues' && action === 'closed') {
-      // do something with closed issues
-    } else if (event === 'issues' && action === 'opened') {
-      // do something with opened issues
-    }
+  // const supportedEvents = [
+  //   'pull_request',
+  //   'issues'
+  // ]
+  robot.on('*', async context => {
+    const owner = await context.payload.repository.owner.login
+    const repo = await context.payload.repository.name
+    const issues = await getAllIssues(context, {owner, repo})
+    const pullRequests = await getAllPullRequests(context, {owner, repo})
+    // console.log(issues)
+    // console.log(pullRequests)
+    postWeeklyDigest.postWeeklyDigest(context, {
+      issues,
+      pullRequests
+    })
   })
 }
