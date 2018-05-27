@@ -1,5 +1,5 @@
-const getAllIssues = require('./lib/getAllIssues')
-const getAllPullRequests = require('./lib/getAllPullRequests')
+const getAllIssues = require('./lib/bin/getAllIssues')
+const getAllPullRequests = require('./lib/bin/getAllPullRequests')
 
 const postWeeklyDigest = require('./lib/postWeeklyDigest')
 
