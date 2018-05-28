@@ -7,8 +7,7 @@ const postCreateLabel = require('./lib/bin/postCreateLabel')
 module.exports = (robot) => {
   robot.log('Yay, the app was loaded!')
   const supportedEvents = [
-    'pull_request',
-    'issues'
+    'pull_request.opened'
   ]
   robot.on('installation.created', async context => {
     const owner = await context.payload.repository.owner.login
