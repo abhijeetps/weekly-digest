@@ -8,17 +8,12 @@ const postCreateLabel = require('./lib/bin/postCreateLabel')
 module.exports = (robot) => {
   robot.log('Weekly Digest app is ready to generate Weekly Reports!')
   createScheduler(robot, {interval: 60 * 60 * 1000})
-  // const supportedEvents = [
-  //   'pull_request.opened'
-  // ]
   robot.on('installation.created', async context => {
-    const owner = await context.payload.repository.owner.login
-    const repo = await context.payload.repository.name
+    const { owner, repo } = context.repo()
     return postCreateLabel(context, {owner, repo, name: 'weekly-digest', color: '9C27B0', description: 'Issues labeled with this label are Weekly Digests created by Weekly Digest app for GitHub. Visit github.com/probot/weekly-digest to know more.'})
   })
   robot.on('schedule.repository', async context => {
-    const owner = await context.payload.repository.owner.login
-    const repo = await context.payload.repository.name
+    const { owner, repo } = context.repo()
     const issues = await getAllIssues(context, {owner, repo})
     const pullRequests = await getAllPullRequests(context, {owner, repo})
     // console.log(issues)
