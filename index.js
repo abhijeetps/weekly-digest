@@ -7,16 +7,16 @@ const getDate = require('./lib/markdown/getDate')
 const defaultConfig = require('./lib/markdown/defaultConfig')
 
 module.exports = (app) => {
-  app.log('Weekly Digest app is ready to generate Weekly Reports!')
+  app.log('Weekly Digest has started running! :)')
   app.on('installation.created', async (context) => {
-    console.log('App installed. installation.created triggered.')
+    console.log('App has been successfully installed.')
     const [owner, repo] = await context.payload.repositories[0].full_name.split('/')
-    console.log(owner + '/' + repo)
+    console.log(`repo: ${owner}/${repo}`)
     createWeeklyDigestLabel(context, {owner, repo})
     createConfigYML(context, {owner, repo})
     const headDate = await getDate.headDate()
     const tailDate = await getDate.tailDate()
-    const config = await getConfig(context, 'weekly-digest.yml')
+    const config = await defaultConfig
     weeklyDigest(context, {owner, repo, headDate, tailDate}, config)
   })
   createScheduler(app, {interval: 60 * 1000}) // 1 hour
