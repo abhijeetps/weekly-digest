@@ -19,7 +19,7 @@ module.exports = (app) => {
     const config = await getConfig(context, 'weekly-digest.yml')
     weeklyDigest(context, {owner, repo, headDate, tailDate}, config)
   })
-  createScheduler(app, {interval: 60 * 60 * 1000}) // 1 hour
+  createScheduler(app, {interval: 60 * 1000}) // 1 hour
   app.on('schedule.repository', async (context) => {
     console.log(`App is running as per schedule.repository`)
     const headDate = await getDate.headDate()
@@ -30,10 +30,9 @@ module.exports = (app) => {
     if (config == null) {
       config = defaultConfig
     }
+    console.log(`Publish Day: ${config.publishDay}, Today: ${currentDate.getDay()}`)
     if (currentDate.getDay() === config.publishDay) {
       const { owner, repo } = context.repo()
-      // console.log(`Owner: ${owner}, Repo: ${repo}, Config: ${config.publishDay}`)
-      // console.log(`Head Date: ${headDate}, Tail Date: ${tailDate}, Current Day: ${currentDate.getDay()}`)
       weeklyDigest(context, {owner, repo, headDate, tailDate}, config)
     }
   })
