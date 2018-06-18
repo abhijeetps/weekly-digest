@@ -7,7 +7,7 @@ const getDate = require('./lib/markdown/getDate')
 const defaultConfig = require('./lib/markdown/defaultConfig')
 
 // 1 day
-const interval = 24 * 60 * 60 * 1000
+const interval = 60 * 1000
 
 module.exports = (app) => {
   app.log('Weekly Digest has started running! :)')
