@@ -5,6 +5,7 @@ const createConfigYML = require('./lib/markdown/createConfigYML')
 const weeklyDigest = require('./lib/weeklyDigest')
 const getDate = require('./lib/markdown/getDate')
 const defaultConfig = require('./lib/markdown/defaultConfig')
+const getNumDayFromLongDay = require('./lib/markdown/getNumDayFromLongDay')
 
 // 1 day
 const interval = 24 * 60 * 60 * 1000
@@ -15,16 +16,8 @@ module.exports = (app) => {
     console.log('App has been successfully installed.')
     const [owner, repo] = await context.payload.repositories[0].full_name.split('/')
     console.error(`repo: ${owner}/${repo}`)
-    try {
-      await createWeeklyDigestLabel(context, {owner, repo})
-    } catch (error) {
-      console.error(error)
-    }
-    try {
-      await createConfigYML(context, {owner, repo})
-    } catch (error) {
-      console.log(error)
-    }
+    await createWeeklyDigestLabel(context, {owner, repo})
+    await createConfigYML(context, {owner, repo})
     const headDate = await getDate.headDate()
     const tailDate = await getDate.tailDate()
     const config = await defaultConfig
@@ -40,8 +33,8 @@ module.exports = (app) => {
     if (config == null) {
       config = defaultConfig
     }
-    console.log(`Publish Day: ${config.publishDay}, Today: ${currentDate.getDay()}`)
-    if (currentDate.getDay() === config.publishDay) {
+    console.log(`Publish Day: ${getNumDayFromLongDay(config.publishDay)}, Today: ${currentDate.getDay()}`)
+    if (currentDate.getDay() === getNumDayFromLongDay(config.publishDay)) {
       const { owner, repo } = context.repo()
       weeklyDigest(context, {owner, repo, headDate, tailDate}, config)
     }
