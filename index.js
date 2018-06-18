@@ -8,7 +8,7 @@ const defaultConfig = require('./lib/markdown/defaultConfig')
 const getNumDayFromLongDay = require('./lib/markdown/getNumDayFromLongDay')
 
 // 1 day
-const interval = 60 * 1000
+const interval = 24 * 60 * 60 * 1000
 
 module.exports = (app) => {
   app.log('Weekly Digest has started running! :)')
@@ -16,16 +16,8 @@ module.exports = (app) => {
     console.log('App has been successfully installed.')
     const [owner, repo] = await context.payload.repositories[0].full_name.split('/')
     console.error(`repo: ${owner}/${repo}`)
-    try {
-      await createWeeklyDigestLabel(context, {owner, repo})
-    } catch (error) {
-      console.error(error)
-    }
-    try {
-      await createConfigYML(context, {owner, repo})
-    } catch (error) {
-      console.log(error)
-    }
+    await createWeeklyDigestLabel(context, {owner, repo})
+    await createConfigYML(context, {owner, repo})
     const headDate = await getDate.headDate()
     const tailDate = await getDate.tailDate()
     const config = await defaultConfig
