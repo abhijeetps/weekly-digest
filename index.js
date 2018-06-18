@@ -5,6 +5,7 @@ const createConfigYML = require('./lib/markdown/createConfigYML')
 const weeklyDigest = require('./lib/weeklyDigest')
 const getDate = require('./lib/markdown/getDate')
 const defaultConfig = require('./lib/markdown/defaultConfig')
+const getNumDayFromLongDay = require('./lib/markdown/getNumDayFromLongDay')
 
 // 1 day
 const interval = 60 * 1000
@@ -40,8 +41,8 @@ module.exports = (app) => {
     if (config == null) {
       config = defaultConfig
     }
-    console.log(`Publish Day: ${config.publishDay}, Today: ${currentDate.getDay()}`)
-    if (currentDate.getDay() === config.publishDay) {
+    console.log(`Publish Day: ${getNumDayFromLongDay(config.publishDay)}, Today: ${currentDate.getDay()}`)
+    if (currentDate.getDay() === getNumDayFromLongDay(config.publishDay)) {
       const { owner, repo } = context.repo()
       weeklyDigest(context, {owner, repo, headDate, tailDate}, config)
     }
