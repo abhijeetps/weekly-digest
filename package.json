@@ -24,7 +24,6 @@
     "nodemon": "^1.17.2",
     "smee-client": "^1.0.1",
     "standard": "^11.0.1",
-    "travis-deploy-once": "^5.0.0",
     "semantic-release": "^15.6.0"
   },
   "engines": {
