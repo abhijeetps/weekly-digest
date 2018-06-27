@@ -4,9 +4,11 @@ module.exports = (commits) => {
   var i
   var commitsString = '# COMMITS\n'
   var commitsCount = 0
-  for (i = 0; i < data.length; i++) {
-    if (data[i].author.type !== 'Bot') {
-      commitsCount = commitsCount + 1
+  if (typeof data !== 'undefined' && data !== null && data.length != null && data.length > 0) {
+    for (i = 0; i < data.length; i++) {
+      if (data[i].author.type !== 'Bot') {
+        commitsCount = commitsCount + 1
+      }
     }
   }
   if (commitsCount > 1) {
