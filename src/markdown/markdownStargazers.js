@@ -4,9 +4,11 @@ module.exports = (stargazers, tailDate) => {
   var stargazersString = `# STARGAZERS\n`
   var data = stargazers.data
   var stargazersArray = []
-  for (var i = 0; i < data.length; i++) {
-    if (data[i].starred_at > tailDate) {
-      stargazersArray.push({user: data[i].user.login, html_url: data[i].user.html_url})
+  if (typeof data !== 'undefined' && data !== null && data.length != null && data.length > 0) {
+    for (var i = 0; i < data.length; i++) {
+      if (data[i].starred_at > tailDate) {
+        stargazersArray.push({user: data[i].user.login, html_url: data[i].user.html_url})
+      }
     }
   }
   if (stargazersArray.length > 1) {
