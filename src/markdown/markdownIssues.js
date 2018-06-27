@@ -11,28 +11,30 @@ module.exports = (issues) => {
   var countIssueOpen = 0
   var countIssueClosed = 0
   var i
-  for (i = 0; i < data.length; i++) {
-    if (data[i].state === 'open' && data[i].user.type !== 'Bot') {
-      countIssueOpen++
-    } else if (data[i].state === 'closed' && data[i].user.type !== 'Bot') {
-      countIssueClosed++
-    }
-    if (typeof likedData === 'undefined') {
-      if (data[i].reactions.total_count > 0 && data[i].user.type !== 'Bot') {
-        likedData = data[i]
+  if (typeof data !== 'undefined' && data !== null && data.length != null && data.length > 0) {
+    for (i = 0; i < data.length; i++) {
+      if (data[i].state === 'open' && data[i].user.type !== 'Bot') {
+        countIssueOpen++
+      } else if (data[i].state === 'closed' && data[i].user.type !== 'Bot') {
+        countIssueClosed++
       }
-    } else if (typeof likedData !== 'undefined') {
-      if (data[i].reactions.total_count > likedData.reactions.total_count && data[i].user.type !== 'Bot') {
-        likedData = data[i]
+      if (typeof likedData === 'undefined') {
+        if (data[i].reactions.total_count > 0 && data[i].user.type !== 'Bot') {
+          likedData = data[i]
+        }
+      } else if (typeof likedData !== 'undefined') {
+        if (data[i].reactions.total_count > likedData.reactions.total_count && data[i].user.type !== 'Bot') {
+          likedData = data[i]
+        }
       }
-    }
-    if (typeof noisyData === 'undefined') {
-      if (data[i].comments > 0 && data[i].user.type !== 'Bot') {
-        noisyData = data[i]
-      }
-    } else if (typeof noisyData !== 'undefined') {
-      if (data[i].comments > noisyData.comments && data[i].user.type !== 'Bot') {
-        noisyData = data[i]
+      if (typeof noisyData === 'undefined') {
+        if (data[i].comments > 0 && data[i].user.type !== 'Bot') {
+          noisyData = data[i]
+        }
+      } else if (typeof noisyData !== 'undefined') {
+        if (data[i].comments > noisyData.comments && data[i].user.type !== 'Bot') {
+          noisyData = data[i]
+        }
       }
     }
   }
