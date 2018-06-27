@@ -5,7 +5,7 @@ test('that we can run tests', () => {
 
 const markdownStargazers = require('./../../src/markdown/markdownStargazers')
 
-const emptyStargazers = require('./../payload/emptyStargazers')
+const emptyStargazers = require('./../payload/empty')
 const payload = jest.fn().mockReturnValue(emptyStargazers)
 
 test('that checks return string if array is empty', () => {

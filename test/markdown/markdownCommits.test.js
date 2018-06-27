@@ -5,7 +5,7 @@ test('that we can run tests', () => {
 
 const markdownCommits = require('./../../src/markdown/markdownCommits')
 
-const emptyCommits = require('./../payload/emptyCommits')
+const emptyCommits = require('./../payload/empty')
 const payload = jest.fn().mockReturnValue(emptyCommits)
 
 test('that checks return string if array is empty', () => {
