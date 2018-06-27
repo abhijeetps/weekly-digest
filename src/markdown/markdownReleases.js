@@ -4,9 +4,11 @@ module.exports = (releases, tailDate) => {
   var releasesString = '# RELEASES\n'
   const data = releases.data
   var releasesCount = 0
-  for (i = 0; i < data.length; i++) {
-    if (data[i].published_at > tailDate) {
-      releasesCount = releasesCount + 1
+  if (typeof data !== 'undefined' && data !== null && data.length != null && data.length > 0) {
+    for (i = 0; i < data.length; i++) {
+      if (data[i].published_at > tailDate) {
+        releasesCount = releasesCount + 1
+      }
     }
   }
   if (releasesCount > 1) {
