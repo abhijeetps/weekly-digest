@@ -6,14 +6,16 @@ module.exports = (pullRequests, tailDate) => {
   var countPullRequestsOpen = 0
   var countPullRequestsMerged = 0
   var i
-  for (i = 0; i < data.length; i++) {
-    if (data[i].updated_at > tailDate) {
-      countPullRequests++
-      if (data[i].merged_at !== null) {
-        countPullRequestsMerged++
-      }
-      if (data[i].state === 'open') {
-        countPullRequestsOpen++
+  if (typeof data !== 'undefined' && data !== null && data.length != null && data.length > 0) {
+    for (i = 0; i < data.length; i++) {
+      if (data[i].updated_at > tailDate) {
+        countPullRequests++
+        if (data[i].merged_at !== null) {
+          countPullRequestsMerged++
+        }
+        if (data[i].state === 'open') {
+          countPullRequestsOpen++
+        }
       }
     }
   }
@@ -27,15 +29,17 @@ module.exports = (pullRequests, tailDate) => {
   }
   if (countPullRequests > 1) {
     pullRequestsString += `This week, ${countPullRequests} pull requests were proposed. Of these, ${countPullRequestsMerged} pull requests have been merged and ${countPullRequestsOpen} are still open.\n`
-    for (i = 0; i < data.length; i++) {
-      if (data[i].updated_at > tailDate) {
-        if (data[i].state === 'open') {
-          countPullRequestsOpen++
-          pullRequestsOpenString += `:green_heart: #${data[i].number} [${data[i].title}](${data[i].html_url}), by [${data[i].user.login}](${data[i].user.html_url})\n`
-        }
-        if (data[i].merged_at != null) {
-          countPullRequestsMerged++
-          pullRequestsMergedString += `:purple_heart: #${data[i].number} [${data[i].title}](${data[i].html_url}), by [${data[i].user.login}](${data[i].user.html_url})\n`
+    if (typeof data !== 'undefined' && data !== null && data.length != null && data.length > 0) {
+      for (i = 0; i < data.length; i++) {
+        if (data[i].updated_at > tailDate) {
+          if (data[i].state === 'open') {
+            countPullRequestsOpen++
+            pullRequestsOpenString += `:green_heart: #${data[i].number} [${data[i].title}](${data[i].html_url}), by [${data[i].user.login}](${data[i].user.html_url})\n`
+          }
+          if (data[i].merged_at != null) {
+            countPullRequestsMerged++
+            pullRequestsMergedString += `:purple_heart: #${data[i].number} [${data[i].title}](${data[i].html_url}), by [${data[i].user.login}](${data[i].user.html_url})\n`
+          }
         }
       }
     }
