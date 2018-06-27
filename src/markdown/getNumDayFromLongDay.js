@@ -1,5 +1,5 @@
 module.exports = (day) => {
-  if (typeof day === 'number') {
+  if (typeof day === 'number' && day >= 0 && day < 7) {
     return day
   } else {
     const longDay = [
@@ -17,5 +17,5 @@ module.exports = (day) => {
       }
     }
   }
-  return 0
+  return -1
 }
