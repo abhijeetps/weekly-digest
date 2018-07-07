@@ -11,11 +11,11 @@ module.exports = (day) => {
       'friday',
       'saturday'
     ]
-    for (var i = 0; i < 7; i++) {
+    for (let i = 0; i < 7; i++) {
       if (longDay[i].includes(String(day).toLowerCase())) {
         return i
       }
     }
   }
-  return -1
+  return undefined
 }
