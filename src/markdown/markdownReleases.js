@@ -19,14 +19,14 @@ module.exports = (releases, tailDate) => {
       }
     }
   } else if (releasesCount === 1) {
-    releasesString += `This week, ${releasesCount} release was published. It is: `
+    releasesString += `This week, ${releasesCount} release was published. It is: \n`
     for (i = 0; i < releasesCount; i++) {
       if (data[i].published_at > tailDate) {
         releasesString += `## ${data[i].tag_name} [${data[i].name}](${data[i].html_url}) :rocket:\n${data[i].body}`
       }
     }
   } else if (releasesCount === 0) {
-    releasesString += `This week, no releases were published.`
+    releasesString += `This week, no releases were published.\n`
   }
   return releasesString
 }
