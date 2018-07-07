@@ -57,13 +57,15 @@ module.exports = (issues) => {
     issuesString += issuesOpenString + issuesClosedString
   } else if (countIssue === 1) {
     if (data[0].state === 'open' && data[0].user.type !== 'Bot') {
-      issuesString += `This week 1 issue is created.`
+      issuesString += `This week 1 issue is created.\n`
+      issuesClosedString = `## OPEN ISSUE \n`
       issuesOpenString += `:green_heart: #${data[0].number} [${data[0].title}](${data[0].html_url}), by [${data[0].user.login}](${data[0].user.html_url})\n`
       issuesString += issuesOpenString
     } else if (data[0].state === 'closed' && data[0].user.type !== 'Bot') {
-      issuesString += `This week 1 issue is closed.`
+      issuesString += `This week 1 issue is closed.\n`
+      issuesClosedString = `## CLOSED ISSUE \n`
       issuesClosedString += `:heart: #${data[0].number} [${data[0].title}](${data[0].html_url}), by [${data[0].user.login}](${data[0].user.html_url})\n`
-      issuesString += issuesOpenString
+      issuesString += issuesClosedString
     }
   } else {
     issuesString += `This week, no issues have been created or closed.\n`
