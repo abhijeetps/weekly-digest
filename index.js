@@ -1,40 +1,44 @@
 const createScheduler = require('probot-scheduler')
 const getConfig = require('probot-config')
-const createWeeklyDigestLabel = require('./lib/markdown/createWeeklyDigestLabel')
-const createConfigYML = require('./lib/markdown/createConfigYML')
-const weeklyDigest = require('./lib/weeklyDigest')
-const getDate = require('./lib/markdown/getDate')
-const defaultConfig = require('./lib/markdown/defaultConfig')
-const getNumDayFromLongDay = require('./lib/markdown/getNumDayFromLongDay')
+
+const moment = require('moment')
+
+const createWeeklyDigestLabel = require('./src/markdown/createWeeklyDigestLabel')
+const createConfigYML = require('./src/markdown/createConfigYML')
+const weeklyDigest = require('./src/weeklyDigest')
+const getDate = require('./src/markdown/getDate')
+const defaultConfig = require('./src/markdown/defaultConfig')
+const getNumDayFromLongDay = require('./src/markdown/getNumDayFromLongDay')
 
 // 1 day
-const interval = 24 * 60 * 60 * 1000
+const interval = 60 * 1000
 
 module.exports = (app) => {
   app.log('Weekly Digest has started running! :)')
   app.on('installation.created', async (context) => {
-    console.log('App has been successfully installed.')
+    app.log('App has been successfully installed.')
+    app.log(moment().format())
     const [owner, repo] = await context.payload.repositories[0].full_name.split('/')
-    console.error(`repo: ${owner}/${repo}`)
+    console.log(`repo: ${owner}/${repo}`)
     await createWeeklyDigestLabel(context, {owner, repo})
     await createConfigYML(context, {owner, repo})
-    const headDate = await getDate.headDate()
-    const tailDate = await getDate.tailDate()
+    const headDate = getDate.headDate()
+    const tailDate = getDate.tailDate()
     const config = await defaultConfig
     weeklyDigest(context, {owner, repo, headDate, tailDate}, config)
   })
   createScheduler(app, {interval: interval})
   app.on('schedule.repository', async (context) => {
     console.log(`App is running as per schedule.repository`)
-    const headDate = await getDate.headDate()
-    const tailDate = await getDate.tailDate()
-    var currentDate = await getDate.getUTCFromISO(headDate)
-    var config = await getConfig(context, 'weekly-digest.yml')
+    app.log(moment().format())
+    const headDate = getDate.headDate()
+    const tailDate = getDate.tailDate()
+    let config = await getConfig(context, 'weekly-digest.yml')
     if (config == null) {
       config = defaultConfig
     }
-    console.log(`Publish Day: ${getNumDayFromLongDay(config.publishDay)}, Today: ${currentDate.getDay()}`)
-    if (currentDate.getDay() === getNumDayFromLongDay(config.publishDay)) {
+    console.log(`Publish Day: ${getNumDayFromLongDay(config.publishDay)}, Today: ${moment().day()}`)
+    if (moment().day() === getNumDayFromLongDay(config.publishDay)) {
       const { owner, repo } = context.repo()
       weeklyDigest(context, {owner, repo, headDate, tailDate}, config)
     }
