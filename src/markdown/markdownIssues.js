@@ -66,7 +66,7 @@ module.exports = (issues) => {
       issuesString += issuesOpenString
     }
   } else {
-    issuesString += `This week, no issues have been created or closed.`
+    issuesString += `This week, no issues have been created or closed.\n`
   }
   if (typeof likedData !== 'undefined') {
     issuesLikedString += `The issue most liked this week has been:\n`
