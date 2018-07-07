@@ -30,7 +30,7 @@ module.exports = (issues) => {
   } else if (contributors.length === 1) {
     contributorsString += `This week, [${contributors[0].user}](${contributors[0].html_url}) has contributed in the repository.\n`
   } else {
-    contributorsString += `This week, no user has contributed to this repository. `
+    contributorsString += `This week, no user has contributed to this repository.\n`
   }
   return contributorsString
 }
