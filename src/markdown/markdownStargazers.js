@@ -26,7 +26,7 @@ module.exports = (stargazers, tailDate) => {
     stargazersString += `This week, [${stargazersArray[0].user}](${stargazersArray[0].html_url}) has starred the repository.\n`
     stargazersString += `You are the star! :star:\n`
   } else {
-    stargazersString += `This week, no user has starred this repository. `
+    stargazersString += `This week, no user has starred this repository.\n`
   }
   return stargazersString
 }
