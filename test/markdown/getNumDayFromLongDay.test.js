@@ -1,12 +1,10 @@
 const getNumDayFromLongDay = require('./../../src/markdown/getNumDayFromLongDay')
 
-test('that we can run tests', () => {
-  // your real tests go here
-  expect(1 + 2 + 3).toBe(6)
-})
-
 test('that checks if 0 returns 0', () => {
   expect(getNumDayFromLongDay(0)).toEqual(0)
+})
+test('that checks any invalid day returns undefined', () => {
+  expect(getNumDayFromLongDay(7)).toBeUndefined()
 })
 test('that checks if 1 returns 1', () => {
   expect(getNumDayFromLongDay(1)).toEqual(1)
