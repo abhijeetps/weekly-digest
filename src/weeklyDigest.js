@@ -13,7 +13,7 @@ const getStargazers = require('./bin/getStargazers')
 const getCommits = require('./bin/getCommits')
 const getReleases = require('./bin/getReleases')
 
-const postCreateIssues = require('./bin/postCreateIssues')
+// const postCreateIssues = require('./bin/postCreateIssues')
 
 module.exports = async (context, {owner, repo, headDate, tailDate}, config) => {
   console.log('In weeklyDigest.js...')
@@ -55,6 +55,6 @@ module.exports = async (context, {owner, repo, headDate, tailDate}, config) => {
   body += `${issuesString}\n${pullRequestsString}\n${contributorsString}\n${stargazersString}\n${commitsString}\n ${releasesString}`
   body += `That's all for this week, please watch :eyes: and star :star: [${owner}/${repo}](https://github.com/${owner}/${repo}) to receive next weekly updates. :smiley:`
   const labels = ['weekly-digest']
-  // console.log(`${title} \n${labels} \n${body}`)
-  postCreateIssues(context, {owner, repo, title, body, labels})
+  console.log(`${title} \n${labels} \n${body}`)
+  // postCreateIssues(context, {owner, repo, title, body, labels})
 }
