@@ -8,6 +8,8 @@ module.exports = (commits) => {
     for (i = 0; i < data.length; i++) {
       if (data[i].author.type !== 'Bot') {
         commitsCount = commitsCount + 1
+      } else {
+        continue
       }
     }
   }
@@ -17,6 +19,8 @@ module.exports = (commits) => {
     for (i = 0; i < data.length; i++) {
       if (data[i].author.type !== 'Bot') {
         commitsString += `:hammer_and_wrench: [${data[i].commit.message}](${data[i].html_url}) by [${data[i].author.login}](${data[i].author.html_url})\n`
+      } else {
+        continue
       }
     }
   } else if (commitsCount === 1) {
