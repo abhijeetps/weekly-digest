@@ -1,3 +1,4 @@
+:warning: *The app is currently under developement. You might experience some unexpected behavior.*
 # Weekly Digest
 
 > App built using [Probot](https://probot.github.io/) which generates an automated summary of activities and happening on your GitHub repository.
