@@ -14,18 +14,16 @@ module.exports = (releases, tailDate) => {
   if (releasesCount > 1) {
     releasesString += `This week, ${releasesCount} releases were published. These are:\n`
     for (i = 0; i < releasesCount; i++) {
-      if (data[i].published_at > tailDate) {
-        releasesString += `## ${data[i].tag_name} [${data[i].name}](${data[i].html_url}) :rocket:\n${data[i].body}`
+      if (data[i].published_at >= tailDate) {
+        releasesString += `:rocket: ${data[i].tag_name} [${data[i].name}](${data[i].html_url})\n${data[i].body}\n`
       }
     }
   } else if (releasesCount === 1) {
     releasesString += `This week, ${releasesCount} release was published. It is: \n`
-    for (i = 0; i < releasesCount; i++) {
-      if (data[i].published_at > tailDate) {
-        releasesString += `## ${data[i].tag_name} [${data[i].name}](${data[i].html_url}) :rocket:\n${data[i].body}`
-      }
+    if (data[0].published_at >= tailDate) {
+      releasesString += `:rocket: ${data[0].tag_name} [${data[0].name}](${data[0].html_url})\n${data[0].body}\n`
     }
-  } else if (releasesCount === 0) {
+  } else {
     releasesString += `This week, no releases were published.\n`
   }
   return releasesString
