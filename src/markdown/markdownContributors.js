@@ -1,9 +1,9 @@
 module.exports = (issues) => {
   console.log('In markdownContributors.js...')
-  var contributorsString = `# CONTRIBUTORS \n`
-  var contributors = []
+  let contributorsString = `# CONTRIBUTORS \n`
+  let contributors = []
   const data = issues.data
-  var i
+  let i
   // getting all the users
   for (i = 0; i < data.length; i++) {
     // checking if it's not a bot

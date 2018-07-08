@@ -1,4 +1,4 @@
-var postCreateLabel = require('./../bin/postCreateLabel')
+let postCreateLabel = require('./../bin/postCreateLabel')
 module.exports = (context, {owner, repo}) => {
   console.log('In createWeeklyDigestLabel.js...')
   postCreateLabel(context, {

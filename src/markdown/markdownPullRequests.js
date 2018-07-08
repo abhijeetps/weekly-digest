@@ -1,11 +1,11 @@
 module.exports = (pullRequests, tailDate) => {
   console.log('In markdownPullRequests.js...')
   const data = pullRequests.data
-  var pullRequestsString = `# PULL REQUESTS\n`
-  var countPullRequests = 0
-  var countPullRequestsOpen = 0
-  var countPullRequestsMerged = 0
-  var i
+  let pullRequestsString = `# PULL REQUESTS\n`
+  let countPullRequests = 0
+  let countPullRequestsOpen = 0
+  let countPullRequestsMerged = 0
+  let i
   if (typeof data !== 'undefined' && data !== null && data.length != null && data.length > 0) {
     for (i = 0; i < data.length; i++) {
       if (data[i].created_at > tailDate) {
@@ -19,8 +19,8 @@ module.exports = (pullRequests, tailDate) => {
       }
     }
   }
-  var pullRequestsOpenString = `## OPEN PRs \n`
-  var pullRequestsMergedString = `## MERGED PRs \n`
+  let pullRequestsOpenString = `## OPEN PRs \n`
+  let pullRequestsMergedString = `## MERGED PRs \n`
   if (!countPullRequestsOpen) {
     pullRequestsOpenString = ``
   }

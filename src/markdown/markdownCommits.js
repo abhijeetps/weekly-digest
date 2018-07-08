@@ -1,9 +1,9 @@
 module.exports = (commits) => {
   console.log('In markdown commits...')
-  var data = commits.data
-  var i
-  var commitsString = '# COMMITS\n'
-  var commitsCount = 0
+  let data = commits.data
+  let i
+  let commitsString = '# COMMITS\n'
+  let commitsCount = 0
   if (typeof data !== 'undefined' && data !== null && data.length != null && data.length > 0) {
     for (i = 0; i < data.length; i++) {
       if (data[i].author.type !== 'Bot') {

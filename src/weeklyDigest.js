@@ -1,32 +1,32 @@
-var markdownIssues = require('./markdown/markdownIssues')
-var markdownPullRequests = require('./markdown/markdownPullRequests')
-var markdownContributors = require('./markdown/markdownContributors')
-var markdownStargazers = require('./markdown/markdownStargazers')
-var markdownCommits = require('./markdown/markdownCommits')
-var markdownReleases = require('./markdown/markdownReleases')
+const markdownIssues = require('./markdown/markdownIssues')
+const markdownPullRequests = require('./markdown/markdownPullRequests')
+const markdownContributors = require('./markdown/markdownContributors')
+const markdownStargazers = require('./markdown/markdownStargazers')
+const markdownCommits = require('./markdown/markdownCommits')
+const markdownReleases = require('./markdown/markdownReleases')
 
-var getLongMonth = require('./markdown/getLongMonth')
+const getLongMonth = require('./markdown/getLongMonth')
 
-var getAllIssues = require('./bin/getAllIssues')
-var getAllPullRequests = require('./bin/getAllPullRequests')
-var getStargazers = require('./bin/getStargazers')
-var getCommits = require('./bin/getCommits')
-var getReleases = require('./bin/getReleases')
+const getAllIssues = require('./bin/getAllIssues')
+const getAllPullRequests = require('./bin/getAllPullRequests')
+const getStargazers = require('./bin/getStargazers')
+const getCommits = require('./bin/getCommits')
+const getReleases = require('./bin/getReleases')
 
-var postCreateIssues = require('./bin/postCreateIssues')
+const postCreateIssues = require('./bin/postCreateIssues')
 
 module.exports = async (context, {owner, repo, headDate, tailDate}, config) => {
   console.log('In weeklyDigest.js...')
   let fromDate = new Date(tailDate)
   let toDate = new Date(headDate)
-  var title = `Weekly Digest (${fromDate.getDate()} ${getLongMonth(fromDate.getMonth())}, ${fromDate.getFullYear()} - ${toDate.getDate()} ${getLongMonth(toDate.getMonth())}, ${toDate.getFullYear()})`
-  var body = `Here's the Weekly Digest for [${owner}/${repo}](https://github.com/${owner}/${repo}):\n`
-  var issuesString = ``
-  var contributorsString = ``
-  var pullRequestsString = ``
-  var stargazersString = ``
-  var commitsString = ``
-  var releasesString = ``
+  let title = `Weekly Digest (${fromDate.getDate()} ${getLongMonth(fromDate.getMonth())}, ${fromDate.getFullYear()} - ${toDate.getDate()} ${getLongMonth(toDate.getMonth())}, ${toDate.getFullYear()})`
+  let body = `Here's the Weekly Digest for [${owner}/${repo}](https://github.com/${owner}/${repo}):\n`
+  let issuesString = ``
+  let contributorsString = ``
+  let pullRequestsString = ``
+  let stargazersString = ``
+  let commitsString = ``
+  let releasesString = ``
   if (config.canPublishIssues || config.canPublishContributors) {
     const issues = await getAllIssues(context, {owner, repo, tailDate})
     if (config.canPublishIssues) {

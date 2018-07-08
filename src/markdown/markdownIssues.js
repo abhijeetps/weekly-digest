@@ -1,16 +1,16 @@
 module.exports = (issues) => {
   console.log('In markdownIssues.js...')
-  var issuesString = `# ISSUES \n`
-  var issuesOpenString = `## OPEN ISSUES \n`
-  var issuesClosedString = `## CLOSED ISSUES \n`
-  var issuesLikedString = `## LIKED ISSUE \n`
-  var issuesNoisyString = `## NOISY ISSUE \n`
+  let issuesString = `# ISSUES \n`
+  let issuesOpenString = `## OPEN ISSUES \n`
+  let issuesClosedString = `## CLOSED ISSUES \n`
+  let issuesLikedString = `## LIKED ISSUE \n`
+  let issuesNoisyString = `## NOISY ISSUE \n`
   const data = issues.data
-  var likedData, noisyData
-  var countIssue = 0
-  var countIssueOpen = 0
-  var countIssueClosed = 0
-  var i
+  let likedData, noisyData
+  let countIssue = 0
+  let countIssueOpen = 0
+  let countIssueClosed = 0
+  let i
   if (typeof data !== 'undefined' && data !== null && data.length != null && data.length > 0) {
     for (i = 0; i < data.length; i++) {
       if (data[i].state === 'open' && data[i].user.type !== 'Bot') {
