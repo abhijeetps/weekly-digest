@@ -17,6 +17,7 @@
   "dependencies": {
     "mockdate": "^2.0.2",
     "moment": "^2.22.2",
+    "nock": "^9.4.1",
     "probot": "^7.0.1",
     "probot-config": "^0.1.0",
     "probot-scheduler": "^1.2.0"
