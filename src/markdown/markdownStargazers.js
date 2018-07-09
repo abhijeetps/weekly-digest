@@ -1,12 +1,15 @@
 
 module.exports = (stargazers, tailDate) => {
   console.log('In markdownStargazers.js...')
-  var stargazersString = `# STARGAZERS\n`
-  var data = stargazers.data
-  var stargazersArray = []
-  for (var i = 0; i < data.length; i++) {
-    if (data[i].starred_at > tailDate) {
-      stargazersArray.push({user: data[i].user.login, html_url: data[i].user.html_url})
+  let stargazersString = `# STARGAZERS\n`
+  let data = stargazers.data
+  let i
+  let stargazersArray = []
+  if (typeof data !== 'undefined' && data !== null && data.length != null && data.length > 0) {
+    for (i = 0; i < data.length; i++) {
+      if (data[i].starred_at > tailDate) {
+        stargazersArray.push({user: data[i].user.login, html_url: data[i].user.html_url})
+      }
     }
   }
   if (stargazersArray.length > 1) {
@@ -24,7 +27,7 @@ module.exports = (stargazers, tailDate) => {
     stargazersString += `This week, [${stargazersArray[0].user}](${stargazersArray[0].html_url}) has starred the repository.\n`
     stargazersString += `You are the star! :star:\n`
   } else {
-    stargazersString += `This week, no user has starred this repository. `
+    stargazersString += `This week, no user has starred this repository.\n`
   }
   return stargazersString
 }

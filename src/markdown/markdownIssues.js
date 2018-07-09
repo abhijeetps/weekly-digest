@@ -1,38 +1,40 @@
 module.exports = (issues) => {
   console.log('In markdownIssues.js...')
-  var issuesString = `# ISSUES \n`
-  var issuesOpenString = `## OPEN ISSUES \n`
-  var issuesClosedString = `## CLOSED ISSUES \n`
-  var issuesLikedString = `## LIKED ISSUE \n`
-  var issuesNoisyString = `## NOISY ISSUE \n`
+  let issuesString = `# ISSUES \n`
+  let issuesOpenString = `## OPEN ISSUES \n`
+  let issuesClosedString = `## CLOSED ISSUES \n`
+  let issuesLikedString = `## LIKED ISSUE \n`
+  let issuesNoisyString = `## NOISY ISSUE \n`
   const data = issues.data
-  var likedData, noisyData
-  var countIssue = 0
-  var countIssueOpen = 0
-  var countIssueClosed = 0
-  var i
-  for (i = 0; i < data.length; i++) {
-    if (data[i].state === 'open' && data[i].user.type !== 'Bot') {
-      countIssueOpen++
-    } else if (data[i].state === 'closed' && data[i].user.type !== 'Bot') {
-      countIssueClosed++
-    }
-    if (typeof likedData === 'undefined') {
-      if (data[i].reactions.total_count > 0 && data[i].user.type !== 'Bot') {
-        likedData = data[i]
+  let likedData, noisyData
+  let countIssue = 0
+  let countIssueOpen = 0
+  let countIssueClosed = 0
+  let i
+  if (typeof data !== 'undefined' && data !== null && data.length != null && data.length > 0) {
+    for (i = 0; i < data.length; i++) {
+      if (data[i].state === 'open' && data[i].user.type !== 'Bot') {
+        countIssueOpen++
+      } else if (data[i].state === 'closed' && data[i].user.type !== 'Bot') {
+        countIssueClosed++
       }
-    } else if (typeof likedData !== 'undefined') {
-      if (data[i].reactions.total_count > likedData.reactions.total_count && data[i].user.type !== 'Bot') {
-        likedData = data[i]
+      if (typeof likedData === 'undefined') {
+        if (data[i].reactions.total_count > 0 && data[i].user.type !== 'Bot') {
+          likedData = data[i]
+        }
+      } else if (typeof likedData !== 'undefined') {
+        if (data[i].reactions.total_count > likedData.reactions.total_count && data[i].user.type !== 'Bot') {
+          likedData = data[i]
+        }
       }
-    }
-    if (typeof noisyData === 'undefined') {
-      if (data[i].comments > 0 && data[i].user.type !== 'Bot') {
-        noisyData = data[i]
-      }
-    } else if (typeof noisyData !== 'undefined') {
-      if (data[i].comments > noisyData.comments && data[i].user.type !== 'Bot') {
-        noisyData = data[i]
+      if (typeof noisyData === 'undefined') {
+        if (data[i].comments > 0 && data[i].user.type !== 'Bot') {
+          noisyData = data[i]
+        }
+      } else if (typeof noisyData !== 'undefined') {
+        if (data[i].comments > noisyData.comments && data[i].user.type !== 'Bot') {
+          noisyData = data[i]
+        }
       }
     }
   }
@@ -55,16 +57,18 @@ module.exports = (issues) => {
     issuesString += issuesOpenString + issuesClosedString
   } else if (countIssue === 1) {
     if (data[0].state === 'open' && data[0].user.type !== 'Bot') {
-      issuesString += `This week 1 issue is created.`
+      issuesString += `This week 1 issue is created.\n`
+      issuesClosedString = `## OPEN ISSUE \n`
       issuesOpenString += `:green_heart: #${data[0].number} [${data[0].title}](${data[0].html_url}), by [${data[0].user.login}](${data[0].user.html_url})\n`
       issuesString += issuesOpenString
     } else if (data[0].state === 'closed' && data[0].user.type !== 'Bot') {
-      issuesString += `This week 1 issue is closed.`
+      issuesString += `This week 1 issue is closed.\n`
+      issuesClosedString = `## CLOSED ISSUE \n`
       issuesClosedString += `:heart: #${data[0].number} [${data[0].title}](${data[0].html_url}), by [${data[0].user.login}](${data[0].user.html_url})\n`
-      issuesString += issuesOpenString
+      issuesString += issuesClosedString
     }
   } else {
-    issuesString += `This week, no issues have been created or closed.`
+    issuesString += `This week, no issues have been created or closed.\n`
   }
   if (typeof likedData !== 'undefined') {
     issuesLikedString += `The issue most liked this week has been:\n`

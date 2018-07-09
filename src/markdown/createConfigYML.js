@@ -1,9 +1,9 @@
-var defaultConfig = require('./defaultConfig')
-var putCreateFile = require('./../bin/putCreateFile')
+let defaultConfig = require('./defaultConfig')
+let putCreateFile = require('./../bin/putCreateFile')
 
 module.exports = (context, {owner, repo}) => {
   console.log('In createConfigYML.js...')
-  var content = Buffer.from(
+  let content = Buffer.from(
     `# Configuration for weekly-digest - https://github.com/apps/weekly-digest
     publishDay: ${defaultConfig.publishDay}
     canPublishIssues: ${defaultConfig.canPublishIssues}

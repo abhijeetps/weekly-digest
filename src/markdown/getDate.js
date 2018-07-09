@@ -1,23 +1,16 @@
+const moment = require('moment')
+
 module.exports = {
-  headDate: async () => {
+  headDate: () => {
     console.log('In getDate.js headDate...')
-    var date = new Date()
-    date.setHours(0, 0, 0, 0)
-    date = await date.toISOString()
-    return date
+    return moment().set({'hour': 0, 'minute': 0, 'second': 0, 'millisecond': 0}).format()
   },
-  tailDate: async () => {
+  tailDate: () => {
     console.log('In getDate.js tailDate...')
-    var date = new Date()
-    date.setHours(0, 0, 0, 0)
-    date.setDate(date.getDate() - 7)
-    date = await date.toISOString()
-    return date
+    return moment().set({'hour': 0, 'minute': 0, 'second': 0, 'millisecond': 0}).subtract(7, 'days').format()
   },
-  getUTCFromISO: async (ISODate) => {
-    console.log('In getDate.js getDateStringFromISO...')
-    var date = ISODate.split(/\D/)
-    var dateUTC = await new Date(Date.UTC(date[0], --date[1], date[2], date[3] || 0, date[4] || 0, date[5] || 0, date[6] || 0))
-    return dateUTC
+  getDayBeforeDate: (date) => {
+    console.log('In getDate.js getDayBeforeDate...')
+    return moment(date).subtract(1, 'days').format()
   }
 }

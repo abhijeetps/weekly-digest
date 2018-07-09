@@ -1,5 +1,5 @@
 module.exports = (day) => {
-  if (typeof month === 'number') {
+  if (typeof day === 'number' && day >= 0 && day < 7) {
     return day
   } else {
     const longDay = [
@@ -11,11 +11,11 @@ module.exports = (day) => {
       'friday',
       'saturday'
     ]
-    for (var i = 0; i < 7; i++) {
+    for (let i = 0; i < 7; i++) {
       if (longDay[i].includes(String(day).toLowerCase())) {
         return i
       }
     }
   }
-  return 0
+  return undefined
 }
