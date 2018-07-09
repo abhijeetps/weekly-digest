@@ -8,8 +8,8 @@ module.exports = async (context, {owner, repo, headDate}) => {
   let date = getDate.getDayBeforeDate(headDate).substr(0, 19)
   let issues = await getSearchIssues(context, {owner, repo, date, author, type})
   if (issues.data.total_count >= 1) {
-    return true
+    return {hasDuplicates: true, url: issues.data.items[0].html_url}
   } else {
-    return false
+    return {hasDuplicates: false, url: undefined}
   }
 }

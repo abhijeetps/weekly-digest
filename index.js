@@ -35,9 +35,10 @@ module.exports = (app) => {
     const { owner, repo } = context.repo()
     const headDate = getDate.headDate()
     const tailDate = getDate.tailDate()
-    let hasDuplicates = checkDuplicates(context, {owner, repo, headDate})
+    let { hasDuplicates, url } = await checkDuplicates(context, {owner, repo, headDate})
     if (hasDuplicates) {
       console.log(`Weekly Digest for this week has already been published for ${owner}/${repo}`)
+      console.log(`URL: ` + url)
     } else {
       let config = await getConfig(context, 'weekly-digest.yml')
       config = fixConfig(config)
