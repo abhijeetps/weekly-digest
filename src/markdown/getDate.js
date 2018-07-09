@@ -8,5 +8,9 @@ module.exports = {
   tailDate: () => {
     console.log('In getDate.js tailDate...')
     return moment().set({'hour': 0, 'minute': 0, 'second': 0, 'millisecond': 0}).subtract(7, 'days').format()
+  },
+  getDayBeforeDate: (date) => {
+    console.log('In getDate.js getDayBeforeDate...')
+    return moment(date).subtract(1, 'days').format()
   }
 }
