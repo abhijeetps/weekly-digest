@@ -23,3 +23,8 @@ test('that returns and fixes configs if some configs are missing', () => {
   expect(fixConfig(testConfig1)).toBeDefined()
   expect(fixConfig(testConfig1)).toEqual(config)
 })
+
+test('that checks config if the received config is null', () => {
+  expect(fixConfig(testConfig1)).toBeDefined()
+  expect(fixConfig(null)).toEqual(config)
+})

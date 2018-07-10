@@ -1,5 +1,5 @@
 module.exports = {
-  publishDay: 'sunday',
+  publishDay: 0,
   canPublishIssues: true,
   canPublishPullRequests: true,
   canPublishContributors: true,
