@@ -31,7 +31,7 @@ module.exports = async (context, {owner, repo, headDate, tailDate}, config) => {
   if (config.canPublishIssues || config.canPublishContributors) {
     const issues = await getAllIssues(context, {owner, repo, tailDate})
     if (config.canPublishIssues) {
-      issuesString = markdownIssues(issues)
+      issuesString = markdownIssues(issues, headDate, tailDate)
     }
     if (config.canPublishContributors) {
       contributorsString = markdownContributors(issues)
