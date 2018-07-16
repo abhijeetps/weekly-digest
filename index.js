@@ -33,6 +33,7 @@ module.exports = (app) => {
     console.log(`App is running as per schedule.repository`)
     app.log('Local Time: ' + moment().format())
     const { owner, repo } = context.repo()
+    console.log(`Repository: ${owner}/${repo}`)
     const headDate = getDate.headDate()
     const tailDate = getDate.tailDate()
     let { hasDuplicates, url } = await checkDuplicates(context, {owner, repo, headDate})
