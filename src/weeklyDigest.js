@@ -43,7 +43,7 @@ module.exports = async (context, {owner, repo, headDate, tailDate}, config) => {
   }
   if (config.canPublishStargazers) {
     const stargazers = await getStargazers(context, {owner, repo})
-    stargazersString = markdownStargazers(stargazers, tailDate)
+    stargazersString = markdownStargazers(stargazers, headDate, tailDate)
   }
   if (config.canPublishCommits) {
     const commits = await getCommits(context, {owner, repo, tailDate})
