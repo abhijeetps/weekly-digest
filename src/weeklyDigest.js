@@ -51,7 +51,7 @@ module.exports = async (context, {owner, repo, headDate, tailDate}, config) => {
   }
   if (config.canPublishReleases) {
     const releases = await getReleases(context, {owner, repo})
-    releasesString = markdownReleases(releases, tailDate)
+    releasesString = markdownReleases(releases, headDate, tailDate)
   }
   body += `${issuesString}\n${pullRequestsString}\n${contributorsString}\n${stargazersString}\n${commitsString}\n ${releasesString}\n`
   body += `That's all for this week, please watch :eyes: and star :star: [${owner}/${repo}](https://github.com/${owner}/${repo}) to receive next weekly updates. :smiley:`
