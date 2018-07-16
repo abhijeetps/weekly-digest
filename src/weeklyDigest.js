@@ -47,7 +47,7 @@ module.exports = async (context, {owner, repo, headDate, tailDate}, config) => {
   }
   if (config.canPublishCommits) {
     const commits = await getCommits(context, {owner, repo, tailDate})
-    commitsString = markdownCommits(commits)
+    commitsString = markdownCommits(commits, headDate, tailDate)
   }
   if (config.canPublishReleases) {
     const releases = await getReleases(context, {owner, repo})
