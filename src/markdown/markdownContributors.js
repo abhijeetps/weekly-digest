@@ -1,36 +1,27 @@
-module.exports = (issues) => {
+module.exports = (commits, headDate, tailDate) => {
   console.log('In markdownContributors.js...')
-  let contributorsString = `# CONTRIBUTORS \n`
-  let contributors = []
-  const data = issues.data
-  let i
-  // getting all the users
-  for (i = 0; i < data.length; i++) {
-    // checking if it's not a bot
-    if (data[i].user.type !== 'Bot') {
-      contributors.push({user: data[i].user.login, html_url: data[i].user.html_url})
-    }
+  let data = commits.data
+  if (data == null) {
+    data = []
   }
-  // filtering duplicate users
-  contributors = contributors.filter((contributor, index, self) =>
-    index === self.findIndex((i) => (
-      i.user === contributor.user && i.html_url === contributor.html_url
-    ))
-  )
-  if (contributors.length > 1) {
-    contributorsString += `This week, ${contributors.length} users have contributed to this repository. \n`
-    contributorsString += `They are `
-    for (i = 0; i < contributors.length; i++) {
-      if (i === contributors.length - 1) {
-        contributorsString += `and [${contributors[i].user}](${contributors[i].html_url}).\n`
-      } else {
-        contributorsString += `[${contributors[i].user}](${contributors[i].html_url}), `
-      }
+  data = data.filter((item) => {
+    if (item.commit.committer.date >= tailDate && item.commit.committer.date < headDate && item.author.login !== 'weekly-digest[bot]') {
+      return true
     }
-  } else if (contributors.length === 1) {
-    contributorsString += `This week, [${contributors[0].user}](${contributors[0].html_url}) has contributed in the repository.\n`
+  })
+  let contributorsString = '# CONTRIBUTORS\n'
+  if (data.length === 0) {
+    contributorsString += `Last week there were no contributors.\n`
   } else {
-    contributorsString += `This week, no user has contributed to this repository.\n`
+    let contributors = []
+    data.forEach((item) => {
+      contributors.push({ login: item.author.login, html_url: item.author.html_url })
+    })
+    let uniqueContributors = Object.values(contributors.reduce((acc, cul) => Object.assign(acc, {[cul.login]: cul}), {}))
+    contributorsString += `Last week there ${(uniqueContributors.length > 1) ? 'were' : 'was'} ${uniqueContributors.length} contributor${(uniqueContributors.length > 1) ? 's' : ''}.\n`
+    uniqueContributors.forEach((item) => {
+      contributorsString += `:bust_in_silhouette: [${item.login}](${item.html_url})\n`
+    })
   }
   return contributorsString
 }

@@ -1,4 +1,44 @@
-test('that we can run tests', () => {
-  // your real tests go here
-  expect(1 + 2 + 3).toBe(6)
+const markdownContributors = require('./../../src/markdown/markdownContributors')
+
+const moment = require('moment')
+const MockDate = require('mockdate')
+MockDate.set(moment('2018-04-24'))
+
+let headDate = moment().format()
+let tailDate = moment().subtract(7, 'days').format()
+
+const commits = require('./../payload/commits')
+let emptyCommit = commits.emptyCommits
+let nullCommit = commits.nullCommits
+let uselessCommit = commits.uselessCommits
+let allCommits = commits.allCommits
+let manyCommits = commits.manyCommits
+
+test('that checks return string if there are no commits', () => {
+  expect(markdownContributors(emptyCommit, headDate, tailDate)).toContain('# CONTRIBUTORS')
+  expect(markdownContributors(emptyCommit, headDate, tailDate)).toContain('Last week there were no contributors.')
+})
+
+test('that checks return string if there are null commits', () => {
+  expect(markdownContributors(nullCommit, headDate, tailDate)).toContain('# CONTRIBUTORS')
+  expect(markdownContributors(nullCommit, headDate, tailDate)).toContain('Last week there were no contributors.')
+})
+
+test('that checks return string if there are useless commits', () => {
+  expect(markdownContributors(uselessCommit, headDate, tailDate)).toContain('# CONTRIBUTORS')
+  expect(markdownContributors(uselessCommit, headDate, tailDate)).toContain('Last week there were no contributors.')
+})
+
+test('that checks returns string of many contributors', () => {
+  expect(markdownContributors(manyCommits, headDate, tailDate)).toContain('# CONTRIBUTORS')
+  expect(markdownContributors(manyCommits, headDate, tailDate)).toContain('Last week there were 3 contributors.')
+  expect(markdownContributors(manyCommits, headDate, tailDate)).toContain(':bust_in_silhouette: [gr2m](https://github.com/gr2m/)')
+  expect(markdownContributors(manyCommits, headDate, tailDate)).toContain(':bust_in_silhouette: [wilhelmklopp](https://github.com/wilhelmklopp/)')
+  expect(markdownContributors(manyCommits, headDate, tailDate)).toContain('bust_in_silhouette: [aps120797](https://github.com/aps120797/)')
+})
+
+test('that checks return string of some contributors', () => {
+  expect(markdownContributors(allCommits, headDate, tailDate)).toContain('# CONTRIBUTORS')
+  expect(markdownContributors(allCommits, headDate, tailDate)).toContain('Last week there was 1 contributor.')
+  expect(markdownContributors(allCommits, headDate, tailDate)).toContain(':bust_in_silhouette: [aps120797](https://github.com/aps120797/)')
 })
