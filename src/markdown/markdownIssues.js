@@ -2,7 +2,7 @@ module.exports = (issues, headDate, tailDate) => {
   console.log('In markdownIssues.js...')
   let issuesString = `# ISSUES\n`
   let data = issues.data
-  if (typeof data === 'undefined' && data === null) {
+  if (data == null) {
     data = []
   }
   data = data.filter((item) => {
