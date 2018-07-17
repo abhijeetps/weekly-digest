@@ -3,29 +3,42 @@ const markdownReleases = require('./../../src/markdown/markdownReleases')
 const moment = require('moment')
 const MockDate = require('mockdate')
 
-MockDate.set(moment('2018-03-24'))
+MockDate.set(moment('2018-04-24'))
+let headDate = moment().format()
+let tailDate = moment().subtract(7, 'days').format()
 
-const emptyReleases = require('./../payload/empty')
 const releases = require('./../payload/releases')
-const release = require('./../payload/release')
+let emptyReleases = releases.emptyReleases
+let nullReleases = releases.nullReleases
+let uselessReleases = releases.uselessReleases
+let manyReleases = releases.manyReleases
+let allReleases = releases.allReleases
 
-test('that checks return string if there are no releases', () => {
-  let tailDate = moment().subtract(7, 'days').format()
-  expect(markdownReleases(emptyReleases, tailDate)).toContain('# RELEASES')
-  expect(markdownReleases(emptyReleases, tailDate)).toContain('This week, no releases were published.')
+test('that checks return string if the releases data is empty', () => {
+  expect(markdownReleases(emptyReleases, headDate, tailDate)).toContain('# RELEASES')
+  expect(markdownReleases(emptyReleases, headDate, tailDate)).toContain('Last week there were no releases.')
+})
+
+test('that checks return string if the releases data is null', () => {
+  expect(markdownReleases(nullReleases, headDate, tailDate)).toContain('# RELEASES')
+  expect(markdownReleases(nullReleases, headDate, tailDate)).toContain('Last week there were no releases.')
+})
+
+test('that checks return string if the releases data is useless', () => {
+  expect(markdownReleases(uselessReleases, headDate, tailDate)).toContain('# RELEASES')
+  expect(markdownReleases(uselessReleases, headDate, tailDate)).toContain('Last week there were no releases.')
+})
+
+test('that checks return string if there are many releases', () => {
+  expect(markdownReleases(manyReleases, headDate, tailDate)).toContain('# RELEASES')
+  expect(markdownReleases(manyReleases, headDate, tailDate)).toContain('Last week there were 3 releases.')
+  expect(markdownReleases(manyReleases, headDate, tailDate)).toContain(':rocket: v1.0.0 [Release v1.0.0](https://github.com/aps120797/playground/releases/tag/v1.0.0)')
+  expect(markdownReleases(manyReleases, headDate, tailDate)).toContain(':rocket: v0.1.1 [Release v0.1.1](https://github.com/aps120797/playground/releases/tag/v0.1.1)')
+  expect(markdownReleases(manyReleases, headDate, tailDate)).toContain(':rocket: v0.0.1 [Release v0.0.1](https://github.com/aps120797/playground/releases/tag/v0.0.1)')
 })
 
 test('that checks return string if there are some releases', () => {
-  let tailDate = moment().subtract(7, 'days').format()
-  expect(markdownReleases(releases, tailDate)).toContain('# RELEASES')
-  expect(markdownReleases(releases, tailDate)).toContain('This week, 2 releases were published.')
-  expect(markdownReleases(releases, tailDate)).toContain(':rocket: v1.0.0 [Majar Release test2](https://github.com/aps120797/playground/releases/tag/v1.0.0)')
-  expect(markdownReleases(releases, tailDate)).toContain(':rocket: v0.1.1 [Minor Patch Release test1](https://github.com/aps120797/playground/releases/tag/v0.1.1)')
-})
-
-test('that checks return string if there is one release', () => {
-  let tailDate = moment().subtract(7, 'days').format()
-  expect(markdownReleases(release, tailDate)).toContain('# RELEASES')
-  expect(markdownReleases(release, tailDate)).toContain('This week, 1 release was published.')
-  expect(markdownReleases(release, tailDate)).toContain(':rocket: v1.0.0 [Majar Release test2](https://github.com/aps120797/playground/releases/tag/v1.0.0)')
+  expect(markdownReleases(allReleases, headDate, tailDate)).toContain('# RELEASES')
+  expect(markdownReleases(allReleases, headDate, tailDate)).toContain('Last week there was 1 release.')
+  expect(markdownReleases(allReleases, headDate, tailDate)).toContain(':rocket: v0.1.1 [Release v0.1.1](https://github.com/aps120797/playground/releases/tag/v0.1.1)')
 })

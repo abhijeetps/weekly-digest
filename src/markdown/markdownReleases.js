@@ -1,30 +1,22 @@
-module.exports = (releases, tailDate) => {
+module.exports = (releases, headDate, tailDate) => {
   console.log('In markdownReleases.js...')
-  let i
-  let releasesString = '# RELEASES\n'
-  const data = releases.data
-  let releasesCount = 0
-  if (typeof data !== 'undefined' && data !== null && data.length != null && data.length > 0) {
-    for (i = 0; i < data.length; i++) {
-      if (data[i].published_at > tailDate) {
-        releasesCount = releasesCount + 1
-      }
-    }
+  let releaseString = '# RELEASES\n'
+  let data = releases.data
+  if (data == null) {
+    data = []
   }
-  if (releasesCount > 1) {
-    releasesString += `This week, ${releasesCount} releases were published. These are:\n`
-    for (i = 0; i < releasesCount; i++) {
-      if (data[i].published_at >= tailDate) {
-        releasesString += `:rocket: ${data[i].tag_name} [${data[i].name}](${data[i].html_url})\n${data[i].body}\n`
-      }
+  data = data.filter((item) => {
+    if (item.published_at >= tailDate && item.published_at < headDate) {
+      return true
     }
-  } else if (releasesCount === 1) {
-    releasesString += `This week, ${releasesCount} release was published. It is: \n`
-    if (data[0].published_at >= tailDate) {
-      releasesString += `:rocket: ${data[0].tag_name} [${data[0].name}](${data[0].html_url})\n${data[0].body}\n`
-    }
+  })
+  if (data.length === 0) {
+    releaseString += `Last week there were no releases.\n`
   } else {
-    releasesString += `This week, no releases were published.\n`
+    releaseString += `Last week there ${(data.length > 1) ? 'were' : 'was'} ${data.length} release${(data.length > 1) ? 's' : ''}.\n`
+    data.forEach((item) => {
+      releaseString += `:rocket: ${item.tag_name} [${item.name}](${item.html_url})\n`
+    })
   }
-  return releasesString
+  return releaseString
 }
