@@ -28,14 +28,9 @@ module.exports = async (context, {owner, repo, headDate, tailDate}, config) => {
   let stargazersString = ``
   let commitsString = ``
   let releasesString = ``
-  if (config.canPublishIssues || config.canPublishContributors) {
+  if (config.canPublishIssues) {
     const issues = await getAllIssues(context, {owner, repo, tailDate})
-    if (config.canPublishIssues) {
-      issuesString = markdownIssues(issues, headDate, tailDate)
-    }
-    if (config.canPublishContributors) {
-      contributorsString = markdownContributors(issues)
-    }
+    issuesString = markdownIssues(issues, headDate, tailDate)
   }
   if (config.canPublishPullRequests) {
     const pullRequests = await getAllPullRequests(context, {owner, repo})
@@ -45,9 +40,14 @@ module.exports = async (context, {owner, repo, headDate, tailDate}, config) => {
     const stargazers = await getStargazers(context, {owner, repo})
     stargazersString = markdownStargazers(stargazers, headDate, tailDate)
   }
-  if (config.canPublishCommits) {
+  if (config.canPublishCommits || config.canPublishContributors) {
     const commits = await getCommits(context, {owner, repo, tailDate})
-    commitsString = markdownCommits(commits, headDate, tailDate)
+    if (config.canPublishCommits) {
+      commitsString = markdownCommits(commits, headDate, tailDate)
+    }
+    if (config.canPublishContributors) {
+      contributorsString = markdownContributors(commits, headDate, tailDate)
+    }
   }
   if (config.canPublishReleases) {
     const releases = await getReleases(context, {owner, repo})
