@@ -22,12 +22,12 @@ module.exports = async (context, {owner, repo, headDate, tailDate}, config) => {
   let tailDateObject = moment(tailDate).toObject()
   let title = `Weekly Digest (${tailDateObject.date} ${getLongMonth(tailDateObject.months)}, ${tailDateObject.years} - ${headDateObject.date} ${getLongMonth(headDateObject.months)}, ${headDateObject.years})`
   let body = `Here's the Weekly Digest for [${owner}/${repo}](https://github.com/${owner}/${repo}):\n`
-  let issuesString = ``
-  let contributorsString = ``
-  let pullRequestsString = ``
-  let stargazersString = ``
-  let commitsString = ``
-  let releasesString = ``
+  let issuesString
+  let contributorsString
+  let pullRequestsString
+  let stargazersString
+  let commitsString
+  let releasesString
   if (config.canPublishIssues) {
     const issues = await getAllIssues(context, {owner, repo, tailDate})
     issuesString = markdownIssues(issues, headDate, tailDate)
@@ -35,10 +35,6 @@ module.exports = async (context, {owner, repo, headDate, tailDate}, config) => {
   if (config.canPublishPullRequests) {
     const pullRequests = await getAllPullRequests(context, {owner, repo})
     pullRequestsString = markdownPullRequests(pullRequests, headDate, tailDate)
-  }
-  if (config.canPublishStargazers) {
-    const stargazers = await getStargazers(context, {owner, repo})
-    stargazersString = markdownStargazers(stargazers, headDate, tailDate)
   }
   if (config.canPublishCommits || config.canPublishContributors) {
     const commits = await getCommits(context, {owner, repo, tailDate})
@@ -49,12 +45,33 @@ module.exports = async (context, {owner, repo, headDate, tailDate}, config) => {
       contributorsString = markdownContributors(commits, headDate, tailDate)
     }
   }
+  if (config.canPublishStargazers) {
+    const stargazers = await getStargazers(context, {owner, repo})
+    stargazersString = markdownStargazers(stargazers, headDate, tailDate)
+  }
   if (config.canPublishReleases) {
     const releases = await getReleases(context, {owner, repo})
     releasesString = markdownReleases(releases, headDate, tailDate)
   }
-  body += `${issuesString}\n${pullRequestsString}\n${contributorsString}\n${stargazersString}\n${commitsString}\n ${releasesString}\n`
-  body += `That's all for this week, please watch :eyes: and star :star: [${owner}/${repo}](https://github.com/${owner}/${repo}) to receive next weekly updates. :smiley:`
+  if (typeof issuesString !== 'undefined') {
+    body += issuesString
+  }
+  if (typeof pullRequestsString !== 'undefined') {
+    body += pullRequestsString
+  }
+  if (typeof commitsString !== 'undefined') {
+    body += commitsString
+  }
+  if (typeof contributorsString !== 'undefined') {
+    body += contributorsString
+  }
+  if (typeof stargazersString !== 'undefined') {
+    body += releasesString
+  }
+  body += '\n'
+  body += `That's all for this week, please watch :eyes: and star :star: [${owner}/${repo}](https://github.com/${owner}/${repo}) to receive next weekly updates. :smiley:\n`
+  body += `You can also [view all Weekly Digests by clicking here](https://github.com/${owner}/${repo}/issues?q=is:open+is:issue+label:weekly-digest).\n\n`
+  body += `Your [Weekly Digest](https://github.com/apps/weekly-digest) bot. :calendar:\n`
   const labels = ['weekly-digest']
   // console.log(`${title} \n${labels} \n${body}`)
   postCreateIssues(context, {owner, repo, title, body, labels})
