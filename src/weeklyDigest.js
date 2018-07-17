@@ -39,7 +39,7 @@ module.exports = async (context, {owner, repo, headDate, tailDate}, config) => {
   }
   if (config.canPublishPullRequests) {
     const pullRequests = await getAllPullRequests(context, {owner, repo})
-    pullRequestsString = markdownPullRequests(pullRequests, tailDate)
+    pullRequestsString = markdownPullRequests(pullRequests, headDate, tailDate)
   }
   if (config.canPublishStargazers) {
     const stargazers = await getStargazers(context, {owner, repo})
