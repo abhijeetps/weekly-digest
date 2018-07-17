@@ -30,15 +30,15 @@ module.exports = async (context, {owner, repo, headDate, tailDate}, config) => {
   let releasesString = ``
   if (config.canPublishIssues) {
     const issues = await getAllIssues(context, {owner, repo, tailDate})
-    issuesString = markdownIssues(issues)
+    issuesString = markdownIssues(issues, headDate, tailDate)
   }
   if (config.canPublishPullRequests) {
     const pullRequests = await getAllPullRequests(context, {owner, repo})
-    pullRequestsString = markdownPullRequests(pullRequests, tailDate)
+    pullRequestsString = markdownPullRequests(pullRequests, headDate, tailDate)
   }
   if (config.canPublishStargazers) {
     const stargazers = await getStargazers(context, {owner, repo})
-    stargazersString = markdownStargazers(stargazers, tailDate)
+    stargazersString = markdownStargazers(stargazers, headDate, tailDate)
   }
   if (config.canPublishCommits || config.canPublishContributors) {
     const commits = await getCommits(context, {owner, repo, tailDate})
@@ -51,7 +51,7 @@ module.exports = async (context, {owner, repo, headDate, tailDate}, config) => {
   }
   if (config.canPublishReleases) {
     const releases = await getReleases(context, {owner, repo})
-    releasesString = markdownReleases(releases, tailDate)
+    releasesString = markdownReleases(releases, headDate, tailDate)
   }
   body += `${issuesString}\n${pullRequestsString}\n${contributorsString}\n${stargazersString}\n${commitsString}\n ${releasesString}\n`
   body += `That's all for this week, please watch :eyes: and star :star: [${owner}/${repo}](https://github.com/${owner}/${repo}) to receive next weekly updates. :smiley:`
