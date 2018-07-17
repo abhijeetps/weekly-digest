@@ -66,6 +66,9 @@ module.exports = async (context, {owner, repo, headDate, tailDate}, config) => {
     body += contributorsString
   }
   if (typeof stargazersString !== 'undefined') {
+    body += stargazersString
+  }
+  if (typeof releasesString !== 'undefined') {
     body += releasesString
   }
   body += '\n'
