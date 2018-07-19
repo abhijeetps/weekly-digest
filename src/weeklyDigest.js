@@ -1,3 +1,4 @@
+
 const moment = require('moment')
 
 const markdownIssues = require('./markdown/markdownIssues')
@@ -53,27 +54,27 @@ module.exports = async (context, {owner, repo, headDate, tailDate}, config) => {
     const releases = await getReleases(context, {owner, repo})
     releasesString = markdownReleases(releases, headDate, tailDate)
   }
-  if (typeof issuesString !== 'undefined') {
+  if (issuesString) {
     body += issuesString
   }
-  if (typeof pullRequestsString !== 'undefined') {
+  if (pullRequestsString) {
     body += pullRequestsString
   }
-  if (typeof commitsString !== 'undefined') {
+  if (commitsString) {
     body += commitsString
   }
-  if (typeof contributorsString !== 'undefined') {
+  if (contributorsString) {
     body += contributorsString
   }
-  if (typeof stargazersString !== 'undefined') {
+  if (stargazersString) {
     body += stargazersString
   }
-  if (typeof releasesString !== 'undefined') {
+  if (releasesString) {
     body += releasesString
   }
   body += '\n'
-  body += `That's all for this week, please watch :eyes: and star :star: [${owner}/${repo}](https://github.com/${owner}/${repo}) to receive next weekly updates. :smiley:\n`
-  body += `You can also [view all Weekly Digests by clicking here](https://github.com/${owner}/${repo}/issues?q=is:open+is:issue+label:weekly-digest).\n\n`
+  body += `That's all for this week, please watch :eyes: and star :star: [${owner}/${repo}](https://github.com/${owner}/${repo}) to receive next weekly updates.\n\n`
+  body += `You can also [view all Weekly Digests by clicking here](https://github.com/${owner}/${repo}/issues?q=is:open+is:issue+label:weekly-digest). :smiley:\n\n`
   body += `Your [Weekly Digest](https://github.com/apps/weekly-digest) bot. :calendar:\n`
   const labels = ['weekly-digest']
   // console.log(`${title} \n${labels} \n${body}`)
