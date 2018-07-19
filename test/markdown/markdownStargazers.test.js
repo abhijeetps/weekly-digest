@@ -1,12 +1,10 @@
-
 const markdownStargazers = require('./../../src/markdown/markdownStargazers')
 
 const moment = require('moment')
 const MockDate = require('mockdate')
-MockDate.set(moment('2018-04-24'))
-
-let headDate = moment().format()
-let tailDate = moment().subtract(7, 'days').format()
+MockDate.set(moment.utc('2018-04-24'))
+let headDate = moment().utc().format()
+let tailDate = moment().utc().subtract(7, 'days').format()
 
 const stargazers = require('./../payload/stargazers')
 let emptyStargazers = stargazers.emptyStargazers

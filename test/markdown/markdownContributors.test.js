@@ -1,11 +1,11 @@
+
 const markdownContributors = require('./../../src/markdown/markdownContributors')
 
 const moment = require('moment')
 const MockDate = require('mockdate')
-MockDate.set(moment('2018-04-24'))
-
-let headDate = moment().format()
-let tailDate = moment().subtract(7, 'days').format()
+MockDate.set(moment.utc('2018-04-24'))
+let headDate = moment().utc().format()
+let tailDate = moment().utc().subtract(7, 'days').format()
 
 const commits = require('./../payload/commits')
 let emptyCommit = commits.emptyCommits
