@@ -1,20 +1,27 @@
-const moment = require('moment')
-const MockDate = require('mockdate')
-MockDate.set(moment('2018-03-24'))
 
 const markdownIssues = require('./../../src/markdown/markdownIssues')
 
+const moment = require('moment')
+const MockDate = require('mockdate')
+MockDate.set(moment.utc('2018-04-24'))
+let headDate = moment().utc().format()
+let tailDate = moment().utc().subtract(7, 'days').format()
+
 const issues = require('./../payload/issues')
+const nullIssue = issues.nullIssue
 const emptyIssue = issues.emptyIssue
 const openIssue = issues.openIssue
 const closedIssue = issues.closedIssue
 const uselessIssue = issues.uselessIssue
 const likedIssue = issues.likedIssue
 const noisyIssue = issues.noisyIssue
-const allIssue = issues.allIssue
+const allIssueA = issues.allIssueA
+const allIssueB = issues.allIssueB
 
-let headDate = moment().format()
-let tailDate = moment().subtract(7, 'days').format()
+test('that checks return string if payload is null', () => {
+  expect(markdownIssues(nullIssue, headDate, tailDate)).toContain('# ISSUES')
+  expect(markdownIssues(nullIssue, headDate, tailDate)).toContain('Last week, no issues were created.')
+})
 
 test('that checks return string if payload is empty', () => {
   expect(markdownIssues(emptyIssue, headDate, tailDate)).toContain('# ISSUES')
@@ -68,18 +75,34 @@ test('that checks return string to test liked issues', () => {
   expect(markdownIssues(likedIssue, headDate, tailDate)).toContain('It received :+1: x3, :smile: x2, :tada: x5 and :heart: x2.')
 })
 
-test('that checks return string if payload has some data', () => {
-  expect(markdownIssues(allIssue, headDate, tailDate)).toContain('# ISSUES')
-  expect(markdownIssues(allIssue, headDate, tailDate)).toContain('Last week 2 issues were created.')
-  expect(markdownIssues(allIssue, headDate, tailDate)).toContain('Of these, 1 issues have been closed and 1 issues are still open.')
-  expect(markdownIssues(allIssue, headDate, tailDate)).toContain('## OPEN ISSUES')
-  expect(markdownIssues(allIssue, headDate, tailDate)).toContain(':green_heart: #6 [Weekly Digest test6](https://github.com/aps120797/playground/issues/6), by [aps120797](https://github.com/aps120797)')
-  expect(markdownIssues(allIssue, headDate, tailDate)).toContain('## CLOSED ISSUES')
-  expect(markdownIssues(allIssue, headDate, tailDate)).toContain(':heart: #5 [Weekly Digest test5](https://github.com/aps120797/playground/issues/5), by [aps120797](https://github.com/aps120797)')
-  expect(markdownIssues(allIssue, headDate, tailDate)).toContain('## LIKED ISSUE')
-  expect(markdownIssues(allIssue, headDate, tailDate)).toContain(':+1: #5 [Weekly Digest test5](https://github.com/aps120797/playground/issues/5), by [aps120797](https://github.com/aps120797)')
-  expect(markdownIssues(allIssue, headDate, tailDate)).toContain('It received :+1: x2, :smile: x3, :tada: x1 and :heart: x2.')
-  expect(markdownIssues(allIssue, headDate, tailDate)).toContain('## NOISY ISSUE')
-  expect(markdownIssues(allIssue, headDate, tailDate)).toContain(':speaker: #6 [Weekly Digest test6](https://github.com/aps120797/playground/issues/6), by [aps120797](https://github.com/aps120797)')
-  expect(markdownIssues(allIssue, headDate, tailDate)).toContain('It received 6 comments.')
+test('that checks return string if payload has some data A', () => {
+  expect(markdownIssues(allIssueA, headDate, tailDate)).toContain('# ISSUES')
+  expect(markdownIssues(allIssueA, headDate, tailDate)).toContain('Last week 2 issues were created.')
+  expect(markdownIssues(allIssueA, headDate, tailDate)).toContain('Of these, 1 issues have been closed and 1 issues are still open.')
+  expect(markdownIssues(allIssueA, headDate, tailDate)).toContain('## OPEN ISSUES')
+  expect(markdownIssues(allIssueA, headDate, tailDate)).toContain(':green_heart: #6 [Weekly Digest test6](https://github.com/aps120797/playground/issues/6), by [aps120797](https://github.com/aps120797)')
+  expect(markdownIssues(allIssueA, headDate, tailDate)).toContain('## CLOSED ISSUES')
+  expect(markdownIssues(allIssueA, headDate, tailDate)).toContain(':heart: #5 [Weekly Digest test5](https://github.com/aps120797/playground/issues/5), by [aps120797](https://github.com/aps120797)')
+  expect(markdownIssues(allIssueA, headDate, tailDate)).toContain('## LIKED ISSUE')
+  expect(markdownIssues(allIssueA, headDate, tailDate)).toContain(':+1: #5 [Weekly Digest test5](https://github.com/aps120797/playground/issues/5), by [aps120797](https://github.com/aps120797)')
+  expect(markdownIssues(allIssueA, headDate, tailDate)).toContain('It received :+1: x2, :smile: x3, :tada: x1 and :heart: x2.')
+  expect(markdownIssues(allIssueA, headDate, tailDate)).toContain('## NOISY ISSUE')
+  expect(markdownIssues(allIssueA, headDate, tailDate)).toContain(':speaker: #6 [Weekly Digest test6](https://github.com/aps120797/playground/issues/6), by [aps120797](https://github.com/aps120797)')
+  expect(markdownIssues(allIssueA, headDate, tailDate)).toContain('It received 6 comments.')
+})
+
+test('that checks return string if payload has some data B', () => {
+  expect(markdownIssues(allIssueB, headDate, tailDate)).toContain('# ISSUES')
+  expect(markdownIssues(allIssueB, headDate, tailDate)).toContain('Last week 2 issues were created.')
+  expect(markdownIssues(allIssueB, headDate, tailDate)).toContain('Of these, 1 issues have been closed and 1 issues are still open.')
+  expect(markdownIssues(allIssueB, headDate, tailDate)).toContain('## OPEN ISSUES')
+  expect(markdownIssues(allIssueB, headDate, tailDate)).toContain(':green_heart: #6 [Weekly Digest test6](https://github.com/aps120797/playground/issues/6), by [aps120797](https://github.com/aps120797)')
+  expect(markdownIssues(allIssueB, headDate, tailDate)).toContain('## CLOSED ISSUES')
+  expect(markdownIssues(allIssueB, headDate, tailDate)).toContain(':heart: #5 [Weekly Digest test5](https://github.com/aps120797/playground/issues/5), by [aps120797](https://github.com/aps120797)')
+  expect(markdownIssues(allIssueB, headDate, tailDate)).toContain('## LIKED ISSUE')
+  expect(markdownIssues(allIssueB, headDate, tailDate)).toContain(':+1: #6 [Weekly Digest test6](https://github.com/aps120797/playground/issues/6), by [aps120797](https://github.com/aps120797)')
+  expect(markdownIssues(allIssueB, headDate, tailDate)).toContain('It received :+1: x2, :smile: x3, :tada: x1 and :heart: x2.')
+  expect(markdownIssues(allIssueB, headDate, tailDate)).toContain('## NOISY ISSUE')
+  expect(markdownIssues(allIssueB, headDate, tailDate)).toContain(':speaker: #5 [Weekly Digest test5](https://github.com/aps120797/playground/issues/5), by [aps120797](https://github.com/aps120797)')
+  expect(markdownIssues(allIssueB, headDate, tailDate)).toContain('It received 6 comments.')
 })
