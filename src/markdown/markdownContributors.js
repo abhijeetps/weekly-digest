@@ -1,11 +1,14 @@
+
+const moment = require('moment')
+
 module.exports = (commits, headDate, tailDate) => {
   console.log('In markdownContributors.js...')
   let data = commits.data
-  if (data == null) {
+  if (!data) {
     data = []
   }
   data = data.filter((item) => {
-    if (item.commit.committer.date >= tailDate && item.commit.committer.date < headDate && item.author.login !== 'weekly-digest[bot]') {
+    if (moment(item.commit.committer.date).isBetween(tailDate, headDate) && item.author.login !== 'weekly-digest[bot]') {
       return true
     }
   })

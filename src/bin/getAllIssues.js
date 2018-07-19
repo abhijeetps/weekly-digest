@@ -1,3 +1,4 @@
+
 module.exports = async (context, {owner, repo, tailDate}) => {
   // method returns all the issues and pull requests
   console.log('In getAllIssues.js...')
@@ -5,7 +6,8 @@ module.exports = async (context, {owner, repo, tailDate}) => {
     owner,
     repo,
     state: 'all',
-    since: tailDate
+    since: tailDate,
+    per_page: 100
   })
   return issues
 }
