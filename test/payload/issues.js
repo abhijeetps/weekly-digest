@@ -10,13 +10,13 @@ module.exports = {
   uselessIssue: {
     data: [
       {
-        html_url: 'https://github.com/aps120797/playground/issues/6',
+        html_url: 'https://github.com/abhijeetps/playground/issues/6',
         number: 6,
         title: 'Weekly Digest test6',
         user: {
           type: 'USER',
-          login: 'aps120797',
-          html_url: 'https://github.com/aps120797'
+          login: 'abhijeetps',
+          html_url: 'https://github.com/abhijeetps'
         },
         created_at: '2018-04-24T00:00:00Z',
         state: 'open',
@@ -30,13 +30,13 @@ module.exports = {
         }
       },
       {
-        html_url: 'https://github.com/aps120797/playground/issues/5',
+        html_url: 'https://github.com/abhijeetps/playground/issues/5',
         number: 5,
         title: 'Weekly Digest test5',
         user: {
           type: 'BOT',
           login: 'weekly-digest[bot]',
-          html_url: 'https://github.com/aps120797'
+          html_url: 'https://github.com/abhijeetps'
         },
         created_at: '2018-04-24T00:00:00Z',
         state: 'open',
@@ -50,13 +50,13 @@ module.exports = {
         }
       },
       {
-        html_url: 'https://github.com/aps120797/playground/issues/3',
+        html_url: 'https://github.com/abhijeetps/playground/issues/3',
         number: 3,
         title: 'Weekly Digest test3',
         user: {
           type: 'BOT',
           login: 'weekly-digest[bot]',
-          html_url: 'https://github.com/aps120797'
+          html_url: 'https://github.com/abhijeetps'
         },
         created_at: '2018-04-21T00:00:00Z',
         state: 'open',
@@ -70,13 +70,13 @@ module.exports = {
         }
       },
       {
-        html_url: 'https://github.com/aps120797/playground/issues/2',
+        html_url: 'https://github.com/abhijeetps/playground/issues/2',
         number: 2,
         title: 'Weekly Digest test2',
         user: {
           type: 'USER',
-          login: 'aps120797',
-          html_url: 'https://github.com/aps120797'
+          login: 'abhijeetps',
+          html_url: 'https://github.com/abhijeetps'
         },
         created_at: '2018-04-16T00:00:00Z',
         state: 'open',
@@ -90,13 +90,13 @@ module.exports = {
         }
       },
       {
-        html_url: 'https://github.com/aps120797/playground/issues/1',
+        html_url: 'https://github.com/abhijeetps/playground/issues/1',
         number: 1,
         title: 'Weekly Digest test1',
         user: {
           type: 'BOT',
           login: 'weekly-digest[bot]',
-          html_url: 'https://github.com/aps120797'
+          html_url: 'https://github.com/abhijeetps'
         },
         created_at: '2018-04-16T00:00:00Z',
         state: 'open',
@@ -115,13 +115,13 @@ module.exports = {
   openIssue: {
     data: [
       {
-        html_url: 'https://github.com/aps120797/playground/issues/6',
+        html_url: 'https://github.com/abhijeetps/playground/issues/6',
         number: 6,
         title: 'Weekly Digest test6',
         user: {
           type: 'USER',
-          login: 'aps120797',
-          html_url: 'https://github.com/aps120797'
+          login: 'abhijeetps',
+          html_url: 'https://github.com/abhijeetps'
         },
         created_at: '2018-04-24T00:00:00Z',
         state: 'open',
@@ -135,13 +135,13 @@ module.exports = {
         }
       },
       {
-        html_url: 'https://github.com/aps120797/playground/issues/5',
+        html_url: 'https://github.com/abhijeetps/playground/issues/5',
         number: 5,
         title: 'Weekly Digest test5',
         user: {
           type: 'BOT',
           login: 'weekly-digest[bot]',
-          html_url: 'https://github.com/aps120797'
+          html_url: 'https://github.com/abhijeetps'
         },
         created_at: '2018-04-24T00:00:00Z',
         state: 'open',
@@ -155,13 +155,13 @@ module.exports = {
         }
       },
       {
-        html_url: 'https://github.com/aps120797/playground/issues/4',
+        html_url: 'https://github.com/abhijeetps/playground/issues/4',
         number: 4,
         title: 'Weekly Digest test4',
         user: {
           type: 'USER',
-          login: 'aps120797',
-          html_url: 'https://github.com/aps120797'
+          login: 'abhijeetps',
+          html_url: 'https://github.com/abhijeetps'
         },
         created_at: '2018-04-21T00:00:00Z',
         state: 'open',
@@ -175,13 +175,13 @@ module.exports = {
         }
       },
       {
-        html_url: 'https://github.com/aps120797/playground/issues/3',
+        html_url: 'https://github.com/abhijeetps/playground/issues/3',
         number: 3,
         title: 'Weekly Digest test3',
         user: {
           type: 'BOT',
           login: 'weekly-digest[bot]',
-          html_url: 'https://github.com/aps120797'
+          html_url: 'https://github.com/abhijeetps'
         },
         created_at: '2018-04-21T00:00:00Z',
         state: 'open',
@@ -195,13 +195,13 @@ module.exports = {
         }
       },
       {
-        html_url: 'https://github.com/aps120797/playground/issues/2',
+        html_url: 'https://github.com/abhijeetps/playground/issues/2',
         number: 2,
         title: 'Weekly Digest test2',
         user: {
           type: 'USER',
-          login: 'aps120797',
-          html_url: 'https://github.com/aps120797'
+          login: 'abhijeetps',
+          html_url: 'https://github.com/abhijeetps'
         },
         created_at: '2018-04-16T00:00:00Z',
         state: 'open',
@@ -215,13 +215,13 @@ module.exports = {
         }
       },
       {
-        html_url: 'https://github.com/aps120797/playground/issues/1',
+        html_url: 'https://github.com/abhijeetps/playground/issues/1',
         number: 1,
         title: 'Weekly Digest test1',
         user: {
           type: 'BOT',
           login: 'weekly-digest[bot]',
-          html_url: 'https://github.com/aps120797'
+          html_url: 'https://github.com/abhijeetps'
         },
         created_at: '2018-04-16T00:00:00Z',
         state: 'open',
@@ -240,13 +240,13 @@ module.exports = {
   closedIssue: {
     data: [
       {
-        html_url: 'https://github.com/aps120797/playground/issues/6',
+        html_url: 'https://github.com/abhijeetps/playground/issues/6',
         number: 6,
         title: 'Weekly Digest test6',
         user: {
           type: 'USER',
-          login: 'aps120797',
-          html_url: 'https://github.com/aps120797'
+          login: 'abhijeetps',
+          html_url: 'https://github.com/abhijeetps'
         },
         created_at: '2018-04-24T00:00:00Z',
         state: 'closed',
@@ -260,13 +260,13 @@ module.exports = {
         }
       },
       {
-        html_url: 'https://github.com/aps120797/playground/issues/5',
+        html_url: 'https://github.com/abhijeetps/playground/issues/5',
         number: 5,
         title: 'Weekly Digest test5',
         user: {
           type: 'BOT',
           login: 'weekly-digest[bot]',
-          html_url: 'https://github.com/aps120797'
+          html_url: 'https://github.com/abhijeetps'
         },
         created_at: '2018-04-24T00:00:00Z',
         state: 'closed',
@@ -280,13 +280,13 @@ module.exports = {
         }
       },
       {
-        html_url: 'https://github.com/aps120797/playground/issues/4',
+        html_url: 'https://github.com/abhijeetps/playground/issues/4',
         number: 4,
         title: 'Weekly Digest test4',
         user: {
           type: 'USER',
-          login: 'aps120797',
-          html_url: 'https://github.com/aps120797'
+          login: 'abhijeetps',
+          html_url: 'https://github.com/abhijeetps'
         },
         created_at: '2018-04-21T00:00:00Z',
         state: 'closed',
@@ -300,13 +300,13 @@ module.exports = {
         }
       },
       {
-        html_url: 'https://github.com/aps120797/playground/issues/3',
+        html_url: 'https://github.com/abhijeetps/playground/issues/3',
         number: 3,
         title: 'Weekly Digest test3',
         user: {
           type: 'BOT',
           login: 'weekly-digest[bot]',
-          html_url: 'https://github.com/aps120797'
+          html_url: 'https://github.com/abhijeetps'
         },
         created_at: '2018-04-21T00:00:00Z',
         state: 'closed',
@@ -320,13 +320,13 @@ module.exports = {
         }
       },
       {
-        html_url: 'https://github.com/aps120797/playground/issues/2',
+        html_url: 'https://github.com/abhijeetps/playground/issues/2',
         number: 2,
         title: 'Weekly Digest test2',
         user: {
           type: 'USER',
-          login: 'aps120797',
-          html_url: 'https://github.com/aps120797'
+          login: 'abhijeetps',
+          html_url: 'https://github.com/abhijeetps'
         },
         created_at: '2018-04-16T00:00:00Z',
         state: 'closed',
@@ -340,13 +340,13 @@ module.exports = {
         }
       },
       {
-        html_url: 'https://github.com/aps120797/playground/issues/1',
+        html_url: 'https://github.com/abhijeetps/playground/issues/1',
         number: 1,
         title: 'Weekly Digest test1',
         user: {
           type: 'BOT',
           login: 'weekly-digest[bot]',
-          html_url: 'https://github.com/aps120797'
+          html_url: 'https://github.com/abhijeetps'
         },
         created_at: '2018-04-16T00:00:00Z',
         state: 'closed',
@@ -364,13 +364,13 @@ module.exports = {
   noisyIssue: {
     data: [
       {
-        html_url: 'https://github.com/aps120797/playground/issues/9',
+        html_url: 'https://github.com/abhijeetps/playground/issues/9',
         number: 9,
         title: 'Weekly Digest test9',
         user: {
           type: 'BOT',
           login: 'weekly-digest[bot]',
-          html_url: 'https://github.com/aps120797'
+          html_url: 'https://github.com/abhijeetps'
         },
         created_at: '2018-04-24T00:00:00Z',
         state: 'open',
@@ -384,13 +384,13 @@ module.exports = {
         }
       },
       {
-        html_url: 'https://github.com/aps120797/playground/issues/8',
+        html_url: 'https://github.com/abhijeetps/playground/issues/8',
         number: 8,
         title: 'Weekly Digest test8',
         user: {
           type: 'USER',
-          login: 'aps120797',
-          html_url: 'https://github.com/aps120797'
+          login: 'abhijeetps',
+          html_url: 'https://github.com/abhijeetps'
         },
         created_at: '2018-04-24T00:00:00Z',
         state: 'open',
@@ -404,13 +404,13 @@ module.exports = {
         }
       },
       {
-        html_url: 'https://github.com/aps120797/playground/issues/7',
+        html_url: 'https://github.com/abhijeetps/playground/issues/7',
         number: 7,
         title: 'Weekly Digest test7',
         user: {
           type: 'USER',
-          login: 'aps120797',
-          html_url: 'https://github.com/aps120797'
+          login: 'abhijeetps',
+          html_url: 'https://github.com/abhijeetps'
         },
         created_at: '2018-04-24T00:00:00Z',
         state: 'closed',
@@ -424,13 +424,13 @@ module.exports = {
         }
       },
       {
-        html_url: 'https://github.com/aps120797/playground/issues/6',
+        html_url: 'https://github.com/abhijeetps/playground/issues/6',
         number: 6,
         title: 'Weekly Digest test6',
         user: {
           type: 'BOT',
           login: 'weekly-digest[bot]',
-          html_url: 'https://github.com/aps120797'
+          html_url: 'https://github.com/abhijeetps'
         },
         created_at: '2018-04-21T00:00:00Z',
         state: 'open',
@@ -444,13 +444,13 @@ module.exports = {
         }
       },
       {
-        html_url: 'https://github.com/aps120797/playground/issues/5',
+        html_url: 'https://github.com/abhijeetps/playground/issues/5',
         number: 5,
         title: 'Weekly Digest test5',
         user: {
           type: 'USER',
-          login: 'aps120797',
-          html_url: 'https://github.com/aps120797'
+          login: 'abhijeetps',
+          html_url: 'https://github.com/abhijeetps'
         },
         created_at: '2018-04-20T00:00:00Z',
         state: 'open',
@@ -464,13 +464,13 @@ module.exports = {
         }
       },
       {
-        html_url: 'https://github.com/aps120797/playground/issues/4',
+        html_url: 'https://github.com/abhijeetps/playground/issues/4',
         number: 4,
         title: 'Weekly Digest test4',
         user: {
           type: 'USER',
-          login: 'aps120797',
-          html_url: 'https://github.com/aps120797'
+          login: 'abhijeetps',
+          html_url: 'https://github.com/abhijeetps'
         },
         created_at: '2018-04-19T00:00:00Z',
         state: 'closed',
@@ -484,13 +484,13 @@ module.exports = {
         }
       },
       {
-        html_url: 'https://github.com/aps120797/playground/issues/3',
+        html_url: 'https://github.com/abhijeetps/playground/issues/3',
         number: 3,
         title: 'Weekly Digest test3',
         user: {
           type: 'BOT',
           login: 'weekly-digest[bot]',
-          html_url: 'https://github.com/aps120797'
+          html_url: 'https://github.com/abhijeetps'
         },
         created_at: '2018-04-16T00:00:00Z',
         state: 'open',
@@ -504,13 +504,13 @@ module.exports = {
         }
       },
       {
-        html_url: 'https://github.com/aps120797/playground/issues/2',
+        html_url: 'https://github.com/abhijeetps/playground/issues/2',
         number: 2,
         title: 'Weekly Digest test2',
         user: {
           type: 'USER',
-          login: 'aps120797',
-          html_url: 'https://github.com/aps120797'
+          login: 'abhijeetps',
+          html_url: 'https://github.com/abhijeetps'
         },
         created_at: '2018-04-16T00:00:00Z',
         state: 'open',
@@ -524,13 +524,13 @@ module.exports = {
         }
       },
       {
-        html_url: 'https://github.com/aps120797/playground/issues/1',
+        html_url: 'https://github.com/abhijeetps/playground/issues/1',
         number: 1,
         title: 'Weekly Digest test1',
         user: {
           type: 'USER',
-          login: 'aps120797',
-          html_url: 'https://github.com/aps120797'
+          login: 'abhijeetps',
+          html_url: 'https://github.com/abhijeetps'
         },
         created_at: '2018-04-16T00:00:00Z',
         state: 'closed',
@@ -548,13 +548,13 @@ module.exports = {
   likedIssue: {
     data: [
       {
-        html_url: 'https://github.com/aps120797/playground/issues/9',
+        html_url: 'https://github.com/abhijeetps/playground/issues/9',
         number: 9,
         title: 'Weekly Digest test9',
         user: {
           type: 'BOT',
           login: 'weekly-digest[bot]',
-          html_url: 'https://github.com/aps120797'
+          html_url: 'https://github.com/abhijeetps'
         },
         created_at: '2018-04-24T00:00:00Z',
         state: 'open',
@@ -568,13 +568,13 @@ module.exports = {
         }
       },
       {
-        html_url: 'https://github.com/aps120797/playground/issues/8',
+        html_url: 'https://github.com/abhijeetps/playground/issues/8',
         number: 8,
         title: 'Weekly Digest test8',
         user: {
           type: 'USER',
-          login: 'aps120797',
-          html_url: 'https://github.com/aps120797'
+          login: 'abhijeetps',
+          html_url: 'https://github.com/abhijeetps'
         },
         created_at: '2018-04-24T00:00:00Z',
         state: 'open',
@@ -588,13 +588,13 @@ module.exports = {
         }
       },
       {
-        html_url: 'https://github.com/aps120797/playground/issues/7',
+        html_url: 'https://github.com/abhijeetps/playground/issues/7',
         number: 7,
         title: 'Weekly Digest test7',
         user: {
           type: 'USER',
-          login: 'aps120797',
-          html_url: 'https://github.com/aps120797'
+          login: 'abhijeetps',
+          html_url: 'https://github.com/abhijeetps'
         },
         created_at: '2018-04-24T00:00:00Z',
         state: 'closed',
@@ -608,13 +608,13 @@ module.exports = {
         }
       },
       {
-        html_url: 'https://github.com/aps120797/playground/issues/6',
+        html_url: 'https://github.com/abhijeetps/playground/issues/6',
         number: 6,
         title: 'Weekly Digest test6',
         user: {
           type: 'BOT',
           login: 'weekly-digest[bot]',
-          html_url: 'https://github.com/aps120797'
+          html_url: 'https://github.com/abhijeetps'
         },
         created_at: '2018-04-21T00:00:00Z',
         state: 'open',
@@ -628,13 +628,13 @@ module.exports = {
         }
       },
       {
-        html_url: 'https://github.com/aps120797/playground/issues/5',
+        html_url: 'https://github.com/abhijeetps/playground/issues/5',
         number: 5,
         title: 'Weekly Digest test5',
         user: {
           type: 'USER',
-          login: 'aps120797',
-          html_url: 'https://github.com/aps120797'
+          login: 'abhijeetps',
+          html_url: 'https://github.com/abhijeetps'
         },
         created_at: '2018-04-20T00:00:00Z',
         state: 'open',
@@ -648,13 +648,13 @@ module.exports = {
         }
       },
       {
-        html_url: 'https://github.com/aps120797/playground/issues/4',
+        html_url: 'https://github.com/abhijeetps/playground/issues/4',
         number: 4,
         title: 'Weekly Digest test4',
         user: {
           type: 'USER',
-          login: 'aps120797',
-          html_url: 'https://github.com/aps120797'
+          login: 'abhijeetps',
+          html_url: 'https://github.com/abhijeetps'
         },
         created_at: '2018-04-19T00:00:00Z',
         state: 'closed',
@@ -668,13 +668,13 @@ module.exports = {
         }
       },
       {
-        html_url: 'https://github.com/aps120797/playground/issues/3',
+        html_url: 'https://github.com/abhijeetps/playground/issues/3',
         number: 3,
         title: 'Weekly Digest test3',
         user: {
           type: 'BOT',
           login: 'weekly-digest[bot]',
-          html_url: 'https://github.com/aps120797'
+          html_url: 'https://github.com/abhijeetps'
         },
         created_at: '2018-04-16T00:00:00Z',
         state: 'open',
@@ -688,13 +688,13 @@ module.exports = {
         }
       },
       {
-        html_url: 'https://github.com/aps120797/playground/issues/2',
+        html_url: 'https://github.com/abhijeetps/playground/issues/2',
         number: 2,
         title: 'Weekly Digest test2',
         user: {
           type: 'USER',
-          login: 'aps120797',
-          html_url: 'https://github.com/aps120797'
+          login: 'abhijeetps',
+          html_url: 'https://github.com/abhijeetps'
         },
         created_at: '2018-04-16T00:00:00Z',
         state: 'open',
@@ -708,13 +708,13 @@ module.exports = {
         }
       },
       {
-        html_url: 'https://github.com/aps120797/playground/issues/1',
+        html_url: 'https://github.com/abhijeetps/playground/issues/1',
         number: 1,
         title: 'Weekly Digest test1',
         user: {
           type: 'USER',
-          login: 'aps120797',
-          html_url: 'https://github.com/aps120797'
+          login: 'abhijeetps',
+          html_url: 'https://github.com/abhijeetps'
         },
         created_at: '2018-04-16T00:00:00Z',
         state: 'closed',
@@ -733,13 +733,13 @@ module.exports = {
   allIssueA: {
     data: [
       {
-        html_url: 'https://github.com/aps120797/playground/issues/12',
+        html_url: 'https://github.com/abhijeetps/playground/issues/12',
         number: 12,
         title: 'Weekly Digest test12',
         user: {
           type: 'BOT',
           login: 'weekly-digest[bot]',
-          html_url: 'https://github.com/aps120797'
+          html_url: 'https://github.com/abhijeetps'
         },
         created_at: '2018-04-24T00:00:00Z',
         state: 'open',
@@ -753,14 +753,14 @@ module.exports = {
         }
       },
       {
-        html_url: 'https://github.com/aps120797/playground/issues/11',
+        html_url: 'https://github.com/abhijeetps/playground/issues/11',
         number: 11,
         title: 'Weekly Digest test11',
         created_at: '2018-04-24T00:00:00Z',
         user: {
           type: 'BOT',
           login: 'weekly-digest[bot]',
-          html_url: 'https://github.com/aps120797'
+          html_url: 'https://github.com/abhijeetps'
         },
         state: 'closed',
         comments: 3,
@@ -773,14 +773,14 @@ module.exports = {
         }
       },
       {
-        html_url: 'https://github.com/aps120797/playground/issues/10',
+        html_url: 'https://github.com/abhijeetps/playground/issues/10',
         number: 10,
         title: 'Weekly Digest test10',
         created_at: '2018-04-24T00:00:00Z',
         user: {
           type: 'USER',
-          login: 'aps120797',
-          html_url: 'https://github.com/aps120797'
+          login: 'abhijeetps',
+          html_url: 'https://github.com/abhijeetps'
         },
         state: 'open',
         comments: 4,
@@ -793,14 +793,14 @@ module.exports = {
         }
       },
       {
-        html_url: 'https://github.com/aps120797/playground/issues/9',
+        html_url: 'https://github.com/abhijeetps/playground/issues/9',
         number: 9,
         title: 'Weekly Digest test9',
         created_at: '2018-04-24T00:00:00Z',
         user: {
           type: 'USER',
-          login: 'aps120797',
-          html_url: 'https://github.com/aps120797'
+          login: 'abhijeetps',
+          html_url: 'https://github.com/abhijeetps'
         },
         state: 'closed',
         comments: 10,
@@ -813,13 +813,13 @@ module.exports = {
         }
       },
       {
-        html_url: 'https://github.com/aps120797/playground/issues/8',
+        html_url: 'https://github.com/abhijeetps/playground/issues/8',
         number: 8,
         title: 'Weekly Digest test8',
         user: {
           type: 'BOT',
           login: 'weekly-digest[bot]',
-          html_url: 'https://github.com/aps120797'
+          html_url: 'https://github.com/abhijeetps'
         },
         created_at: '2018-04-22T00:00:00Z',
         state: 'open',
@@ -833,14 +833,14 @@ module.exports = {
         }
       },
       {
-        html_url: 'https://github.com/aps120797/playground/issues/7',
+        html_url: 'https://github.com/abhijeetps/playground/issues/7',
         number: 7,
         title: 'Weekly Digest test7',
         created_at: '2018-04-21T00:00:00Z',
         user: {
           type: 'BOT',
           login: 'weekly-digest[bot]',
-          html_url: 'https://github.com/aps120797'
+          html_url: 'https://github.com/abhijeetps'
         },
         state: 'closed',
         comments: 15,
@@ -853,14 +853,14 @@ module.exports = {
         }
       },
       {
-        html_url: 'https://github.com/aps120797/playground/issues/6',
+        html_url: 'https://github.com/abhijeetps/playground/issues/6',
         number: 6,
         title: 'Weekly Digest test6',
         created_at: '2018-04-20T00:00:00Z',
         user: {
           type: 'USER',
-          login: 'aps120797',
-          html_url: 'https://github.com/aps120797'
+          login: 'abhijeetps',
+          html_url: 'https://github.com/abhijeetps'
         },
         state: 'open',
         comments: 6,
@@ -873,14 +873,14 @@ module.exports = {
         }
       },
       {
-        html_url: 'https://github.com/aps120797/playground/issues/5',
+        html_url: 'https://github.com/abhijeetps/playground/issues/5',
         number: 5,
         title: 'Weekly Digest test5',
         created_at: '2018-04-19T00:00:00Z',
         user: {
           type: 'USER',
-          login: 'aps120797',
-          html_url: 'https://github.com/aps120797'
+          login: 'abhijeetps',
+          html_url: 'https://github.com/abhijeetps'
         },
         state: 'closed',
         comments: 4,
@@ -893,13 +893,13 @@ module.exports = {
         }
       },
       {
-        html_url: 'https://github.com/aps120797/playground/issues/4',
+        html_url: 'https://github.com/abhijeetps/playground/issues/4',
         number: 4,
         title: 'Weekly Digest test4',
         user: {
           type: 'BOT',
           login: 'weekly-digest[bot]',
-          html_url: 'https://github.com/aps120797'
+          html_url: 'https://github.com/abhijeetps'
         },
         created_at: '2018-04-16T00:00:00Z',
         state: 'open',
@@ -913,14 +913,14 @@ module.exports = {
         }
       },
       {
-        html_url: 'https://github.com/aps120797/playground/issues/3',
+        html_url: 'https://github.com/abhijeetps/playground/issues/3',
         number: 3,
         title: 'Weekly Digest test3',
         created_at: '2018-04-16T00:00:00Z',
         user: {
           type: 'BOT',
           login: 'weekly-digest[bot]',
-          html_url: 'https://github.com/aps120797'
+          html_url: 'https://github.com/abhijeetps'
         },
         state: 'closed',
         comments: 3,
@@ -933,14 +933,14 @@ module.exports = {
         }
       },
       {
-        html_url: 'https://github.com/aps120797/playground/issues/2',
+        html_url: 'https://github.com/abhijeetps/playground/issues/2',
         number: 2,
         title: 'Weekly Digest test2',
         created_at: '2018-04-16T00:00:00Z',
         user: {
           type: 'USER',
-          login: 'aps120797',
-          html_url: 'https://github.com/aps120797'
+          login: 'abhijeetps',
+          html_url: 'https://github.com/abhijeetps'
         },
         state: 'open',
         comments: 4,
@@ -953,14 +953,14 @@ module.exports = {
         }
       },
       {
-        html_url: 'https://github.com/aps120797/playground/issues/1',
+        html_url: 'https://github.com/abhijeetps/playground/issues/1',
         number: 1,
         title: 'Weekly Digest test1',
         created_at: '2018-04-16T00:00:00Z',
         user: {
           type: 'USER',
-          login: 'aps120797',
-          html_url: 'https://github.com/aps120797'
+          login: 'abhijeetps',
+          html_url: 'https://github.com/abhijeetps'
         },
         state: 'closed',
         comments: 10,
@@ -977,13 +977,13 @@ module.exports = {
   allIssueB: {
     data: [
       {
-        html_url: 'https://github.com/aps120797/playground/issues/12',
+        html_url: 'https://github.com/abhijeetps/playground/issues/12',
         number: 12,
         title: 'Weekly Digest test12',
         user: {
           type: 'BOT',
           login: 'weekly-digest[bot]',
-          html_url: 'https://github.com/aps120797'
+          html_url: 'https://github.com/abhijeetps'
         },
         created_at: '2018-04-24T00:00:00Z',
         state: 'open',
@@ -997,14 +997,14 @@ module.exports = {
         }
       },
       {
-        html_url: 'https://github.com/aps120797/playground/issues/11',
+        html_url: 'https://github.com/abhijeetps/playground/issues/11',
         number: 11,
         title: 'Weekly Digest test11',
         created_at: '2018-04-24T00:00:00Z',
         user: {
           type: 'BOT',
           login: 'weekly-digest[bot]',
-          html_url: 'https://github.com/aps120797'
+          html_url: 'https://github.com/abhijeetps'
         },
         state: 'closed',
         comments: 3,
@@ -1017,14 +1017,14 @@ module.exports = {
         }
       },
       {
-        html_url: 'https://github.com/aps120797/playground/issues/10',
+        html_url: 'https://github.com/abhijeetps/playground/issues/10',
         number: 10,
         title: 'Weekly Digest test10',
         created_at: '2018-04-24T00:00:00Z',
         user: {
           type: 'USER',
-          login: 'aps120797',
-          html_url: 'https://github.com/aps120797'
+          login: 'abhijeetps',
+          html_url: 'https://github.com/abhijeetps'
         },
         state: 'open',
         comments: 4,
@@ -1037,14 +1037,14 @@ module.exports = {
         }
       },
       {
-        html_url: 'https://github.com/aps120797/playground/issues/9',
+        html_url: 'https://github.com/abhijeetps/playground/issues/9',
         number: 9,
         title: 'Weekly Digest test9',
         created_at: '2018-04-24T00:00:00Z',
         user: {
           type: 'USER',
-          login: 'aps120797',
-          html_url: 'https://github.com/aps120797'
+          login: 'abhijeetps',
+          html_url: 'https://github.com/abhijeetps'
         },
         state: 'closed',
         comments: 10,
@@ -1057,13 +1057,13 @@ module.exports = {
         }
       },
       {
-        html_url: 'https://github.com/aps120797/playground/issues/8',
+        html_url: 'https://github.com/abhijeetps/playground/issues/8',
         number: 8,
         title: 'Weekly Digest test8',
         user: {
           type: 'BOT',
           login: 'weekly-digest[bot]',
-          html_url: 'https://github.com/aps120797'
+          html_url: 'https://github.com/abhijeetps'
         },
         created_at: '2018-04-22T00:00:00Z',
         state: 'open',
@@ -1077,14 +1077,14 @@ module.exports = {
         }
       },
       {
-        html_url: 'https://github.com/aps120797/playground/issues/7',
+        html_url: 'https://github.com/abhijeetps/playground/issues/7',
         number: 7,
         title: 'Weekly Digest test7',
         created_at: '2018-04-21T00:00:00Z',
         user: {
           type: 'BOT',
           login: 'weekly-digest[bot]',
-          html_url: 'https://github.com/aps120797'
+          html_url: 'https://github.com/abhijeetps'
         },
         state: 'closed',
         comments: 15,
@@ -1097,14 +1097,14 @@ module.exports = {
         }
       },
       {
-        html_url: 'https://github.com/aps120797/playground/issues/6',
+        html_url: 'https://github.com/abhijeetps/playground/issues/6',
         number: 6,
         title: 'Weekly Digest test6',
         created_at: '2018-04-20T00:00:00Z',
         user: {
           type: 'USER',
-          login: 'aps120797',
-          html_url: 'https://github.com/aps120797'
+          login: 'abhijeetps',
+          html_url: 'https://github.com/abhijeetps'
         },
         state: 'open',
         comments: 4,
@@ -1117,14 +1117,14 @@ module.exports = {
         }
       },
       {
-        html_url: 'https://github.com/aps120797/playground/issues/5',
+        html_url: 'https://github.com/abhijeetps/playground/issues/5',
         number: 5,
         title: 'Weekly Digest test5',
         created_at: '2018-04-19T00:00:00Z',
         user: {
           type: 'USER',
-          login: 'aps120797',
-          html_url: 'https://github.com/aps120797'
+          login: 'abhijeetps',
+          html_url: 'https://github.com/abhijeetps'
         },
         state: 'closed',
         comments: 6,
@@ -1137,13 +1137,13 @@ module.exports = {
         }
       },
       {
-        html_url: 'https://github.com/aps120797/playground/issues/4',
+        html_url: 'https://github.com/abhijeetps/playground/issues/4',
         number: 4,
         title: 'Weekly Digest test4',
         user: {
           type: 'BOT',
           login: 'weekly-digest[bot]',
-          html_url: 'https://github.com/aps120797'
+          html_url: 'https://github.com/abhijeetps'
         },
         created_at: '2018-04-16T00:00:00Z',
         state: 'open',
@@ -1157,14 +1157,14 @@ module.exports = {
         }
       },
       {
-        html_url: 'https://github.com/aps120797/playground/issues/3',
+        html_url: 'https://github.com/abhijeetps/playground/issues/3',
         number: 3,
         title: 'Weekly Digest test3',
         created_at: '2018-04-16T00:00:00Z',
         user: {
           type: 'BOT',
           login: 'weekly-digest[bot]',
-          html_url: 'https://github.com/aps120797'
+          html_url: 'https://github.com/abhijeetps'
         },
         state: 'closed',
         comments: 3,
@@ -1177,14 +1177,14 @@ module.exports = {
         }
       },
       {
-        html_url: 'https://github.com/aps120797/playground/issues/2',
+        html_url: 'https://github.com/abhijeetps/playground/issues/2',
         number: 2,
         title: 'Weekly Digest test2',
         created_at: '2018-04-16T00:00:00Z',
         user: {
           type: 'USER',
-          login: 'aps120797',
-          html_url: 'https://github.com/aps120797'
+          login: 'abhijeetps',
+          html_url: 'https://github.com/abhijeetps'
         },
         state: 'open',
         comments: 4,
@@ -1197,14 +1197,14 @@ module.exports = {
         }
       },
       {
-        html_url: 'https://github.com/aps120797/playground/issues/1',
+        html_url: 'https://github.com/abhijeetps/playground/issues/1',
         number: 1,
         title: 'Weekly Digest test1',
         created_at: '2018-04-16T00:00:00Z',
         user: {
           type: 'USER',
-          login: 'aps120797',
-          html_url: 'https://github.com/aps120797'
+          login: 'abhijeetps',
+          html_url: 'https://github.com/abhijeetps'
         },
         state: 'closed',
         comments: 10,

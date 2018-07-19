@@ -2,9 +2,9 @@
   "name": "weekly-digest",
   "version": "0.0.0-development",
   "description": "",
-  "author": "aps120797 <aps.120797@gmail.com>",
+  "author": "abhijeetps <abhijeetps@outlook.com>",
   "license": "ISC",
-  "repository": "https://github.com/aps120797/weekly-digest.git",
+  "repository": "https://github.com/probot/weekly-digest.git",
   "scripts": {
     "dev": "nodemon --exec \"npm start\"",
     "start": "probot run ./index.js",

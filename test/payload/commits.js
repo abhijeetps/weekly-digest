@@ -20,7 +20,7 @@ module.exports = {
           login: 'weekly-digest[bot]',
           html_url: 'https://github.com/apps/weekly-digest'
         },
-        html_url: 'https://github.com/aps120797/playground/commit/commit-sha-6'
+        html_url: 'https://github.com/abhijeetps/playground/commit/commit-sha-6'
       },
       {
         commit:
@@ -32,10 +32,10 @@ module.exports = {
         },
         author:
         {
-          login: 'aps120797',
-          html_url: 'https://github.com/aps120797/'
+          login: 'abhijeetps',
+          html_url: 'https://github.com/abhijeetps/'
         },
-        html_url: 'https://github.com/aps120797/playground/commit/commit-sha-5'
+        html_url: 'https://github.com/abhijeetps/playground/commit/commit-sha-5'
       },
       {
         commit:
@@ -50,7 +50,7 @@ module.exports = {
           login: 'weekly-digest[bot]',
           html_url: 'https://github.com/app/weekly-digest'
         },
-        html_url: 'https://github.com/aps120797/playground/commit/commit-sha-4'
+        html_url: 'https://github.com/abhijeetps/playground/commit/commit-sha-4'
       },
       {
         commit:
@@ -65,7 +65,7 @@ module.exports = {
           login: 'weekly-digest[bot]',
           html_url: 'https://github.com/apps/weekly-digest'
         },
-        html_url: 'https://github.com/aps120797/playground/commit/commit-sha-2'
+        html_url: 'https://github.com/abhijeetps/playground/commit/commit-sha-2'
       },
       {
         commit:
@@ -77,10 +77,10 @@ module.exports = {
         },
         author:
         {
-          login: 'aps120797',
-          html_url: 'https://github.com/aps120797/'
+          login: 'abhijeetps',
+          html_url: 'https://github.com/abhijeetps/'
         },
-        html_url: 'https://github.com/aps120797/playground/commit/commit-sha-1'
+        html_url: 'https://github.com/abhijeetps/playground/commit/commit-sha-1'
       }
     ]
   },
@@ -99,7 +99,7 @@ module.exports = {
           login: 'gr2m',
           html_url: 'https://github.com/gr2m/'
         },
-        html_url: 'https://github.com/aps120797/playground/commit/commit-sha-3'
+        html_url: 'https://github.com/abhijeetps/playground/commit/commit-sha-3'
       },
       {
         commit:
@@ -114,7 +114,7 @@ module.exports = {
           login: 'wilhelmklopp',
           html_url: 'https://github.com/wilhelmklopp/'
         },
-        html_url: 'https://github.com/aps120797/playground/commit/commit-sha-2'
+        html_url: 'https://github.com/abhijeetps/playground/commit/commit-sha-2'
       },
       {
         commit:
@@ -126,10 +126,10 @@ module.exports = {
         },
         author:
         {
-          login: 'aps120797',
-          html_url: 'https://github.com/aps120797/'
+          login: 'abhijeetps',
+          html_url: 'https://github.com/abhijeetps/'
         },
-        html_url: 'https://github.com/aps120797/playground/commit/commit-sha-1'
+        html_url: 'https://github.com/abhijeetps/playground/commit/commit-sha-1'
       }
     ]
   },
@@ -148,7 +148,7 @@ module.exports = {
           login: 'weekly-digest[bot]',
           html_url: 'https://github.com/apps/weekly-digest'
         },
-        html_url: 'https://github.com/aps120797/playground/commit/commit-sha-6'
+        html_url: 'https://github.com/abhijeetps/playground/commit/commit-sha-6'
       },
       {
         commit:
@@ -160,10 +160,10 @@ module.exports = {
         },
         author:
         {
-          login: 'aps120797',
-          html_url: 'https://github.com/aps120797/'
+          login: 'abhijeetps',
+          html_url: 'https://github.com/abhijeetps/'
         },
-        html_url: 'https://github.com/aps120797/playground/commit/commit-sha-5'
+        html_url: 'https://github.com/abhijeetps/playground/commit/commit-sha-5'
       },
       {
         commit:
@@ -178,7 +178,7 @@ module.exports = {
           login: 'weekly-digest[bot]',
           html_url: 'https://github.com/app/weekly-digest'
         },
-        html_url: 'https://github.com/aps120797/playground/commit/commit-sha-4'
+        html_url: 'https://github.com/abhijeetps/playground/commit/commit-sha-4'
       },
       {
         commit:
@@ -190,10 +190,10 @@ module.exports = {
         },
         author:
         {
-          login: 'aps120797',
-          html_url: 'https://github.com/aps120797/'
+          login: 'abhijeetps',
+          html_url: 'https://github.com/abhijeetps/'
         },
-        html_url: 'https://github.com/aps120797/playground/commit/commit-sha-3'
+        html_url: 'https://github.com/abhijeetps/playground/commit/commit-sha-3'
       },
       {
         commit:
@@ -208,7 +208,7 @@ module.exports = {
           login: 'weekly-digest[bot]',
           html_url: 'https://github.com/apps/weekly-digest'
         },
-        html_url: 'https://github.com/aps120797/playground/commit/commit-sha-2'
+        html_url: 'https://github.com/abhijeetps/playground/commit/commit-sha-2'
       },
       {
         commit:
@@ -220,10 +220,10 @@ module.exports = {
         },
         author:
         {
-          login: 'aps120797',
-          html_url: 'https://github.com/aps120797/'
+          login: 'abhijeetps',
+          html_url: 'https://github.com/abhijeetps/'
         },
-        html_url: 'https://github.com/aps120797/playground/commit/commit-sha-1'
+        html_url: 'https://github.com/abhijeetps/playground/commit/commit-sha-1'
       }
     ]
   }
