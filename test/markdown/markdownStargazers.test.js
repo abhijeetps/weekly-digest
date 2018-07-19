@@ -32,7 +32,7 @@ test('that checks return string if there are many stargazers', () => {
   expect(markdownStargazers(manyStargazers, headDate, tailDate)).toContain('# STARGAZERS')
   expect(markdownStargazers(manyStargazers, headDate, tailDate)).toContain('Last week there were 3 stagazers.')
   expect(markdownStargazers(manyStargazers, headDate, tailDate)).toContain(':star: [wilhelmklopp](https://github.com/wilhelmklopp)')
-  expect(markdownStargazers(manyStargazers, headDate, tailDate)).toContain(':star: [aps120797](https://github.com/aps120797)')
+  expect(markdownStargazers(manyStargazers, headDate, tailDate)).toContain(':star: [abhijeetps](https://github.com/abhijeetps)')
   expect(markdownStargazers(manyStargazers, headDate, tailDate)).toContain(':star: [gr2m](https://github.com/gr2m)')
   expect(markdownStargazers(manyStargazers, headDate, tailDate)).toContain('You all are the stars! :star2:')
 })
@@ -40,6 +40,6 @@ test('that checks return string if there are many stargazers', () => {
 test('that checks return string if there are some stargazers', () => {
   expect(markdownStargazers(allStargazers, headDate, tailDate)).toContain('# STARGAZERS')
   expect(markdownStargazers(allStargazers, headDate, tailDate)).toContain('Last week there was 1 stargazer.')
-  expect(markdownStargazers(allStargazers, headDate, tailDate)).toContain(':star: [aps120797](https://github.com/aps120797)')
+  expect(markdownStargazers(allStargazers, headDate, tailDate)).toContain(':star: [abhijeetps](https://github.com/abhijeetps)')
   expect(markdownStargazers(allStargazers, headDate, tailDate)).toContain('You are the star! :star2:')
 })

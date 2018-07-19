@@ -34,8 +34,8 @@ module.exports = {
       },
       {
         user: {
-          login: 'aps120797',
-          html_url: 'https://github.com/aps120797'
+          login: 'abhijeetps',
+          html_url: 'https://github.com/abhijeetps'
         },
         starred_at: '2018-04-20T00:00:00Z'
       },
@@ -59,8 +59,8 @@ module.exports = {
       },
       {
         user: {
-          login: 'aps120797',
-          html_url: 'https://github.com/aps120797'
+          login: 'abhijeetps',
+          html_url: 'https://github.com/abhijeetps'
         },
         starred_at: '2018-04-20T00:00:00Z'
       },

@@ -32,25 +32,25 @@ test('that checks return string if the releases data is useless', () => {
 test('that checks return string if there are many releases', () => {
   expect(markdownReleases(manyReleases, headDate, tailDate)).toContain('# RELEASES')
   expect(markdownReleases(manyReleases, headDate, tailDate)).toContain('Last week there were 3 releases.')
-  expect(markdownReleases(manyReleases, headDate, tailDate)).toContain(':rocket: [v1.0.0 Release v1.0.0](https://github.com/aps120797/playground/releases/tag/v1.0.0)')
-  expect(markdownReleases(manyReleases, headDate, tailDate)).toContain(':rocket: [v0.1.1 Release v0.1.1](https://github.com/aps120797/playground/releases/tag/v0.1.1)')
-  expect(markdownReleases(manyReleases, headDate, tailDate)).toContain(':rocket: [v0.0.1 Release v0.0.1](https://github.com/aps120797/playground/releases/tag/v0.0.1)')
+  expect(markdownReleases(manyReleases, headDate, tailDate)).toContain(':rocket: [v1.0.0 Release v1.0.0](https://github.com/abhijeetps/playground/releases/tag/v1.0.0)')
+  expect(markdownReleases(manyReleases, headDate, tailDate)).toContain(':rocket: [v0.1.1 Release v0.1.1](https://github.com/abhijeetps/playground/releases/tag/v0.1.1)')
+  expect(markdownReleases(manyReleases, headDate, tailDate)).toContain(':rocket: [v0.0.1 Release v0.0.1](https://github.com/abhijeetps/playground/releases/tag/v0.0.1)')
 })
 
 test('that checks return string if there are some releases', () => {
   expect(markdownReleases(allReleases, headDate, tailDate)).toContain('# RELEASES')
   expect(markdownReleases(allReleases, headDate, tailDate)).toContain('Last week there was 1 release.')
-  expect(markdownReleases(allReleases, headDate, tailDate)).toContain(':rocket: [v0.1.1 Release v0.1.1](https://github.com/aps120797/playground/releases/tag/v0.1.1)')
+  expect(markdownReleases(allReleases, headDate, tailDate)).toContain(':rocket: [v0.1.1 Release v0.1.1](https://github.com/abhijeetps/playground/releases/tag/v0.1.1)')
 })
 
 test('that checks return string if there are some releases where name is null', () => {
   expect(markdownReleases(allReleases, headDate, tailDate)).toContain('# RELEASES')
   expect(markdownReleases(allReleases, headDate, tailDate)).toContain('Last week there was 1 release.')
-  expect(markdownReleases(allReleases, headDate, tailDate)).toContain(':rocket: [v0.1.1 Release v0.1.1](https://github.com/aps120797/playground/releases/tag/v0.1.1)')
+  expect(markdownReleases(allReleases, headDate, tailDate)).toContain(':rocket: [v0.1.1 Release v0.1.1](https://github.com/abhijeetps/playground/releases/tag/v0.1.1)')
 })
 
 test('that checks return string if there are some releases where name is null', () => {
   expect(markdownReleases(nullNameReleases, headDate, tailDate)).toContain('# RELEASES')
   expect(markdownReleases(nullNameReleases, headDate, tailDate)).toContain('Last week there was 1 release.')
-  expect(markdownReleases(nullNameReleases, headDate, tailDate)).toContain(':rocket: [v0.1.1](https://github.com/aps120797/playground/releases/tag/v0.1.1)')
+  expect(markdownReleases(nullNameReleases, headDate, tailDate)).toContain(':rocket: [v0.1.1](https://github.com/abhijeetps/playground/releases/tag/v0.1.1)')
 })

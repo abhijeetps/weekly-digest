@@ -32,13 +32,13 @@ test('that checks return string if the commit data is useless', () => {
 test('that checks return string if there are many commits', () => {
   expect(markdownCommits(manyCommits, headDate, tailDate)).toContain('# COMMITS')
   expect(markdownCommits(manyCommits, headDate, tailDate)).toContain('Last week there were 3 commits.')
-  expect(markdownCommits(manyCommits, headDate, tailDate)).toContain(':hammer_and_wrench: [Weekly-Digest commit test3](https://github.com/aps120797/playground/commit/commit-sha-3) by [gr2m](https://github.com/gr2m/)')
-  expect(markdownCommits(manyCommits, headDate, tailDate)).toContain(':hammer_and_wrench: [Weekly-Digest commit test3](https://github.com/aps120797/playground/commit/commit-sha-2) by [wilhelmklopp](https://github.com/wilhelmklopp/)')
-  expect(markdownCommits(manyCommits, headDate, tailDate)).toContain(':hammer_and_wrench: [Weekly-Digest commit test3](https://github.com/aps120797/playground/commit/commit-sha-1) by [aps120797](https://github.com/aps120797/)')
+  expect(markdownCommits(manyCommits, headDate, tailDate)).toContain(':hammer_and_wrench: [Weekly-Digest commit test3](https://github.com/abhijeetps/playground/commit/commit-sha-3) by [gr2m](https://github.com/gr2m/)')
+  expect(markdownCommits(manyCommits, headDate, tailDate)).toContain(':hammer_and_wrench: [Weekly-Digest commit test3](https://github.com/abhijeetps/playground/commit/commit-sha-2) by [wilhelmklopp](https://github.com/wilhelmklopp/)')
+  expect(markdownCommits(manyCommits, headDate, tailDate)).toContain(':hammer_and_wrench: [Weekly-Digest commit test3](https://github.com/abhijeetps/playground/commit/commit-sha-1) by [abhijeetps](https://github.com/abhijeetps/)')
 })
 
 test('that checks return string if there are commit', () => {
   expect(markdownCommits(allCommits, headDate, tailDate)).toContain('# COMMITS')
   expect(markdownCommits(allCommits, headDate, tailDate)).toContain('Last week there was 1 commit.')
-  expect(markdownCommits(allCommits, headDate, tailDate)).toContain(':hammer_and_wrench: [Weekly-Digest commit test3](https://github.com/aps120797/playground/commit/commit-sha-3) by [aps120797](https://github.com/aps120797/)')
+  expect(markdownCommits(allCommits, headDate, tailDate)).toContain(':hammer_and_wrench: [Weekly-Digest commit test3](https://github.com/abhijeetps/playground/commit/commit-sha-3) by [abhijeetps](https://github.com/abhijeetps/)')
 })

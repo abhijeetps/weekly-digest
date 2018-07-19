@@ -34,11 +34,11 @@ test('that checks returns string of many contributors', () => {
   expect(markdownContributors(manyCommits, headDate, tailDate)).toContain('Last week there were 3 contributors.')
   expect(markdownContributors(manyCommits, headDate, tailDate)).toContain(':bust_in_silhouette: [gr2m](https://github.com/gr2m/)')
   expect(markdownContributors(manyCommits, headDate, tailDate)).toContain(':bust_in_silhouette: [wilhelmklopp](https://github.com/wilhelmklopp/)')
-  expect(markdownContributors(manyCommits, headDate, tailDate)).toContain('bust_in_silhouette: [aps120797](https://github.com/aps120797/)')
+  expect(markdownContributors(manyCommits, headDate, tailDate)).toContain('bust_in_silhouette: [abhijeetps](https://github.com/abhijeetps/)')
 })
 
 test('that checks return string of some contributors', () => {
   expect(markdownContributors(allCommits, headDate, tailDate)).toContain('# CONTRIBUTORS')
   expect(markdownContributors(allCommits, headDate, tailDate)).toContain('Last week there was 1 contributor.')
-  expect(markdownContributors(allCommits, headDate, tailDate)).toContain(':bust_in_silhouette: [aps120797](https://github.com/aps120797/)')
+  expect(markdownContributors(allCommits, headDate, tailDate)).toContain(':bust_in_silhouette: [abhijeetps](https://github.com/abhijeetps/)')
 })
