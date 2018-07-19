@@ -67,7 +67,7 @@ test('that checks return string to test liked issues', () => {
   expect(markdownIssues(likedIssue, headDate, tailDate)).toContain('Last week 2 issues were created.')
   expect(markdownIssues(likedIssue, headDate, tailDate)).toContain('Of these, 1 issues have been closed and 1 issues are still open.')
   expect(markdownIssues(likedIssue, headDate, tailDate)).toContain('## OPEN ISSUES')
-  expect(markdownIssues(likedIssue, headDate, tailDate)).toContain(':green_heart: #5 [Weekly Digest test5](https://github.com/abhijeetpss/playground/issues/5), by [abhijeetps](https://github.com/abhijeetps)')
+  expect(markdownIssues(likedIssue, headDate, tailDate)).toContain(':green_heart: #5 [Weekly Digest test5](https://github.com/abhijeetps/playground/issues/5), by [abhijeetps](https://github.com/abhijeetps)')
   expect(markdownIssues(likedIssue, headDate, tailDate)).toContain('## CLOSED ISSUES')
   expect(markdownIssues(likedIssue, headDate, tailDate)).toContain(':heart: #4 [Weekly Digest test4](https://github.com/abhijeetps/playground/issues/4), by [abhijeetps](https://github.com/abhijeetps)')
   expect(markdownIssues(likedIssue, headDate, tailDate)).toContain('## LIKED ISSUE')
@@ -87,7 +87,7 @@ test('that checks return string if payload has some data A', () => {
   expect(markdownIssues(allIssueA, headDate, tailDate)).toContain(':+1: #5 [Weekly Digest test5](https://github.com/abhijeetps/playground/issues/5), by [abhijeetps](https://github.com/abhijeetps)')
   expect(markdownIssues(allIssueA, headDate, tailDate)).toContain('It received :+1: x2, :smile: x3, :tada: x1 and :heart: x2.')
   expect(markdownIssues(allIssueA, headDate, tailDate)).toContain('## NOISY ISSUE')
-  expect(markdownIssues(allIssueA, headDate, tailDate)).toContain(':speaker: #6 [Weekly Digest test6](https://github.com/abhijeetpss/playground/issues/6), by [abhijeetps](https://github.com/abhijeetps)')
+  expect(markdownIssues(allIssueA, headDate, tailDate)).toContain(':speaker: #6 [Weekly Digest test6](https://github.com/abhijeetps/playground/issues/6), by [abhijeetps](https://github.com/abhijeetps)')
   expect(markdownIssues(allIssueA, headDate, tailDate)).toContain('It received 6 comments.')
 })
 
