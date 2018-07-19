@@ -65,5 +65,27 @@ module.exports = {
         published_at: '2018-04-16T00:00:00Z'
       }
     ]
+  },
+  nullNameReleases: {
+    data: [
+      {
+        html_url: 'https://github.com/aps120797/playground/releases/tag/v1.0.0',
+        tag_name: 'v1.0.0',
+        name: null,
+        published_at: '2018-04-24T00:00:00Z'
+      },
+      {
+        html_url: 'https://github.com/aps120797/playground/releases/tag/v0.1.1',
+        tag_name: 'v0.1.1',
+        name: null,
+        published_at: '2018-04-21T00:00:00Z'
+      },
+      {
+        html_url: 'https://github.com/aps120797/playground/releases/tag/v0.0.1',
+        tag_name: 'v0.0.1',
+        name: null,
+        published_at: '2018-04-16T00:00:00Z'
+      }
+    ]
   }
 }
