@@ -20,7 +20,8 @@
     "nock": "^9.4.1",
     "probot": "^7.0.1",
     "probot-config": "^0.1.0",
-    "probot-scheduler": "^1.2.0"
+    "probot-scheduler": "^1.2.0",
+    "raven": "^2.6.3"
   },
   "devDependencies": {
     "jest": "^23.2.0",
