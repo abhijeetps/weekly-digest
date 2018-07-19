@@ -1,12 +1,15 @@
+
+const moment = require('moment')
+
 module.exports = (releases, headDate, tailDate) => {
   console.log('In markdownReleases.js...')
   let releaseString = '# RELEASES\n'
   let data = releases.data
-  if (data == null) {
+  if (!data) {
     data = []
   }
   data = data.filter((item) => {
-    if (item.published_at >= tailDate && item.published_at < headDate) {
+    if (moment(item.published_at).isBetween(tailDate, headDate)) {
       return true
     }
   })
@@ -15,7 +18,7 @@ module.exports = (releases, headDate, tailDate) => {
   } else {
     releaseString += `Last week there ${(data.length > 1) ? 'were' : 'was'} ${data.length} release${(data.length > 1) ? 's' : ''}.\n`
     data.forEach((item) => {
-      releaseString += `:rocket: ${item.tag_name} [${item.name}](${item.html_url})\n`
+      releaseString += `:rocket: [${item.tag_name.replace(/\n/g, ' ')}${(item.name != null) ? ` ${item.name.replace(/\n/g, ' ')}` : ''}](${item.html_url})\n`
     })
   }
   return releaseString
