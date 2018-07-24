@@ -8,15 +8,15 @@ let headDate = moment().utc().format()
 let tailDate = moment().utc().subtract(7, 'days').format()
 
 const issues = require('./../payload/issues')
-const nullIssue = issues.nullIssue
-const emptyIssue = issues.emptyIssue
-const openIssue = issues.openIssue
-const closedIssue = issues.closedIssue
-const uselessIssue = issues.uselessIssue
-const likedIssue = issues.likedIssue
-const noisyIssue = issues.noisyIssue
-const allIssueA = issues.allIssueA
-const allIssueB = issues.allIssueB
+const nullIssue = issues.nullIssue.data
+const emptyIssue = issues.emptyIssue.data
+const openIssue = issues.openIssue.data
+const closedIssue = issues.closedIssue.data
+const uselessIssue = issues.uselessIssue.data
+const likedIssue = issues.likedIssue.data
+const noisyIssue = issues.noisyIssue.data
+const allIssueA = issues.allIssueA.data
+const allIssueB = issues.allIssueB.data
 
 test('that checks return string if payload is null', () => {
   expect(markdownIssues(nullIssue, headDate, tailDate)).toContain('# ISSUES')

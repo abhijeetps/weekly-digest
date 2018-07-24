@@ -7,12 +7,12 @@ let headDate = moment().utc().format()
 let tailDate = moment().utc().subtract(7, 'days').format()
 
 const releases = require('./../payload/releases')
-let emptyReleases = releases.emptyReleases
-let nullReleases = releases.nullReleases
-let uselessReleases = releases.uselessReleases
-let manyReleases = releases.manyReleases
-let allReleases = releases.allReleases
-let nullNameReleases = releases.nullNameReleases
+let emptyReleases = releases.emptyReleases.data
+let nullReleases = releases.nullReleases.data
+let uselessReleases = releases.uselessReleases.data
+let manyReleases = releases.manyReleases.data
+let allReleases = releases.allReleases.data
+let nullNameReleases = releases.nullNameReleases.data
 
 test('that checks return string if the releases data is empty', () => {
   expect(markdownReleases(emptyReleases, headDate, tailDate)).toContain('# RELEASES')

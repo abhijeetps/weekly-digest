@@ -8,11 +8,11 @@ let headDate = moment().utc().format()
 let tailDate = moment().utc().subtract(7, 'days').format()
 
 const commits = require('./../payload/commits')
-let emptyCommit = commits.emptyCommits
-let nullCommit = commits.nullCommits
-let uselessCommit = commits.uselessCommits
-let allCommits = commits.allCommits
-let manyCommits = commits.manyCommits
+let emptyCommit = commits.emptyCommits.data
+let nullCommit = commits.nullCommits.data
+let uselessCommit = commits.uselessCommits.data
+let allCommits = commits.allCommits.data
+let manyCommits = commits.manyCommits.data
 
 test('that checks return string if there are no commits', () => {
   expect(markdownContributors(emptyCommit, headDate, tailDate)).toContain('# CONTRIBUTORS')
