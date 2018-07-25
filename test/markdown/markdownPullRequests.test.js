@@ -8,14 +8,14 @@ let headDate = moment().utc().format()
 let tailDate = moment().utc().subtract(7, 'days').format()
 
 const pullRequests = require('./../payload/pullRequests')
-const emptyPullRequest = pullRequests.emptyPullRequest
-const nullPullRequest = pullRequests.nullPullRequest
-const uselessPullRequest = pullRequests.uselessPullRequest
-const mergedPullRequest = pullRequests.mergedPullRequest
-const openPullRequest = pullRequests.openPullRequest
-const updatedPullRequest = pullRequests.updatedPullRequest
-const allPullRequest = pullRequests.allPullRequests
-const onePullRequest = pullRequests.onePullRequest
+const emptyPullRequest = pullRequests.emptyPullRequest.data
+const nullPullRequest = pullRequests.nullPullRequest.data
+const uselessPullRequest = pullRequests.uselessPullRequest.data
+const mergedPullRequest = pullRequests.mergedPullRequest.data
+const openPullRequest = pullRequests.openPullRequest.data
+const updatedPullRequest = pullRequests.updatedPullRequest.data
+const allPullRequest = pullRequests.allPullRequests.data
+const onePullRequest = pullRequests.onePullRequest.data
 
 test('that checks return string if the pull requests is empty', () => {
   expect(markdownPullRequests(emptyPullRequest, headDate, tailDate)).toContain('# PULL REQUESTS')

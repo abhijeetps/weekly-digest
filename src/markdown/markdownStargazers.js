@@ -4,7 +4,7 @@ const moment = require('moment')
 module.exports = (stargazers, headDate, tailDate) => {
   console.log('In markdownStargazers.js...')
   let stargazersString = `# STARGAZERS\n`
-  let data = stargazers.data
+  let data = stargazers
   if (!data) {
     data = []
   }

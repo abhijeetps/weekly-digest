@@ -7,11 +7,11 @@ let headDate = moment().utc().format()
 let tailDate = moment().utc().subtract(7, 'days').format()
 
 const stargazers = require('./../payload/stargazers')
-let emptyStargazers = stargazers.emptyStargazers
-let nullStargazers = stargazers.nullStargazers
-let uselessStargazers = stargazers.uselessStargazers
-let manyStargazers = stargazers.manyStargazers
-let allStargazers = stargazers.allStargazers
+let emptyStargazers = stargazers.emptyStargazers.data
+let nullStargazers = stargazers.nullStargazers.data
+let uselessStargazers = stargazers.uselessStargazers.data
+let manyStargazers = stargazers.manyStargazers.data
+let allStargazers = stargazers.allStargazers.data
 
 test('that checks return string if stargazers data is empty', () => {
   expect(markdownStargazers(emptyStargazers, headDate, tailDate)).toContain('# STARGAZERS')
