@@ -2,8 +2,8 @@ const createScheduler = require('probot-scheduler')
 const getConfig = require('probot-config')
 const moment = require('moment')
 
-const createWeeklyDigestLabel = require('./src/markdown/createWeeklyDigestLabel')
-const createConfigYML = require('./src/markdown/createConfigYML')
+// const createWeeklyDigestLabel = require('./src/markdown/createWeeklyDigestLabel')
+const postCreateLabel = require('./src/bin/postCreateLabel')
 const weeklyDigest = require('./src/weeklyDigest')
 const getDate = require('./src/markdown/getDate')
 const defaultConfig = require('./src/markdown/defaultConfig')
@@ -12,22 +12,23 @@ const fixConfig = require('./src/markdown/fixConfig')
 const checkDuplicates = require('./src/markdown/checkDuplicates')
 
 // 12 hours
-const interval = 12 * 60 * 60 * 1000
+const interval = 60 * 1000
 
 module.exports = (app) => {
   app.log('Weekly Digest app is running successfully.')
+
   app.on('installation.created', async (context) => {
     app.log('App has been successfully installed.')
     app.log('Local Time: ' + moment().format())
     const [owner, repo] = await context.payload.repositories[0].full_name.split('/')
     console.log(`Repository: ${owner}/${repo}`)
-    await createWeeklyDigestLabel(context, {owner, repo})
-    await createConfigYML(context, {owner, repo})
+    await postCreateLabel(context, {owner, repo, name: 'weekly-digest', color: '9C27B0', description: ''})
     const headDate = getDate.headDate()
     const tailDate = getDate.tailDate()
     const config = defaultConfig
     weeklyDigest(context, {owner, repo, headDate, tailDate}, config)
   })
+
   createScheduler(app, {interval: interval})
   app.on('schedule.repository', async (context) => {
     console.log(`App is running as per schedule.repository`)

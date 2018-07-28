@@ -17,7 +17,7 @@
   "dependencies": {
     "mockdate": "^2.0.2",
     "moment": "^2.22.2",
-    "nock": "^9.4.1",
+    "nock": "^9.4.2",
     "probot": "^7.0.1",
     "probot-config": "^0.1.0",
     "probot-scheduler": "^1.2.0"
@@ -27,7 +27,8 @@
     "nodemon": "^1.17.5",
     "smee-client": "^1.0.2",
     "standard": "^11.0.1",
-    "semantic-release": "^15.6.0"
+    "semantic-release": "^15.8.1",
+    "travis-deploy-once": "^5.0.1"
   },
   "engines": {
     "node": ">= 8.3.0"
@@ -35,6 +36,11 @@
   "standard": {
     "env": [
       "jest"
+    ]
+  },
+  "jest": {
+    "collectCoverageFrom": [
+      "src/**/*.js"
     ]
   }
 }
