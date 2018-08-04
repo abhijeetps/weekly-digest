@@ -1,8 +1,8 @@
 const { Application } = require('probot')
 // Requiring our app implementation
-const myProbotApp = require('..')
+const myProbotApp = require('./')
 
-const installationCreatedPayload = require('./payload/issues.opened.json')
+const installationCreatedPayload = require('./test/payload/issues.opened.json')
 
 describe('My Probot app', () => {
   let app, github
