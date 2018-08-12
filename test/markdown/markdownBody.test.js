@@ -55,5 +55,5 @@ test('that markdownBody works when the configs defined are all false', () => {
       }
     }
   }
-  expect(markdownBody(context, {owner, repo, headDate, tailDate}, config)).toBeDefined()
+  expect(markdownBody(context, {owner, repo, headDate, tailDate}, falseConfig)).toBeDefined()
 })
