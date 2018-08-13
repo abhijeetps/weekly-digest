@@ -9,7 +9,7 @@
     "dev": "nodemon --exec \"npm start\"",
     "start": "probot run ./index.js",
     "lint": "standard --fix",
-    "test": "standard && jest && codecov",
+    "test": "standard && jest",
     "test:watch": "jest --watch --notify --notifyMode=change --coverage",
     "travis-deploy-once": "travis-deploy-once",
     "semantic-release": "semantic-release"
@@ -44,8 +44,8 @@
     "testURL": "http://localhost/",
     "collectCoverageFrom": [
       "src/**/*.js"
-    ]
+    ],
     "coverageDirectory": "./coverage/",
-    "collectCoverage": true,
+    "collectCoverage": true
   }
 }
