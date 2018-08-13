@@ -44,6 +44,8 @@
     "testURL": "http://localhost/",
     "collectCoverageFrom": [
       "src/**/*.js"
-    ]
+    ],
+    "coverageDirectory": "./coverage/",
+    "collectCoverage": true
   }
 }
