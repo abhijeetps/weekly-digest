@@ -74,5 +74,6 @@ module.exports = async (context, {owner, repo, headDate, tailDate}, config) => {
   body += `That's all for last week, please <kbd>:eyes: **Watch**</kbd> and <kbd>:star: **Star**</kbd> the repository [*${owner}/${repo}*](https://github.com/${owner}/${repo}) to receive next weekly updates. :smiley:\n\n`
   body += `*You can also [view all Weekly Digests by clicking here](https://github.com/${owner}/${repo}/issues?q=is:open+is:issue+label:weekly-digest).* \n\n`
   body += `> Your [**Weekly Digest**](https://github.com/apps/weekly-digest) bot. :calendar:\n`
+  console.log(body)
   return body
 }
