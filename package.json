@@ -43,7 +43,8 @@
     "verbose": true,
     "testURL": "http://localhost/",
     "collectCoverageFrom": [
-      "src/**/*.js"
+      "src/**/*.js",
+      "index.js"
     ],
     "coverageDirectory": "./coverage/",
     "collectCoverage": true
