@@ -3,7 +3,7 @@
   - `installation_repositories`
   
 # Addtional Events 
-  - schedule.repository [probot-scheduler](https://www.npmjs.com/package/probot-scheduler)
+  - schedule.repository ([probot-scheduler](https://www.npmjs.com/package/probot-scheduler))
   
 # Extentions Used
   - probot-scheduler (https://www.npmjs.com/package/probot-scheduler)
