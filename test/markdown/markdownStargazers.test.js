@@ -30,7 +30,7 @@ test('that checks return string if stargazers data is useless', () => {
 
 test('that checks return string if there are many stargazers', () => {
   expect(markdownStargazers(manyStargazers, headDate, tailDate)).toContain('# STARGAZERS')
-  expect(markdownStargazers(manyStargazers, headDate, tailDate)).toContain('Last week there were 3 stagazers.')
+  expect(markdownStargazers(manyStargazers, headDate, tailDate)).toContain('Last week there were 3 stargazers.')
   expect(markdownStargazers(manyStargazers, headDate, tailDate)).toContain(':star: [wilhelmklopp](https://github.com/wilhelmklopp)')
   expect(markdownStargazers(manyStargazers, headDate, tailDate)).toContain(':star: [abhijeetps](https://github.com/abhijeetps)')
   expect(markdownStargazers(manyStargazers, headDate, tailDate)).toContain(':star: [gr2m](https://github.com/gr2m)')
