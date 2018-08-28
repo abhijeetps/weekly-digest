@@ -19,7 +19,7 @@ module.exports = (stargazers, headDate, tailDate) => {
     if (data.length === 1) {
       stargazersString += `Last week there was ${data.length} stargazer.\n`
     } else {
-      stargazersString += `Last week there were ${data.length} stagazers.\n`
+      stargazersString += `Last week there were ${data.length} stargazers.\n`
     }
     data.forEach((item) => {
       stargazersString += `:star: [${item.user.login}](${item.user.html_url})\n`
