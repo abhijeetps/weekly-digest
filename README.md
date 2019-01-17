@@ -48,7 +48,7 @@ One can change the default configuration of the app by adding a _.github/weekly-
 2. Clone the forked repository on your development machine.
 3. Move into your project's directory: `cd weekly-digest`
 4. Run `npm install` to setup the project.
-5. Follow [Configuring a GitHub App](https://probot.github.io/docs/development/#configuring-a-github-app) too configure your app loon your development machine.
+5. Follow [Configuring a GitHub App](https://probot.github.io/docs/development/#configuring-a-github-app) too configure your app on your development machine.
 6. Follow [Running the app locally](https://probot.github.io/docs/development/#running-the-app-locally) to run your app on your development machine.
 7. Before you add a feature or suggest some changes, we recommend [opening an issue here](https://github.com/probot/weekly-digest/issues/new) so that we can have a discussion about the changes.
 8. Please make sure you run `npm test` before submitting a pull request. If possible, please add tests for your changes also.
