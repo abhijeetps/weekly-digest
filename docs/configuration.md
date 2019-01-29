@@ -5,7 +5,8 @@ The app provides features to customize your application. To configure your appli
 2. Add the following configuration in the file:
    ```yaml
    # Configuration for weekly-digest - https://github.com/apps/weekly-digest
-   publishDay: sun
+   # publishDay value: 0, 1, 2, 3, 4, 5, 6
+   publishDay: 0
    canPublishIssues: true
    canPublishPullRequests: true
    canPublishContributors: true
