@@ -1,4 +1,3 @@
-
 const moment = require('moment')
 
 module.exports = (issues, headDate, tailDate) => {
@@ -9,11 +8,10 @@ module.exports = (issues, headDate, tailDate) => {
     data = []
   }
   data = data.filter((item) => {
-    if (moment(item.created_at).isBetween(tailDate, headDate) && (item.user.login !== 'weekly-digest[bot]')) {
-      return true
-    } else {
-      return false
-    }
+    const itemCreatedAt = moment(item.created_at)
+    const isWeeklyDigest = (item.user.login === 'weekly-digest[bot]')
+    const isPullRequest = item.hasOwnProperty('pull_request')
+    return itemCreatedAt.isBetween(tailDate, headDate) && !isWeeklyDigest && !isPullRequest
   })
   if (data.length === 0) {
     issuesString += `Last week, no issues were created.\n`
