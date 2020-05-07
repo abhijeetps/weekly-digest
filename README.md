@@ -41,7 +41,7 @@ When the Weekly Digest App gets installed in a repository of a user or organizat
 
 The app, as the name suggests, generates these digests and publishes it on weekly basis, typically on a Sunday. 
 
-One can change the default configuration of the app by adding a _.github/weekly-digest.yml_ file in their GitHub repository, which allows them to configure the publish day and the specific information included in the digest.
+One can change the default configuration of the app by adding a [_.github/weekly-digest.yml_](docs/configuration.md) file in their GitHub repository, which allows them to configure the publication day and the specific information included in the digest.
 
 ## How to Contribute
 1. Fork this repository.
