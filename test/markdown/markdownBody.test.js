@@ -12,6 +12,10 @@ test('that markdownBody works', () => {
   let owner = 'abhijeetps'
   let repo = 'playground'
   let context = {
+    log: {
+      info: jest.fn(),
+      debug: jest.fn()
+    },
     github: {
       paginate: jest.fn(),
       issues: {
@@ -37,6 +41,10 @@ test('that markdownBody works when the configs defined are all false', () => {
   let owner = 'abhijeetps'
   let repo = 'playground'
   let context = {
+    log: {
+      info: jest.fn(),
+      debug: jest.fn()
+    },
     github: {
       paginate: jest.fn(),
       issues: {

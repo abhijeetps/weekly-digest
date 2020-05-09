@@ -8,6 +8,10 @@ const mock = jest.fn()
 
 test('that getSearchIssues is working', async () => {
   let context = {
+    log: {
+      info: jest.fn(),
+      debug: jest.fn()
+    },
     github: {
       search: {
         issues: mock.mockReturnValue()

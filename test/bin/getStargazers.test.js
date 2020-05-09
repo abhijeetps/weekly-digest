@@ -7,6 +7,10 @@ MockDate.set(moment.utc('2018-04-24'))
 
 test('that getStargazers is working', async () => {
   let context = {
+    log: {
+      info: jest.fn(),
+      debug: jest.fn()
+    },
     github: {
       paginate: jest.fn(),
       activity: {

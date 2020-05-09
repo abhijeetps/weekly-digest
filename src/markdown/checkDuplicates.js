@@ -2,7 +2,7 @@ const getSearchIssues = require('./../bin/getSearchIssues')
 const getDate = require('./getDate')
 
 module.exports = async (context, {owner, repo, headDate}) => {
-  console.log('In checkDuplicates.js...')
+  context.log.debug('In checkDuplicates.js...')
   let author = 'app/weekly-digest'
   let type = 'issues'
   let date = getDate.getDayBeforeDate(headDate).substr(0, 19)

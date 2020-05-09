@@ -15,6 +15,10 @@ test.skip('that checkDuplicates is working', async () => {
     getDayBeforeDate: mock
   }
   let context = {
+    log: {
+      info: jest.fn(),
+      debug: jest.fn()
+    },
     github: {
       search: {
         issues: mock.mockReturnValue(Promise.resolve({
@@ -28,7 +32,6 @@ test.skip('that checkDuplicates is working', async () => {
       }
     }
   }
-  console.log(context.github.search.issues())
   await checkDuplicates(context, {
     owner: 'abhijeetps',
     repo: 'playground',

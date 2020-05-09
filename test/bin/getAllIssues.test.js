@@ -8,6 +8,10 @@ let tailDate = moment.utc().subtract(7, 'days').format()
 
 test('that getAllIssues is working', async () => {
   let context = {
+    log: {
+      info: jest.fn(),
+      debug: jest.fn()
+    },
     github: {
       paginate: jest.fn(),
       issues: {
