@@ -7,6 +7,10 @@ MockDate.set(moment.utc('2018-04-24'))
 
 test('that postCreateIssues is working', async () => {
   let context = {
+    log: {
+      info: jest.fn(),
+      debug: jest.fn()
+    },
     github: {
       issues: {
         create: jest.fn()

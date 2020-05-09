@@ -2,7 +2,6 @@
 const moment = require('moment')
 
 module.exports = (commits, headDate, tailDate) => {
-  console.log('In markdownContributors.js...')
   let data = commits
   if (!data) {
     data = []
