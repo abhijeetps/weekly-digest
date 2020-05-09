@@ -2,7 +2,6 @@
 const moment = require('moment')
 
 module.exports = (pullRequests, headDate, tailDate) => {
-  console.log('In markdownPullRequests.js...')
   let pullRequestsString = `# PULL REQUESTS\n`
   let data = pullRequests
   if (!data) {

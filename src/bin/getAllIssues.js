@@ -1,7 +1,7 @@
 
 module.exports = async (context, {owner, repo, tailDate}) => {
   // method returns all the issues and pull requests
-  console.log('In getAllIssues.js...')
+  context.log.debug('In getAllIssues.js...')
   let issues = await context.github.paginate(
     context.github.issues.getForRepo({
       owner,

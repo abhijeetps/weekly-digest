@@ -14,6 +14,10 @@ test('that weekly digest is working when configs are defined and is false', asyn
   let owner = 'abhijeetps'
   let repo = 'playground'
   let context = {
+    log: {
+      info: jest.fn(),
+      debug: jest.fn()
+    },
     github: {
       paginate: jest.fn(),
       issues: {
@@ -42,6 +46,10 @@ test('that weekly digest is working when configs are defined and is true', async
   let owner = 'abhijeetps'
   let repo = 'playground'
   let context = {
+    log: {
+      info: jest.fn(),
+      debug: jest.fn()
+    },
     github: {
       paginate: jest.fn(),
       issues: {

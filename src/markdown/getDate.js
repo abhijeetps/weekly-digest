@@ -3,15 +3,12 @@ const moment = require('moment')
 
 module.exports = {
   headDate: () => {
-    console.log('In getDate.js headDate...')
     return moment.utc().set({'hour': 0, 'minute': 0, 'second': 0, 'millisecond': 0}).format()
   },
   tailDate: () => {
-    console.log('In getDate.js tailDate...')
     return moment.utc().set({'hour': 0, 'minute': 0, 'second': 0, 'millisecond': 0}).subtract(7, 'days').format()
   },
   getDayBeforeDate: (date) => {
-    console.log('In getDate.js getDayBeforeDate...')
     return moment(date).subtract(1, 'days').format()
   }
 }
