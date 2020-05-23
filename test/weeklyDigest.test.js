@@ -1,5 +1,5 @@
 
-const weeklyDigest = require('./../src/weeklyDigest')
+const weeklyDigest = require('./../src/bin/weeklyDigest')
 const config = require('./../src/markdown/defaultConfig')
 const falseConfig = require('./payload/falseConfig')
 const moment = require('moment')

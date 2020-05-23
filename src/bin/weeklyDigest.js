@@ -1,10 +1,10 @@
 
 const moment = require('moment')
 
-const getLongMonth = require('./markdown/getLongMonth')
-const markdownBody = require('./markdown/markdownBody')
+const getLongMonth = require('../markdown/getLongMonth')
+const markdownBody = require('../markdown/markdownBody')
 
-const postCreateIssues = require('./bin/postCreateIssues')
+const postCreateIssues = require('./postCreateIssues')
 
 module.exports = async (context, {owner, repo, headDate, tailDate}, config) => {
   context.log.debug('In weeklyDigest.js...')
