@@ -19,9 +19,7 @@ module.exports = (app) => {
   })
 
   createScheduler(app, { interval: INTERVAL })
-  console.log('Hello')
   app.on(SCHEDULE_REPOSITORY_EVENT, async (context) => {
-    console.log('Pikachu')
     context.log.debug(`App is running as per schedule.repository`)
     context.log.debug('Local Time: ' + moment().format())
     await initCreateWeeklyDigest(context)
