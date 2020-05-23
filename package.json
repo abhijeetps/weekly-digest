@@ -6,7 +6,7 @@
   "license": "ISC",
   "repository": "https://github.com/probot/weekly-digest.git",
   "scripts": {
-    "dev": "nodemon --exec \"npm start\"",
+    "dev": "nodemon --exec \"ENVIRONMENT=development npm start\"",
     "prodlike": "nodemon --exec \"LOG_LEVEL=info npm start\"",
     "start": "probot run ./index.js",
     "lint": "standard --fix",

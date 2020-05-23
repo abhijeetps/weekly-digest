@@ -1,35 +1,31 @@
 const { Application } = require('probot')
-// Requiring our app implementation
+const { SCHEDULE_REPOSITORY_EVENT } = require('./src/bin/constants')
+const createScheduler = require('probot-scheduler')
+
 const myProbotApp = require('./')
 
-const installationCreatedPayload = require('./test/payload/issues.opened.json')
-
-describe('My Probot app', () => {
-  let app, github
+describe.skip('My Probot app', () => {
+  let app
+  let github
 
   beforeEach(() => {
     app = new Application()
-    // Initialize the app based on the code from index.js
     app.load(myProbotApp)
-    // This is an easy way to mock out the GitHub API
     github = {
       issues: {
         createLabel: jest.fn().mockReturnValue(Promise.resolve({}))
       }
     }
-    // Passes the mocked out GitHub API into out app instance
     app.auth = () => Promise.resolve(github)
+    createScheduler(app)
   })
 
-  test.skip('creates a comment when an issue is opened', async () => {
-    // Simulates delivery of an issues.opened webhook
+  it(`initCreateWeeklyDigest to have been called when it receives ${SCHEDULE_REPOSITORY_EVENT}`, async () => {
+    const initCreateWeeklyDigest = jest.fn()
     await app.receive({
-      event: 'installation.created',
-      payload: installationCreatedPayload
+      event: SCHEDULE_REPOSITORY_EVENT
     })
-
-    // This test passes if the code in your index.js file calls `context.github.issues.createComment`
-    expect(github.issues.createLabel).toHaveBeenCalled()
+    expect(initCreateWeeklyDigest).toHaveBeenCalled()
   })
 })
 
