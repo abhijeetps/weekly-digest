@@ -1,13 +1,13 @@
 
-module.exports = async (context, {owner, repo}) => {
-  context.log.debug('In getReleases.js...')
-  let releases = await context.github.paginate(
+module.exports = async (context, { owner, repo }) => {
+  context.log.debug('In getReleases.js...');
+  const releases = await context.github.paginate(
     context.github.repos.getReleases({
       owner,
       repo,
-      per_page: 100
+      per_page: 100,
     }),
-    res => res.data
-  )
-  return releases
-}
+    (res) => res.data,
+  );
+  return releases;
+};

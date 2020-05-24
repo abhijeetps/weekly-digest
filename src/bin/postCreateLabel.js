@@ -1,10 +1,12 @@
-module.exports = (context, {owner, repo, name, color, description}) => {
-  context.log.debug('In postCreateLabel.js..')
+module.exports = (context, {
+  owner, repo, name, color, description,
+}) => {
+  context.log.debug('In postCreateLabel.js..');
   context.github.issues.createLabel({
     owner,
     repo,
-    name: name,
-    color: color,
-    description: description
-  })
-}
+    name,
+    color,
+    description,
+  });
+};

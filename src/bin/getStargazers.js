@@ -1,13 +1,13 @@
 
-module.exports = async (context, {owner, repo}) => {
-  context.log.debug('In getStargazers.js...')
-  let stargazers = await context.github.paginate(
+module.exports = async (context, { owner, repo }) => {
+  context.log.debug('In getStargazers.js...');
+  const stargazers = await context.github.paginate(
     context.github.activity.getStargazersForRepo({
       owner,
       repo,
-      per_page: 100
+      per_page: 100,
     }),
-    res => res.data
-  )
-  return stargazers
-}
+    (res) => res.data,
+  );
+  return stargazers;
+};

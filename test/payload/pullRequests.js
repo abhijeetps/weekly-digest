@@ -1,9 +1,9 @@
 module.exports = {
   nullPullRequest: {
-    data: null
+    data: null,
   },
   emptyPullRequest: {
-    data: []
+    data: [],
   },
   uselessPullRequest: {
     data: [
@@ -15,11 +15,11 @@ module.exports = {
         title: 'Weekly Digest test36',
         user: {
           login: 'abhijeetps',
-          html_url: 'https://github.com/abhijeetps'
+          html_url: 'https://github.com/abhijeetps',
         },
         created_at: '2018-04-24T00:00:00Z',
         updated_at: '2018-04-25T00:00:00Z',
-        merged_at: '2018-04-26T00:00:00Z'
+        merged_at: '2018-04-26T00:00:00Z',
       },
       {
         html_url: 'https://github.com/abhijeetps/playground/pull/35',
@@ -28,11 +28,11 @@ module.exports = {
         title: 'Weekly Digest test35',
         user: {
           login: 'weekly-digest[bot]',
-          html_url: 'https://github.com/apps/weekly-digest'
+          html_url: 'https://github.com/apps/weekly-digest',
         },
         created_at: '2018-04-24T00:00:00Z',
         updated_at: '2018-04-25T00:00:00Z',
-        merged_at: '2018-04-26T00:00:00Z'
+        merged_at: '2018-04-26T00:00:00Z',
       },
       {
         html_url: 'https://github.com/abhijeetps/playground/pull/34',
@@ -41,11 +41,11 @@ module.exports = {
         title: 'Weekly Digest test34',
         user: {
           login: 'abhijeetps',
-          html_url: 'https://github.com/abhijeetps'
+          html_url: 'https://github.com/abhijeetps',
         },
         created_at: '2018-04-24T00:00:00Z',
         updated_at: '2018-04-25T00:00:00Z',
-        merged_at: null
+        merged_at: null,
       },
       {
         html_url: 'https://github.com/abhijeetps/playground/pull/33',
@@ -54,11 +54,11 @@ module.exports = {
         title: 'Weekly Digest test33',
         user: {
           login: 'weekly-digest[bot]',
-          html_url: 'https://github.com/apps/weekly-digest'
+          html_url: 'https://github.com/apps/weekly-digest',
         },
         created_at: '2018-04-24T00:00:00Z',
         updated_at: '2018-04-25T00:00:00Z',
-        merged_at: null
+        merged_at: null,
       },
       {
         html_url: 'https://github.com/abhijeetps/playground/pull/32',
@@ -67,11 +67,11 @@ module.exports = {
         title: 'Weekly Digest test32',
         user: {
           login: 'abhijeetps',
-          html_url: 'https://github.com/abhijeetps'
+          html_url: 'https://github.com/abhijeetps',
         },
         created_at: '2018-04-24T00:00:00Z',
         updated_at: '2018-04-24T00:00:00Z',
-        merged_at: null
+        merged_at: null,
       },
       {
         html_url: 'https://github.com/abhijeetps/playground/pull/31',
@@ -80,11 +80,11 @@ module.exports = {
         title: 'Weekly Digest test31',
         user: {
           login: 'weekly-digest[bot]',
-          html_url: 'https://github.com/app/weekly-digest'
+          html_url: 'https://github.com/app/weekly-digest',
         },
         created_at: '2018-04-24T00:00:00Z',
         updated_at: '2018-04-24T00:00:00Z',
-        merged_at: null
+        merged_at: null,
       },
       {
         html_url: 'https://github.com/abhijeetps/playground/pull/30',
@@ -93,11 +93,11 @@ module.exports = {
         title: 'Weekly Digest test30',
         user: {
           login: 'abhijeetps',
-          html_url: 'https://github.com/abhijeetps'
+          html_url: 'https://github.com/abhijeetps',
         },
         created_at: '2018-04-24T00:00:00Z',
         updated_at: '2018-04-25T00:00:00Z',
-        merged_at: '2018-04-26T00:00:00Z'
+        merged_at: '2018-04-26T00:00:00Z',
       },
       {
         html_url: 'https://github.com/abhijeetps/playground/pull/29',
@@ -106,11 +106,11 @@ module.exports = {
         title: 'Weekly Digest test29',
         user: {
           login: 'weekly-digest[bot]',
-          html_url: 'https://github.com/app/weekly-digest'
+          html_url: 'https://github.com/app/weekly-digest',
         },
         created_at: '2018-04-24T00:00:00Z',
         updated_at: '2018-04-25T00:00:00Z',
-        merged_at: '2018-04-26T00:00:00Z'
+        merged_at: '2018-04-26T00:00:00Z',
       },
       {
         html_url: 'https://github.com/abhijeetps/playground/pull/28',
@@ -119,11 +119,11 @@ module.exports = {
         title: 'Weekly Digest test28',
         user: {
           login: 'abhijeetps',
-          html_url: 'https://github.com/abhijeetps'
+          html_url: 'https://github.com/abhijeetps',
         },
         created_at: '2018-04-24T00:00:00Z',
         updated_at: '2018-04-25T00:00:00Z',
-        merged_at: null
+        merged_at: null,
       },
       {
         html_url: 'https://github.com/abhijeetps/playground/pull/27',
@@ -132,11 +132,11 @@ module.exports = {
         title: 'Weekly Digest test27',
         user: {
           login: 'weekly-digest[bot]',
-          html_url: 'https://github.com/app/weekly-digest'
+          html_url: 'https://github.com/app/weekly-digest',
         },
         created_at: '2018-04-24T00:00:00Z',
         updated_at: '2018-04-25T00:00:00Z',
-        merged_at: null
+        merged_at: null,
       },
       {
         html_url: 'https://github.com/abhijeetps/playground/pull/26',
@@ -145,11 +145,11 @@ module.exports = {
         title: 'Weekly Digest test26',
         user: {
           login: 'abhijeetps',
-          html_url: 'https://github.com/abhijeetps'
+          html_url: 'https://github.com/abhijeetps',
         },
         created_at: '2018-04-24T00:00:00Z',
         updated_at: '2018-04-24T00:00:00Z',
-        merged_at: null
+        merged_at: null,
       },
       {
         html_url: 'https://github.com/abhijeetps/playground/pull/25',
@@ -158,11 +158,11 @@ module.exports = {
         title: 'Weekly Digest test25',
         user: {
           login: 'weekly-digest[bot]',
-          html_url: 'https://github.com/app/weekly-digest'
+          html_url: 'https://github.com/app/weekly-digest',
         },
         created_at: '2018-04-24T00:00:00Z',
         updated_at: '2018-04-24T00:00:00Z',
-        merged_at: null
+        merged_at: null,
       },
       // current
       {
@@ -172,11 +172,11 @@ module.exports = {
         title: 'Weekly Digest test23',
         user: {
           login: 'weekly-digest[bot]',
-          html_url: 'https://github.com/apps/weekly-digest'
+          html_url: 'https://github.com/apps/weekly-digest',
         },
         created_at: '2018-04-19T00:00:00Z',
         updated_at: '2018-04-20T00:00:00Z',
-        merged_at: '2018-04-21T00:00:00Z'
+        merged_at: '2018-04-21T00:00:00Z',
       },
       {
         html_url: 'https://github.com/abhijeetps/playground/pull/22',
@@ -185,11 +185,11 @@ module.exports = {
         title: 'Weekly Digest test22',
         user: {
           login: 'abhijeetps',
-          html_url: 'https://github.com/abhijeetps'
+          html_url: 'https://github.com/abhijeetps',
         },
         created_at: '2018-04-19T00:00:00Z',
         updated_at: '2018-04-20T00:00:00Z',
-        merged_at: null
+        merged_at: null,
       },
       {
         html_url: 'https://github.com/abhijeetps/playground/pull/21',
@@ -198,11 +198,11 @@ module.exports = {
         title: 'Weekly Digest test21',
         user: {
           login: 'weekly-digest[bot]',
-          html_url: 'https://github.com/apps/weekly-digest'
+          html_url: 'https://github.com/apps/weekly-digest',
         },
         created_at: '2018-04-19T00:00:00Z',
         updated_at: '2018-04-20T00:00:00Z',
-        merged_at: null
+        merged_at: null,
       },
       {
         html_url: 'https://github.com/abhijeetps/playground/pull/20',
@@ -211,11 +211,11 @@ module.exports = {
         title: 'Weekly Digest test20',
         user: {
           login: 'abhijeetps',
-          html_url: 'https://github.com/abhijeetps'
+          html_url: 'https://github.com/abhijeetps',
         },
         created_at: '2018-04-20T00:00:00Z',
         updated_at: '2018-04-20T00:00:00Z',
-        merged_at: null
+        merged_at: null,
       },
       {
         html_url: 'https://github.com/abhijeetps/playground/pull/19',
@@ -224,11 +224,11 @@ module.exports = {
         title: 'Weekly Digest test19',
         user: {
           login: 'weekly-digest[bot]',
-          html_url: 'https://github.com/app/weekly-digest'
+          html_url: 'https://github.com/app/weekly-digest',
         },
         created_at: '2018-04-20T00:00:00Z',
         updated_at: '2018-04-20T00:00:00Z',
-        merged_at: null
+        merged_at: null,
       },
       {
         html_url: 'https://github.com/abhijeetps/playground/pull/18',
@@ -237,11 +237,11 @@ module.exports = {
         title: 'Weekly Digest test18',
         user: {
           login: 'abhijeetps',
-          html_url: 'https://github.com/abhijeetps'
+          html_url: 'https://github.com/abhijeetps',
         },
         created_at: '2018-04-19T00:00:00Z',
         updated_at: '2018-04-20T00:00:00Z',
-        merged_at: '2018-04-21T00:00:00Z'
+        merged_at: '2018-04-21T00:00:00Z',
       },
       {
         html_url: 'https://github.com/abhijeetps/playground/pull/17',
@@ -250,11 +250,11 @@ module.exports = {
         title: 'Weekly Digest test17',
         user: {
           login: 'weekly-digest[bot]',
-          html_url: 'https://github.com/app/weekly-digest'
+          html_url: 'https://github.com/app/weekly-digest',
         },
         created_at: '2018-04-19T00:00:00Z',
         updated_at: '2018-04-20T00:00:00Z',
-        merged_at: '2018-04-21T00:00:00Z'
+        merged_at: '2018-04-21T00:00:00Z',
       },
       {
         html_url: 'https://github.com/abhijeetps/playground/pull/15',
@@ -263,11 +263,11 @@ module.exports = {
         title: 'Weekly Digest test15',
         user: {
           login: 'weekly-digest[bot]',
-          html_url: 'https://github.com/app/weekly-digest'
+          html_url: 'https://github.com/app/weekly-digest',
         },
         created_at: '2018-04-19T00:00:00Z',
         updated_at: '2018-04-20T00:00:00Z',
-        merged_at: null
+        merged_at: null,
       },
       {
         html_url: 'https://github.com/abhijeetps/playground/pull/13',
@@ -276,11 +276,11 @@ module.exports = {
         title: 'Weekly Digest test13',
         user: {
           login: 'weekly-digest[bot]',
-          html_url: 'https://github.com/app/weekly-digest'
+          html_url: 'https://github.com/app/weekly-digest',
         },
         created_at: '2018-04-20T00:00:00Z',
         updated_at: '2018-04-20T00:00:00Z',
-        merged_at: null
+        merged_at: null,
       },
       // old
       {
@@ -290,11 +290,11 @@ module.exports = {
         title: 'Weekly Digest test12',
         user: {
           login: 'abhijeetps',
-          html_url: 'https://github.com/abhijeetps'
+          html_url: 'https://github.com/abhijeetps',
         },
         created_at: '2018-04-14T00:00:00Z',
         updated_at: '2018-04-15T00:00:00Z',
-        merged_at: '2018-04-16T00:00:00Z'
+        merged_at: '2018-04-16T00:00:00Z',
       },
       {
         html_url: 'https://github.com/abhijeetps/playground/pull/11',
@@ -303,11 +303,11 @@ module.exports = {
         title: 'Weekly Digest test11',
         user: {
           login: 'weekly-digest[bot]',
-          html_url: 'https://github.com/apps/weekly-digest'
+          html_url: 'https://github.com/apps/weekly-digest',
         },
         created_at: '2018-04-14T00:00:00Z',
         updated_at: '2018-04-15T00:00:00Z',
-        merged_at: '2018-04-16T00:00:00Z'
+        merged_at: '2018-04-16T00:00:00Z',
       },
       {
         html_url: 'https://github.com/abhijeetps/playground/pull/10',
@@ -316,11 +316,11 @@ module.exports = {
         title: 'Weekly Digest test10',
         user: {
           login: 'abhijeetps',
-          html_url: 'https://github.com/abhijeetps'
+          html_url: 'https://github.com/abhijeetps',
         },
         created_at: '2018-04-14T00:00:00Z',
         updated_at: '2018-04-15T00:00:00Z',
-        merged_at: null
+        merged_at: null,
       },
       {
         html_url: 'https://github.com/abhijeetps/playground/pull/9',
@@ -329,11 +329,11 @@ module.exports = {
         title: 'Weekly Digest test9',
         user: {
           login: 'weekly-digest[bot]',
-          html_url: 'https://github.com/apps/weekly-digest'
+          html_url: 'https://github.com/apps/weekly-digest',
         },
         created_at: '2018-04-14T00:00:00Z',
         updated_at: '2018-04-15T00:00:00Z',
-        merged_at: null
+        merged_at: null,
       },
       {
         html_url: 'https://github.com/abhijeetps/playground/pull/8',
@@ -342,11 +342,11 @@ module.exports = {
         title: 'Weekly Digest test8',
         user: {
           login: 'abhijeetps',
-          html_url: 'https://github.com/abhijeetps'
+          html_url: 'https://github.com/abhijeetps',
         },
         created_at: '2018-04-16T00:00:00Z',
         updated_at: '2018-04-16T00:00:00Z',
-        merged_at: null
+        merged_at: null,
       },
       {
         html_url: 'https://github.com/abhijeetps/playground/pull/7',
@@ -355,11 +355,11 @@ module.exports = {
         title: 'Weekly Digest test7',
         user: {
           login: 'weekly-digest[bot]',
-          html_url: 'https://github.com/app/weekly-digest'
+          html_url: 'https://github.com/app/weekly-digest',
         },
         created_at: '2018-04-16T00:00:00Z',
         updated_at: '2018-04-16T00:00:00Z',
-        merged_at: null
+        merged_at: null,
       },
       {
         html_url: 'https://github.com/abhijeetps/playground/pull/6',
@@ -368,11 +368,11 @@ module.exports = {
         title: 'Weekly Digest test6',
         user: {
           login: 'abhijeetps',
-          html_url: 'https://github.com/abhijeetps'
+          html_url: 'https://github.com/abhijeetps',
         },
         created_at: '2018-04-14T00:00:00Z',
         updated_at: '2018-04-15T00:00:00Z',
-        merged_at: '2018-04-16T00:00:00Z'
+        merged_at: '2018-04-16T00:00:00Z',
       },
       {
         html_url: 'https://github.com/abhijeetps/playground/pull/5',
@@ -381,11 +381,11 @@ module.exports = {
         title: 'Weekly Digest test5',
         user: {
           login: 'weekly-digest[bot]',
-          html_url: 'https://github.com/app/weekly-digest'
+          html_url: 'https://github.com/app/weekly-digest',
         },
         created_at: '2018-04-14T00:00:00Z',
         updated_at: '2018-04-15T00:00:00Z',
-        merged_at: '2018-04-16T00:00:00Z'
+        merged_at: '2018-04-16T00:00:00Z',
       },
       {
         html_url: 'https://github.com/abhijeetps/playground/pull/4',
@@ -394,11 +394,11 @@ module.exports = {
         title: 'Weekly Digest test4',
         user: {
           login: 'abhijeetps',
-          html_url: 'https://github.com/abhijeetps'
+          html_url: 'https://github.com/abhijeetps',
         },
         created_at: '2018-04-15T00:00:00Z',
         updated_at: '2018-04-16T00:00:00Z',
-        merged_at: null
+        merged_at: null,
       },
       {
         html_url: 'https://github.com/abhijeetps/playground/pull/3',
@@ -407,11 +407,11 @@ module.exports = {
         title: 'Weekly Digest test3',
         user: {
           login: 'weekly-digest[bot]',
-          html_url: 'https://github.com/app/weekly-digest'
+          html_url: 'https://github.com/app/weekly-digest',
         },
         created_at: '2018-04-15T00:00:00Z',
         updated_at: '2018-04-16T00:00:00Z',
-        merged_at: null
+        merged_at: null,
       },
       {
         html_url: 'https://github.com/abhijeetps/playground/pull/2',
@@ -420,11 +420,11 @@ module.exports = {
         title: 'Weekly Digest test2',
         user: {
           login: 'abhijeetps',
-          html_url: 'https://github.com/abhijeetps'
+          html_url: 'https://github.com/abhijeetps',
         },
         created_at: '2018-04-16T00:00:00Z',
         updated_at: '2018-04-16T00:00:00Z',
-        merged_at: null
+        merged_at: null,
       },
       {
         html_url: 'https://github.com/abhijeetps/playground/pull/1',
@@ -433,13 +433,13 @@ module.exports = {
         title: 'Weekly Digest test1',
         user: {
           login: 'weekly-digest[bot]',
-          html_url: 'https://github.com/app/weekly-digest'
+          html_url: 'https://github.com/app/weekly-digest',
         },
         created_at: '2018-04-16T00:00:00Z',
         updated_at: '2018-04-16T00:00:00Z',
-        merged_at: null
-      }
-    ]
+        merged_at: null,
+      },
+    ],
   },
   onePullRequest: {
     data: [
@@ -450,11 +450,11 @@ module.exports = {
         title: 'Weekly Digest test32',
         user: {
           login: 'abhijeetps',
-          html_url: 'https://github.com/abhijeetps'
+          html_url: 'https://github.com/abhijeetps',
         },
         created_at: '2018-04-24T00:00:00Z',
         updated_at: '2018-04-24T00:00:00Z',
-        merged_at: null
+        merged_at: null,
       },
       {
         html_url: 'https://github.com/abhijeetps/playground/pull/31',
@@ -463,11 +463,11 @@ module.exports = {
         title: 'Weekly Digest test31',
         user: {
           login: 'weekly-digest[bot]',
-          html_url: 'https://github.com/app/weekly-digest'
+          html_url: 'https://github.com/app/weekly-digest',
         },
         created_at: '2018-04-24T00:00:00Z',
         updated_at: '2018-04-24T00:00:00Z',
-        merged_at: null
+        merged_at: null,
       },
       {
         html_url: 'https://github.com/abhijeetps/playground/pull/26',
@@ -476,11 +476,11 @@ module.exports = {
         title: 'Weekly Digest test26',
         user: {
           login: 'abhijeetps',
-          html_url: 'https://github.com/abhijeetps'
+          html_url: 'https://github.com/abhijeetps',
         },
         created_at: '2018-04-24T00:00:00Z',
         updated_at: '2018-04-24T00:00:00Z',
-        merged_at: null
+        merged_at: null,
       },
       {
         html_url: 'https://github.com/abhijeetps/playground/pull/25',
@@ -489,11 +489,11 @@ module.exports = {
         title: 'Weekly Digest test25',
         user: {
           login: 'weekly-digest[bot]',
-          html_url: 'https://github.com/app/weekly-digest'
+          html_url: 'https://github.com/app/weekly-digest',
         },
         created_at: '2018-04-24T00:00:00Z',
         updated_at: '2018-04-24T00:00:00Z',
-        merged_at: null
+        merged_at: null,
       },
       // current
       {
@@ -503,11 +503,11 @@ module.exports = {
         title: 'Weekly Digest test20',
         user: {
           login: 'abhijeetps',
-          html_url: 'https://github.com/abhijeetps'
+          html_url: 'https://github.com/abhijeetps',
         },
         created_at: '2018-04-20T00:00:00Z',
         updated_at: '2018-04-20T00:00:00Z',
-        merged_at: null
+        merged_at: null,
       },
       {
         html_url: 'https://github.com/abhijeetps/playground/pull/19',
@@ -516,11 +516,11 @@ module.exports = {
         title: 'Weekly Digest test19',
         user: {
           login: 'weekly-digest[bot]',
-          html_url: 'https://github.com/app/weekly-digest'
+          html_url: 'https://github.com/app/weekly-digest',
         },
         created_at: '2018-04-20T00:00:00Z',
         updated_at: '2018-04-20T00:00:00Z',
-        merged_at: null
+        merged_at: null,
       },
       {
         html_url: 'https://github.com/abhijeetps/playground/pull/14',
@@ -529,11 +529,11 @@ module.exports = {
         title: 'Weekly Digest test14',
         user: {
           login: 'abhijeetps',
-          html_url: 'https://github.com/abhijeetps'
+          html_url: 'https://github.com/abhijeetps',
         },
         created_at: '2018-04-20T00:00:00Z',
         updated_at: '2018-04-20T00:00:00Z',
-        merged_at: null
+        merged_at: null,
       },
       {
         html_url: 'https://github.com/abhijeetps/playground/pull/13',
@@ -542,11 +542,11 @@ module.exports = {
         title: 'Weekly Digest test13',
         user: {
           login: 'weekly-digest[bot]',
-          html_url: 'https://github.com/app/weekly-digest'
+          html_url: 'https://github.com/app/weekly-digest',
         },
         created_at: '2018-04-20T00:00:00Z',
         updated_at: '2018-04-20T00:00:00Z',
-        merged_at: null
+        merged_at: null,
       },
       // old
       {
@@ -556,11 +556,11 @@ module.exports = {
         title: 'Weekly Digest test8',
         user: {
           login: 'abhijeetps',
-          html_url: 'https://github.com/abhijeetps'
+          html_url: 'https://github.com/abhijeetps',
         },
         created_at: '2018-04-16T00:00:00Z',
         updated_at: '2018-04-16T00:00:00Z',
-        merged_at: null
+        merged_at: null,
       },
       {
         html_url: 'https://github.com/abhijeetps/playground/pull/7',
@@ -569,11 +569,11 @@ module.exports = {
         title: 'Weekly Digest test7',
         user: {
           login: 'weekly-digest[bot]',
-          html_url: 'https://github.com/app/weekly-digest'
+          html_url: 'https://github.com/app/weekly-digest',
         },
         created_at: '2018-04-16T00:00:00Z',
         updated_at: '2018-04-16T00:00:00Z',
-        merged_at: null
+        merged_at: null,
       },
       {
         html_url: 'https://github.com/abhijeetps/playground/pull/2',
@@ -582,11 +582,11 @@ module.exports = {
         title: 'Weekly Digest test2',
         user: {
           login: 'abhijeetps',
-          html_url: 'https://github.com/abhijeetps'
+          html_url: 'https://github.com/abhijeetps',
         },
         created_at: '2018-04-16T00:00:00Z',
         updated_at: '2018-04-16T00:00:00Z',
-        merged_at: null
+        merged_at: null,
       },
       {
         html_url: 'https://github.com/abhijeetps/playground/pull/1',
@@ -595,13 +595,13 @@ module.exports = {
         title: 'Weekly Digest test1',
         user: {
           login: 'weekly-digest[bot]',
-          html_url: 'https://github.com/app/weekly-digest'
+          html_url: 'https://github.com/app/weekly-digest',
         },
         created_at: '2018-04-16T00:00:00Z',
         updated_at: '2018-04-16T00:00:00Z',
-        merged_at: null
-      }
-    ]
+        merged_at: null,
+      },
+    ],
   },
   openPullRequest: {
     data: [
@@ -612,11 +612,11 @@ module.exports = {
         title: 'Weekly Digest test32',
         user: {
           login: 'abhijeetps',
-          html_url: 'https://github.com/abhijeetps'
+          html_url: 'https://github.com/abhijeetps',
         },
         created_at: '2018-04-24T00:00:00Z',
         updated_at: '2018-04-24T00:00:00Z',
-        merged_at: null
+        merged_at: null,
       },
       {
         html_url: 'https://github.com/abhijeetps/playground/pull/31',
@@ -625,11 +625,11 @@ module.exports = {
         title: 'Weekly Digest test31',
         user: {
           login: 'weekly-digest[bot]',
-          html_url: 'https://github.com/app/weekly-digest'
+          html_url: 'https://github.com/app/weekly-digest',
         },
         created_at: '2018-04-24T00:00:00Z',
         updated_at: '2018-04-24T00:00:00Z',
-        merged_at: null
+        merged_at: null,
       },
       {
         html_url: 'https://github.com/abhijeetps/playground/pull/26',
@@ -638,11 +638,11 @@ module.exports = {
         title: 'Weekly Digest test26',
         user: {
           login: 'abhijeetps',
-          html_url: 'https://github.com/abhijeetps'
+          html_url: 'https://github.com/abhijeetps',
         },
         created_at: '2018-04-24T00:00:00Z',
         updated_at: '2018-04-24T00:00:00Z',
-        merged_at: null
+        merged_at: null,
       },
       {
         html_url: 'https://github.com/abhijeetps/playground/pull/25',
@@ -651,11 +651,11 @@ module.exports = {
         title: 'Weekly Digest test25',
         user: {
           login: 'weekly-digest[bot]',
-          html_url: 'https://github.com/app/weekly-digest'
+          html_url: 'https://github.com/app/weekly-digest',
         },
         created_at: '2018-04-24T00:00:00Z',
         updated_at: '2018-04-24T00:00:00Z',
-        merged_at: null
+        merged_at: null,
       },
       // current
       {
@@ -665,11 +665,11 @@ module.exports = {
         title: 'Weekly Digest test20',
         user: {
           login: 'abhijeetps',
-          html_url: 'https://github.com/abhijeetps'
+          html_url: 'https://github.com/abhijeetps',
         },
         created_at: '2018-04-20T00:00:00Z',
         updated_at: '2018-04-20T00:00:00Z',
-        merged_at: null
+        merged_at: null,
       },
       {
         html_url: 'https://github.com/abhijeetps/playground/pull/19',
@@ -678,11 +678,11 @@ module.exports = {
         title: 'Weekly Digest test19',
         user: {
           login: 'weekly-digest[bot]',
-          html_url: 'https://github.com/app/weekly-digest'
+          html_url: 'https://github.com/app/weekly-digest',
         },
         created_at: '2018-04-20T00:00:00Z',
         updated_at: '2018-04-20T00:00:00Z',
-        merged_at: null
+        merged_at: null,
       },
       {
         html_url: 'https://github.com/abhijeetps/playground/pull/15',
@@ -691,11 +691,11 @@ module.exports = {
         title: 'Weekly Digest test15',
         user: {
           login: 'abhijeetps',
-          html_url: 'https://github.com/abhijeetps'
+          html_url: 'https://github.com/abhijeetps',
         },
         created_at: '2018-04-21T00:00:00Z',
         updated_at: '2018-04-21T00:00:00Z',
-        merged_at: null
+        merged_at: null,
       },
       {
         html_url: 'https://github.com/abhijeetps/playground/pull/14',
@@ -704,11 +704,11 @@ module.exports = {
         title: 'Weekly Digest test14',
         user: {
           login: 'abhijeetps',
-          html_url: 'https://github.com/abhijeetps'
+          html_url: 'https://github.com/abhijeetps',
         },
         created_at: '2018-04-20T00:00:00Z',
         updated_at: '2018-04-20T00:00:00Z',
-        merged_at: null
+        merged_at: null,
       },
       {
         html_url: 'https://github.com/abhijeetps/playground/pull/13',
@@ -717,11 +717,11 @@ module.exports = {
         title: 'Weekly Digest test13',
         user: {
           login: 'weekly-digest[bot]',
-          html_url: 'https://github.com/app/weekly-digest'
+          html_url: 'https://github.com/app/weekly-digest',
         },
         created_at: '2018-04-20T00:00:00Z',
         updated_at: '2018-04-20T00:00:00Z',
-        merged_at: null
+        merged_at: null,
       },
       // old
       {
@@ -731,11 +731,11 @@ module.exports = {
         title: 'Weekly Digest test8',
         user: {
           login: 'abhijeetps',
-          html_url: 'https://github.com/abhijeetps'
+          html_url: 'https://github.com/abhijeetps',
         },
         created_at: '2018-04-16T00:00:00Z',
         updated_at: '2018-04-16T00:00:00Z',
-        merged_at: null
+        merged_at: null,
       },
       {
         html_url: 'https://github.com/abhijeetps/playground/pull/7',
@@ -744,11 +744,11 @@ module.exports = {
         title: 'Weekly Digest test7',
         user: {
           login: 'weekly-digest[bot]',
-          html_url: 'https://github.com/app/weekly-digest'
+          html_url: 'https://github.com/app/weekly-digest',
         },
         created_at: '2018-04-16T00:00:00Z',
         updated_at: '2018-04-16T00:00:00Z',
-        merged_at: null
+        merged_at: null,
       },
       {
         html_url: 'https://github.com/abhijeetps/playground/pull/2',
@@ -757,11 +757,11 @@ module.exports = {
         title: 'Weekly Digest test2',
         user: {
           login: 'abhijeetps',
-          html_url: 'https://github.com/abhijeetps'
+          html_url: 'https://github.com/abhijeetps',
         },
         created_at: '2018-04-16T00:00:00Z',
         updated_at: '2018-04-16T00:00:00Z',
-        merged_at: null
+        merged_at: null,
       },
       {
         html_url: 'https://github.com/abhijeetps/playground/pull/1',
@@ -770,13 +770,13 @@ module.exports = {
         title: 'Weekly Digest test1',
         user: {
           login: 'weekly-digest[bot]',
-          html_url: 'https://github.com/app/weekly-digest'
+          html_url: 'https://github.com/app/weekly-digest',
         },
         created_at: '2018-04-16T00:00:00Z',
         updated_at: '2018-04-16T00:00:00Z',
-        merged_at: null
-      }
-    ]
+        merged_at: null,
+      },
+    ],
   },
   updatedPullRequest: {
     data: [
@@ -787,11 +787,11 @@ module.exports = {
         title: 'Weekly Digest test34',
         user: {
           login: 'abhijeetps',
-          html_url: 'https://github.com/abhijeetps'
+          html_url: 'https://github.com/abhijeetps',
         },
         created_at: '2018-04-24T00:00:00Z',
         updated_at: '2018-04-25T00:00:00Z',
-        merged_at: null
+        merged_at: null,
       },
       {
         html_url: 'https://github.com/abhijeetps/playground/pull/33',
@@ -800,11 +800,11 @@ module.exports = {
         title: 'Weekly Digest test33',
         user: {
           login: 'weekly-digest[bot]',
-          html_url: 'https://github.com/apps/weekly-digest'
+          html_url: 'https://github.com/apps/weekly-digest',
         },
         created_at: '2018-04-24T00:00:00Z',
         updated_at: '2018-04-25T00:00:00Z',
-        merged_at: null
+        merged_at: null,
       },
       {
         html_url: 'https://github.com/abhijeetps/playground/pull/28',
@@ -813,11 +813,11 @@ module.exports = {
         title: 'Weekly Digest test28',
         user: {
           login: 'abhijeetps',
-          html_url: 'https://github.com/abhijeetps'
+          html_url: 'https://github.com/abhijeetps',
         },
         created_at: '2018-04-24T00:00:00Z',
         updated_at: '2018-04-25T00:00:00Z',
-        merged_at: null
+        merged_at: null,
       },
       {
         html_url: 'https://github.com/abhijeetps/playground/pull/27',
@@ -826,11 +826,11 @@ module.exports = {
         title: 'Weekly Digest test27',
         user: {
           login: 'weekly-digest[bot]',
-          html_url: 'https://github.com/app/weekly-digest'
+          html_url: 'https://github.com/app/weekly-digest',
         },
         created_at: '2018-04-24T00:00:00Z',
         updated_at: '2018-04-25T00:00:00Z',
-        merged_at: null
+        merged_at: null,
       },
       // current
       {
@@ -840,11 +840,11 @@ module.exports = {
         title: 'Weekly Digest test22',
         user: {
           login: 'abhijeetps',
-          html_url: 'https://github.com/abhijeetps'
+          html_url: 'https://github.com/abhijeetps',
         },
         created_at: '2018-04-19T00:00:00Z',
         updated_at: '2018-04-20T00:00:00Z',
-        merged_at: null
+        merged_at: null,
       },
       {
         html_url: 'https://github.com/abhijeetps/playground/pull/21',
@@ -853,11 +853,11 @@ module.exports = {
         title: 'Weekly Digest test21',
         user: {
           login: 'weekly-digest[bot]',
-          html_url: 'https://github.com/apps/weekly-digest'
+          html_url: 'https://github.com/apps/weekly-digest',
         },
         created_at: '2018-04-19T00:00:00Z',
         updated_at: '2018-04-20T00:00:00Z',
-        merged_at: null
+        merged_at: null,
       },
       {
         html_url: 'https://github.com/abhijeetps/playground/pull/17',
@@ -866,11 +866,11 @@ module.exports = {
         title: 'Weekly Digest test17',
         user: {
           login: 'abhijeetps',
-          html_url: 'https://github.com/abhijeetps'
+          html_url: 'https://github.com/abhijeetps',
         },
         created_at: '2018-04-19T00:00:00Z',
         updated_at: '2018-04-20T00:00:00Z',
-        merged_at: null
+        merged_at: null,
       },
       {
         html_url: 'https://github.com/abhijeetps/playground/pull/16',
@@ -879,11 +879,11 @@ module.exports = {
         title: 'Weekly Digest test16',
         user: {
           login: 'abhijeetps',
-          html_url: 'https://github.com/abhijeetps'
+          html_url: 'https://github.com/abhijeetps',
         },
         created_at: '2018-04-19T00:00:00Z',
         updated_at: '2018-04-20T00:00:00Z',
-        merged_at: null
+        merged_at: null,
       },
       {
         html_url: 'https://github.com/abhijeetps/playground/pull/15',
@@ -892,11 +892,11 @@ module.exports = {
         title: 'Weekly Digest test15',
         user: {
           login: 'weekly-digest[bot]',
-          html_url: 'https://github.com/app/weekly-digest'
+          html_url: 'https://github.com/app/weekly-digest',
         },
         created_at: '2018-04-19T00:00:00Z',
         updated_at: '2018-04-20T00:00:00Z',
-        merged_at: null
+        merged_at: null,
       },
       // old
       {
@@ -906,11 +906,11 @@ module.exports = {
         title: 'Weekly Digest test10',
         user: {
           login: 'abhijeetps',
-          html_url: 'https://github.com/abhijeetps'
+          html_url: 'https://github.com/abhijeetps',
         },
         created_at: '2018-04-14T00:00:00Z',
         updated_at: '2018-04-15T00:00:00Z',
-        merged_at: null
+        merged_at: null,
       },
       {
         html_url: 'https://github.com/abhijeetps/playground/pull/9',
@@ -919,11 +919,11 @@ module.exports = {
         title: 'Weekly Digest test9',
         user: {
           login: 'weekly-digest[bot]',
-          html_url: 'https://github.com/apps/weekly-digest'
+          html_url: 'https://github.com/apps/weekly-digest',
         },
         created_at: '2018-04-14T00:00:00Z',
         updated_at: '2018-04-15T00:00:00Z',
-        merged_at: null
+        merged_at: null,
       },
       {
         html_url: 'https://github.com/abhijeetps/playground/pull/4',
@@ -932,11 +932,11 @@ module.exports = {
         title: 'Weekly Digest test4',
         user: {
           login: 'abhijeetps',
-          html_url: 'https://github.com/abhijeetps'
+          html_url: 'https://github.com/abhijeetps',
         },
         created_at: '2018-04-15T00:00:00Z',
         updated_at: '2018-04-16T00:00:00Z',
-        merged_at: null
+        merged_at: null,
       },
       {
         html_url: 'https://github.com/abhijeetps/playground/pull/3',
@@ -945,13 +945,13 @@ module.exports = {
         title: 'Weekly Digest test3',
         user: {
           login: 'weekly-digest[bot]',
-          html_url: 'https://github.com/app/weekly-digest'
+          html_url: 'https://github.com/app/weekly-digest',
         },
         created_at: '2018-04-15T00:00:00Z',
         updated_at: '2018-04-16T00:00:00Z',
-        merged_at: null
-      }
-    ]
+        merged_at: null,
+      },
+    ],
   },
   mergedPullRequest: {
     data: [
@@ -962,11 +962,11 @@ module.exports = {
         title: 'Weekly Digest test36',
         user: {
           login: 'abhijeetps',
-          html_url: 'https://github.com/abhijeetps'
+          html_url: 'https://github.com/abhijeetps',
         },
         created_at: '2018-04-24T00:00:00Z',
         updated_at: '2018-04-25T00:00:00Z',
-        merged_at: '2018-04-26T00:00:00Z'
+        merged_at: '2018-04-26T00:00:00Z',
       },
       {
         html_url: 'https://github.com/abhijeetps/playground/pull/35',
@@ -975,11 +975,11 @@ module.exports = {
         title: 'Weekly Digest test35',
         user: {
           login: 'weekly-digest[bot]',
-          html_url: 'https://github.com/apps/weekly-digest'
+          html_url: 'https://github.com/apps/weekly-digest',
         },
         created_at: '2018-04-24T00:00:00Z',
         updated_at: '2018-04-25T00:00:00Z',
-        merged_at: '2018-04-26T00:00:00Z'
+        merged_at: '2018-04-26T00:00:00Z',
       },
       {
         html_url: 'https://github.com/abhijeetps/playground/pull/30',
@@ -988,11 +988,11 @@ module.exports = {
         title: 'Weekly Digest test30',
         user: {
           login: 'abhijeetps',
-          html_url: 'https://github.com/abhijeetps'
+          html_url: 'https://github.com/abhijeetps',
         },
         created_at: '2018-04-24T00:00:00Z',
         updated_at: '2018-04-25T00:00:00Z',
-        merged_at: '2018-04-26T00:00:00Z'
+        merged_at: '2018-04-26T00:00:00Z',
       },
       {
         html_url: 'https://github.com/abhijeetps/playground/pull/29',
@@ -1001,11 +1001,11 @@ module.exports = {
         title: 'Weekly Digest test29',
         user: {
           login: 'weekly-digest[bot]',
-          html_url: 'https://github.com/app/weekly-digest'
+          html_url: 'https://github.com/app/weekly-digest',
         },
         created_at: '2018-04-24T00:00:00Z',
         updated_at: '2018-04-25T00:00:00Z',
-        merged_at: '2018-04-26T00:00:00Z'
+        merged_at: '2018-04-26T00:00:00Z',
       },
       // current
       {
@@ -1015,11 +1015,11 @@ module.exports = {
         title: 'Weekly Digest test25',
         user: {
           login: 'abhijeetps',
-          html_url: 'https://github.com/abhijeetps'
+          html_url: 'https://github.com/abhijeetps',
         },
         created_at: '2018-04-20T00:00:00Z',
         updated_at: '2018-04-21T00:00:00Z',
-        merged_at: '2018-04-22T00:00:00Z'
+        merged_at: '2018-04-22T00:00:00Z',
       },
       {
         html_url: 'https://github.com/abhijeetps/playground/pull/24',
@@ -1028,11 +1028,11 @@ module.exports = {
         title: 'Weekly Digest test24',
         user: {
           login: 'abhijeetps',
-          html_url: 'https://github.com/abhijeetps'
+          html_url: 'https://github.com/abhijeetps',
         },
         created_at: '2018-04-19T00:00:00Z',
         updated_at: '2018-04-20T00:00:00Z',
-        merged_at: '2018-04-21T00:00:00Z'
+        merged_at: '2018-04-21T00:00:00Z',
       },
       {
         html_url: 'https://github.com/abhijeetps/playground/pull/23',
@@ -1041,11 +1041,11 @@ module.exports = {
         title: 'Weekly Digest test23',
         user: {
           login: 'weekly-digest[bot]',
-          html_url: 'https://github.com/apps/weekly-digest'
+          html_url: 'https://github.com/apps/weekly-digest',
         },
         created_at: '2018-04-19T00:00:00Z',
         updated_at: '2018-04-20T00:00:00Z',
-        merged_at: '2018-04-21T00:00:00Z'
+        merged_at: '2018-04-21T00:00:00Z',
       },
       {
         html_url: 'https://github.com/abhijeetps/playground/pull/18',
@@ -1054,11 +1054,11 @@ module.exports = {
         title: 'Weekly Digest test18',
         user: {
           login: 'abhijeetps',
-          html_url: 'https://github.com/abhijeetps'
+          html_url: 'https://github.com/abhijeetps',
         },
         created_at: '2018-04-19T00:00:00Z',
         updated_at: '2018-04-20T00:00:00Z',
-        merged_at: '2018-04-21T00:00:00Z'
+        merged_at: '2018-04-21T00:00:00Z',
       },
       {
         html_url: 'https://github.com/abhijeetps/playground/pull/17',
@@ -1067,11 +1067,11 @@ module.exports = {
         title: 'Weekly Digest test17',
         user: {
           login: 'weekly-digest[bot]',
-          html_url: 'https://github.com/app/weekly-digest'
+          html_url: 'https://github.com/app/weekly-digest',
         },
         created_at: '2018-04-19T00:00:00Z',
         updated_at: '2018-04-20T00:00:00Z',
-        merged_at: '2018-04-21T00:00:00Z'
+        merged_at: '2018-04-21T00:00:00Z',
       },
       // old
       {
@@ -1081,11 +1081,11 @@ module.exports = {
         title: 'Weekly Digest test12',
         user: {
           login: 'abhijeetps',
-          html_url: 'https://github.com/abhijeetps'
+          html_url: 'https://github.com/abhijeetps',
         },
         created_at: '2018-04-14T00:00:00Z',
         updated_at: '2018-04-15T00:00:00Z',
-        merged_at: '2018-04-16T00:00:00Z'
+        merged_at: '2018-04-16T00:00:00Z',
       },
       {
         html_url: 'https://github.com/abhijeetps/playground/pull/11',
@@ -1094,11 +1094,11 @@ module.exports = {
         title: 'Weekly Digest test11',
         user: {
           login: 'weekly-digest[bot]',
-          html_url: 'https://github.com/apps/weekly-digest'
+          html_url: 'https://github.com/apps/weekly-digest',
         },
         created_at: '2018-04-14T00:00:00Z',
         updated_at: '2018-04-15T00:00:00Z',
-        merged_at: '2018-04-16T00:00:00Z'
+        merged_at: '2018-04-16T00:00:00Z',
       },
       {
         html_url: 'https://github.com/abhijeetps/playground/pull/6',
@@ -1107,11 +1107,11 @@ module.exports = {
         title: 'Weekly Digest test6',
         user: {
           login: 'abhijeetps',
-          html_url: 'https://github.com/abhijeetps'
+          html_url: 'https://github.com/abhijeetps',
         },
         created_at: '2018-04-14T00:00:00Z',
         updated_at: '2018-04-15T00:00:00Z',
-        merged_at: '2018-04-16T00:00:00Z'
+        merged_at: '2018-04-16T00:00:00Z',
       },
       {
         html_url: 'https://github.com/abhijeetps/playground/pull/5',
@@ -1120,13 +1120,13 @@ module.exports = {
         title: 'Weekly Digest test5',
         user: {
           login: 'weekly-digest[bot]',
-          html_url: 'https://github.com/app/weekly-digest'
+          html_url: 'https://github.com/app/weekly-digest',
         },
         created_at: '2018-04-14T00:00:00Z',
         updated_at: '2018-04-15T00:00:00Z',
-        merged_at: '2018-04-16T00:00:00Z'
-      }
-    ]
+        merged_at: '2018-04-16T00:00:00Z',
+      },
+    ],
   },
   allPullRequests: {
     data: [
@@ -1138,11 +1138,11 @@ module.exports = {
         title: 'Weekly Digest test36',
         user: {
           login: 'abhijeetps',
-          html_url: 'https://github.com/abhijeetps'
+          html_url: 'https://github.com/abhijeetps',
         },
         created_at: '2018-04-24T00:00:00Z',
         updated_at: '2018-04-25T00:00:00Z',
-        merged_at: '2018-04-26T00:00:00Z'
+        merged_at: '2018-04-26T00:00:00Z',
       },
       {
         html_url: 'https://github.com/abhijeetps/playground/pull/35',
@@ -1151,11 +1151,11 @@ module.exports = {
         title: 'Weekly Digest test35',
         user: {
           login: 'weekly-digest[bot]',
-          html_url: 'https://github.com/apps/weekly-digest'
+          html_url: 'https://github.com/apps/weekly-digest',
         },
         created_at: '2018-04-24T00:00:00Z',
         updated_at: '2018-04-25T00:00:00Z',
-        merged_at: '2018-04-26T00:00:00Z'
+        merged_at: '2018-04-26T00:00:00Z',
       },
       {
         html_url: 'https://github.com/abhijeetps/playground/pull/34',
@@ -1164,11 +1164,11 @@ module.exports = {
         title: 'Weekly Digest test34',
         user: {
           login: 'abhijeetps',
-          html_url: 'https://github.com/abhijeetps'
+          html_url: 'https://github.com/abhijeetps',
         },
         created_at: '2018-04-24T00:00:00Z',
         updated_at: '2018-04-25T00:00:00Z',
-        merged_at: null
+        merged_at: null,
       },
       {
         html_url: 'https://github.com/abhijeetps/playground/pull/33',
@@ -1177,11 +1177,11 @@ module.exports = {
         title: 'Weekly Digest test33',
         user: {
           login: 'weekly-digest[bot]',
-          html_url: 'https://github.com/apps/weekly-digest'
+          html_url: 'https://github.com/apps/weekly-digest',
         },
         created_at: '2018-04-24T00:00:00Z',
         updated_at: '2018-04-25T00:00:00Z',
-        merged_at: null
+        merged_at: null,
       },
       {
         html_url: 'https://github.com/abhijeetps/playground/pull/32',
@@ -1190,11 +1190,11 @@ module.exports = {
         title: 'Weekly Digest test32',
         user: {
           login: 'abhijeetps',
-          html_url: 'https://github.com/abhijeetps'
+          html_url: 'https://github.com/abhijeetps',
         },
         created_at: '2018-04-24T00:00:00Z',
         updated_at: '2018-04-24T00:00:00Z',
-        merged_at: null
+        merged_at: null,
       },
       {
         html_url: 'https://github.com/abhijeetps/playground/pull/31',
@@ -1203,11 +1203,11 @@ module.exports = {
         title: 'Weekly Digest test31',
         user: {
           login: 'weekly-digest[bot]',
-          html_url: 'https://github.com/app/weekly-digest'
+          html_url: 'https://github.com/app/weekly-digest',
         },
         created_at: '2018-04-24T00:00:00Z',
         updated_at: '2018-04-24T00:00:00Z',
-        merged_at: null
+        merged_at: null,
       },
       {
         html_url: 'https://github.com/abhijeetps/playground/pull/30',
@@ -1216,11 +1216,11 @@ module.exports = {
         title: 'Weekly Digest test30',
         user: {
           login: 'abhijeetps',
-          html_url: 'https://github.com/abhijeetps'
+          html_url: 'https://github.com/abhijeetps',
         },
         created_at: '2018-04-24T00:00:00Z',
         updated_at: '2018-04-25T00:00:00Z',
-        merged_at: '2018-04-26T00:00:00Z'
+        merged_at: '2018-04-26T00:00:00Z',
       },
       {
         html_url: 'https://github.com/abhijeetps/playground/pull/29',
@@ -1229,11 +1229,11 @@ module.exports = {
         title: 'Weekly Digest test29',
         user: {
           login: 'weekly-digest[bot]',
-          html_url: 'https://github.com/app/weekly-digest'
+          html_url: 'https://github.com/app/weekly-digest',
         },
         created_at: '2018-04-24T00:00:00Z',
         updated_at: '2018-04-25T00:00:00Z',
-        merged_at: '2018-04-26T00:00:00Z'
+        merged_at: '2018-04-26T00:00:00Z',
       },
       {
         html_url: 'https://github.com/abhijeetps/playground/pull/28',
@@ -1242,11 +1242,11 @@ module.exports = {
         title: 'Weekly Digest test28',
         user: {
           login: 'abhijeetps',
-          html_url: 'https://github.com/abhijeetps'
+          html_url: 'https://github.com/abhijeetps',
         },
         created_at: '2018-04-24T00:00:00Z',
         updated_at: '2018-04-25T00:00:00Z',
-        merged_at: null
+        merged_at: null,
       },
       {
         html_url: 'https://github.com/abhijeetps/playground/pull/27',
@@ -1255,11 +1255,11 @@ module.exports = {
         title: 'Weekly Digest test27',
         user: {
           login: 'weekly-digest[bot]',
-          html_url: 'https://github.com/app/weekly-digest'
+          html_url: 'https://github.com/app/weekly-digest',
         },
         created_at: '2018-04-24T00:00:00Z',
         updated_at: '2018-04-25T00:00:00Z',
-        merged_at: null
+        merged_at: null,
       },
       {
         html_url: 'https://github.com/abhijeetps/playground/pull/26',
@@ -1268,11 +1268,11 @@ module.exports = {
         title: 'Weekly Digest test26',
         user: {
           login: 'abhijeetps',
-          html_url: 'https://github.com/abhijeetps'
+          html_url: 'https://github.com/abhijeetps',
         },
         created_at: '2018-04-24T00:00:00Z',
         updated_at: '2018-04-24T00:00:00Z',
-        merged_at: null
+        merged_at: null,
       },
       {
         html_url: 'https://github.com/abhijeetps/playground/pull/25',
@@ -1281,11 +1281,11 @@ module.exports = {
         title: 'Weekly Digest test25',
         user: {
           login: 'weekly-digest[bot]',
-          html_url: 'https://github.com/app/weekly-digest'
+          html_url: 'https://github.com/app/weekly-digest',
         },
         created_at: '2018-04-24T00:00:00Z',
         updated_at: '2018-04-24T00:00:00Z',
-        merged_at: null
+        merged_at: null,
       },
       // current
       {
@@ -1295,11 +1295,11 @@ module.exports = {
         title: 'Weekly Digest test24',
         user: {
           login: 'abhijeetps',
-          html_url: 'https://github.com/abhijeetps'
+          html_url: 'https://github.com/abhijeetps',
         },
         created_at: '2018-04-19T00:00:00Z',
         updated_at: '2018-04-20T00:00:00Z',
-        merged_at: '2018-04-21T00:00:00Z'
+        merged_at: '2018-04-21T00:00:00Z',
       },
       {
         html_url: 'https://github.com/abhijeetps/playground/pull/23',
@@ -1308,11 +1308,11 @@ module.exports = {
         title: 'Weekly Digest test23',
         user: {
           login: 'weekly-digest[bot]',
-          html_url: 'https://github.com/apps/weekly-digest'
+          html_url: 'https://github.com/apps/weekly-digest',
         },
         created_at: '2018-04-19T00:00:00Z',
         updated_at: '2018-04-20T00:00:00Z',
-        merged_at: '2018-04-21T00:00:00Z'
+        merged_at: '2018-04-21T00:00:00Z',
       },
       {
         html_url: 'https://github.com/abhijeetps/playground/pull/22',
@@ -1321,11 +1321,11 @@ module.exports = {
         title: 'Weekly Digest test22',
         user: {
           login: 'abhijeetps',
-          html_url: 'https://github.com/abhijeetps'
+          html_url: 'https://github.com/abhijeetps',
         },
         created_at: '2018-04-19T00:00:00Z',
         updated_at: '2018-04-20T00:00:00Z',
-        merged_at: null
+        merged_at: null,
       },
       {
         html_url: 'https://github.com/abhijeetps/playground/pull/21',
@@ -1334,11 +1334,11 @@ module.exports = {
         title: 'Weekly Digest test21',
         user: {
           login: 'weekly-digest[bot]',
-          html_url: 'https://github.com/apps/weekly-digest'
+          html_url: 'https://github.com/apps/weekly-digest',
         },
         created_at: '2018-04-19T00:00:00Z',
         updated_at: '2018-04-20T00:00:00Z',
-        merged_at: null
+        merged_at: null,
       },
       {
         html_url: 'https://github.com/abhijeetps/playground/pull/20',
@@ -1347,11 +1347,11 @@ module.exports = {
         title: 'Weekly Digest test20',
         user: {
           login: 'abhijeetps',
-          html_url: 'https://github.com/abhijeetps'
+          html_url: 'https://github.com/abhijeetps',
         },
         created_at: '2018-04-20T00:00:00Z',
         updated_at: '2018-04-20T00:00:00Z',
-        merged_at: null
+        merged_at: null,
       },
       {
         html_url: 'https://github.com/abhijeetps/playground/pull/19',
@@ -1360,11 +1360,11 @@ module.exports = {
         title: 'Weekly Digest test19',
         user: {
           login: 'weekly-digest[bot]',
-          html_url: 'https://github.com/app/weekly-digest'
+          html_url: 'https://github.com/app/weekly-digest',
         },
         created_at: '2018-04-20T00:00:00Z',
         updated_at: '2018-04-20T00:00:00Z',
-        merged_at: null
+        merged_at: null,
       },
       {
         html_url: 'https://github.com/abhijeetps/playground/pull/18',
@@ -1373,11 +1373,11 @@ module.exports = {
         title: 'Weekly Digest test18',
         user: {
           login: 'abhijeetps',
-          html_url: 'https://github.com/abhijeetps'
+          html_url: 'https://github.com/abhijeetps',
         },
         created_at: '2018-04-19T00:00:00Z',
         updated_at: '2018-04-20T00:00:00Z',
-        merged_at: '2018-04-21T00:00:00Z'
+        merged_at: '2018-04-21T00:00:00Z',
       },
       {
         html_url: 'https://github.com/abhijeetps/playground/pull/17',
@@ -1386,11 +1386,11 @@ module.exports = {
         title: 'Weekly Digest test17',
         user: {
           login: 'weekly-digest[bot]',
-          html_url: 'https://github.com/app/weekly-digest'
+          html_url: 'https://github.com/app/weekly-digest',
         },
         created_at: '2018-04-19T00:00:00Z',
         updated_at: '2018-04-20T00:00:00Z',
-        merged_at: '2018-04-21T00:00:00Z'
+        merged_at: '2018-04-21T00:00:00Z',
       },
       {
         html_url: 'https://github.com/abhijeetps/playground/pull/16',
@@ -1399,11 +1399,11 @@ module.exports = {
         title: 'Weekly Digest test16',
         user: {
           login: 'abhijeetps',
-          html_url: 'https://github.com/abhijeetps'
+          html_url: 'https://github.com/abhijeetps',
         },
         created_at: '2018-04-19T00:00:00Z',
         updated_at: '2018-04-20T00:00:00Z',
-        merged_at: null
+        merged_at: null,
       },
       {
         html_url: 'https://github.com/abhijeetps/playground/pull/15',
@@ -1412,11 +1412,11 @@ module.exports = {
         title: 'Weekly Digest test15',
         user: {
           login: 'weekly-digest[bot]',
-          html_url: 'https://github.com/app/weekly-digest'
+          html_url: 'https://github.com/app/weekly-digest',
         },
         created_at: '2018-04-19T00:00:00Z',
         updated_at: '2018-04-20T00:00:00Z',
-        merged_at: null
+        merged_at: null,
       },
       {
         html_url: 'https://github.com/abhijeetps/playground/pull/14',
@@ -1425,11 +1425,11 @@ module.exports = {
         title: 'Weekly Digest test14',
         user: {
           login: 'abhijeetps',
-          html_url: 'https://github.com/abhijeetps'
+          html_url: 'https://github.com/abhijeetps',
         },
         created_at: '2018-04-20T00:00:00Z',
         updated_at: '2018-04-20T00:00:00Z',
-        merged_at: null
+        merged_at: null,
       },
       {
         html_url: 'https://github.com/abhijeetps/playground/pull/13',
@@ -1438,11 +1438,11 @@ module.exports = {
         title: 'Weekly Digest test13',
         user: {
           login: 'weekly-digest[bot]',
-          html_url: 'https://github.com/app/weekly-digest'
+          html_url: 'https://github.com/app/weekly-digest',
         },
         created_at: '2018-04-20T00:00:00Z',
         updated_at: '2018-04-20T00:00:00Z',
-        merged_at: null
+        merged_at: null,
       },
       // old
       {
@@ -1452,11 +1452,11 @@ module.exports = {
         title: 'Weekly Digest test12',
         user: {
           login: 'abhijeetps',
-          html_url: 'https://github.com/abhijeetps'
+          html_url: 'https://github.com/abhijeetps',
         },
         created_at: '2018-04-14T00:00:00Z',
         updated_at: '2018-04-15T00:00:00Z',
-        merged_at: '2018-04-16T00:00:00Z'
+        merged_at: '2018-04-16T00:00:00Z',
       },
       {
         html_url: 'https://github.com/abhijeetps/playground/pull/11',
@@ -1465,11 +1465,11 @@ module.exports = {
         title: 'Weekly Digest test11',
         user: {
           login: 'weekly-digest[bot]',
-          html_url: 'https://github.com/apps/weekly-digest'
+          html_url: 'https://github.com/apps/weekly-digest',
         },
         created_at: '2018-04-14T00:00:00Z',
         updated_at: '2018-04-15T00:00:00Z',
-        merged_at: '2018-04-16T00:00:00Z'
+        merged_at: '2018-04-16T00:00:00Z',
       },
       {
         html_url: 'https://github.com/abhijeetps/playground/pull/10',
@@ -1478,11 +1478,11 @@ module.exports = {
         title: 'Weekly Digest test10',
         user: {
           login: 'abhijeetps',
-          html_url: 'https://github.com/abhijeetps'
+          html_url: 'https://github.com/abhijeetps',
         },
         created_at: '2018-04-14T00:00:00Z',
         updated_at: '2018-04-15T00:00:00Z',
-        merged_at: null
+        merged_at: null,
       },
       {
         html_url: 'https://github.com/abhijeetps/playground/pull/9',
@@ -1491,11 +1491,11 @@ module.exports = {
         title: 'Weekly Digest test9',
         user: {
           login: 'weekly-digest[bot]',
-          html_url: 'https://github.com/apps/weekly-digest'
+          html_url: 'https://github.com/apps/weekly-digest',
         },
         created_at: '2018-04-14T00:00:00Z',
         updated_at: '2018-04-15T00:00:00Z',
-        merged_at: null
+        merged_at: null,
       },
       {
         html_url: 'https://github.com/abhijeetps/playground/pull/8',
@@ -1504,11 +1504,11 @@ module.exports = {
         title: 'Weekly Digest test8',
         user: {
           login: 'abhijeetps',
-          html_url: 'https://github.com/abhijeetps'
+          html_url: 'https://github.com/abhijeetps',
         },
         created_at: '2018-04-16T00:00:00Z',
         updated_at: '2018-04-16T00:00:00Z',
-        merged_at: null
+        merged_at: null,
       },
       {
         html_url: 'https://github.com/abhijeetps/playground/pull/7',
@@ -1517,11 +1517,11 @@ module.exports = {
         title: 'Weekly Digest test7',
         user: {
           login: 'weekly-digest[bot]',
-          html_url: 'https://github.com/app/weekly-digest'
+          html_url: 'https://github.com/app/weekly-digest',
         },
         created_at: '2018-04-16T00:00:00Z',
         updated_at: '2018-04-16T00:00:00Z',
-        merged_at: null
+        merged_at: null,
       },
       {
         html_url: 'https://github.com/abhijeetps/playground/pull/6',
@@ -1530,11 +1530,11 @@ module.exports = {
         title: 'Weekly Digest test6',
         user: {
           login: 'abhijeetps',
-          html_url: 'https://github.com/abhijeetps'
+          html_url: 'https://github.com/abhijeetps',
         },
         created_at: '2018-04-14T00:00:00Z',
         updated_at: '2018-04-15T00:00:00Z',
-        merged_at: '2018-04-16T00:00:00Z'
+        merged_at: '2018-04-16T00:00:00Z',
       },
       {
         html_url: 'https://github.com/abhijeetps/playground/pull/5',
@@ -1543,11 +1543,11 @@ module.exports = {
         title: 'Weekly Digest test5',
         user: {
           login: 'weekly-digest[bot]',
-          html_url: 'https://github.com/app/weekly-digest'
+          html_url: 'https://github.com/app/weekly-digest',
         },
         created_at: '2018-04-14T00:00:00Z',
         updated_at: '2018-04-15T00:00:00Z',
-        merged_at: '2018-04-16T00:00:00Z'
+        merged_at: '2018-04-16T00:00:00Z',
       },
       {
         html_url: 'https://github.com/abhijeetps/playground/pull/4',
@@ -1556,11 +1556,11 @@ module.exports = {
         title: 'Weekly Digest test4',
         user: {
           login: 'abhijeetps',
-          html_url: 'https://github.com/abhijeetps'
+          html_url: 'https://github.com/abhijeetps',
         },
         created_at: '2018-04-15T00:00:00Z',
         updated_at: '2018-04-16T00:00:00Z',
-        merged_at: null
+        merged_at: null,
       },
       {
         html_url: 'https://github.com/abhijeetps/playground/pull/3',
@@ -1569,11 +1569,11 @@ module.exports = {
         title: 'Weekly Digest test3',
         user: {
           login: 'weekly-digest[bot]',
-          html_url: 'https://github.com/app/weekly-digest'
+          html_url: 'https://github.com/app/weekly-digest',
         },
         created_at: '2018-04-15T00:00:00Z',
         updated_at: '2018-04-16T00:00:00Z',
-        merged_at: null
+        merged_at: null,
       },
       {
         html_url: 'https://github.com/abhijeetps/playground/pull/2',
@@ -1582,11 +1582,11 @@ module.exports = {
         title: 'Weekly Digest test2',
         user: {
           login: 'abhijeetps',
-          html_url: 'https://github.com/abhijeetps'
+          html_url: 'https://github.com/abhijeetps',
         },
         created_at: '2018-04-16T00:00:00Z',
         updated_at: '2018-04-16T00:00:00Z',
-        merged_at: null
+        merged_at: null,
       },
       {
         html_url: 'https://github.com/abhijeetps/playground/pull/1',
@@ -1595,12 +1595,12 @@ module.exports = {
         title: 'Weekly Digest test1',
         user: {
           login: 'weekly-digest[bot]',
-          html_url: 'https://github.com/app/weekly-digest'
+          html_url: 'https://github.com/app/weekly-digest',
         },
         created_at: '2018-04-16T00:00:00Z',
         updated_at: '2018-04-16T00:00:00Z',
-        merged_at: null
-      }
-    ]
-  }
-}
+        merged_at: null,
+      },
+    ],
+  },
+};

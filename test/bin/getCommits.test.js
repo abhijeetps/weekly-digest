@@ -1,30 +1,30 @@
 
-const getCommits = require('./../../src/bin/getCommits')
+const moment = require('moment');
+const MockDate = require('mockdate');
+const getCommits = require('../../src/bin/getCommits');
 
-const moment = require('moment')
-const MockDate = require('mockdate')
-MockDate.set(moment.utc('2018-04-24'))
-let tailDate = moment.utc().subtract(7, 'days').format()
+MockDate.set(moment.utc('2018-04-24'));
+const tailDate = moment.utc().subtract(7, 'days').format();
 
 test('that getCommits is working', async () => {
-  let context = {
+  const context = {
     log: {
       info: jest.fn(),
-      debug: jest.fn()
+      debug: jest.fn(),
     },
     github: {
       paginate: jest.fn(),
       repos: {
-        getCommits: jest.fn()
-      }
-    }
+        getCommits: jest.fn(),
+      },
+    },
 
-  }
+  };
   await getCommits(context, {
     owner: 'abhijeetps',
     repo: 'playground',
-    tailDate: tailDate
-  })
-  expect(context.github.paginate).toHaveBeenCalled()
-  expect(context.github.repos.getCommits).toHaveBeenCalled()
-})
+    tailDate,
+  });
+  expect(context.github.paginate).toHaveBeenCalled();
+  expect(context.github.repos.getCommits).toHaveBeenCalled();
+});

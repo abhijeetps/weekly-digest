@@ -5,5 +5,5 @@ module.exports = {
   canPublishContributors: false,
   canPublishStargazers: false,
   canPublishCommits: false,
-  canPublishReleases: false
-}
+  canPublishReleases: false,
+};

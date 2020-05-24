@@ -1,76 +1,76 @@
 module.exports = {
   emptyStargazers: {
-    data: []
+    data: [],
   },
   nullStargazers: {
-    data: null
+    data: null,
   },
   uselessStargazers: {
     data: [
       {
         user: {
           login: 'wilhelmklopp',
-          html_url: 'https://github.com/wilhelmklopp'
+          html_url: 'https://github.com/wilhelmklopp',
         },
-        starred_at: '2018-04-24T00:00:00Z'
+        starred_at: '2018-04-24T00:00:00Z',
       },
       {
         user: {
           login: 'gr2m',
-          html_url: 'https://github.com/gr2m'
+          html_url: 'https://github.com/gr2m',
         },
-        starred_at: '2018-04-16T00:00:00Z'
-      }
-    ]
+        starred_at: '2018-04-16T00:00:00Z',
+      },
+    ],
   },
   manyStargazers: {
     data: [
       {
         user: {
           login: 'wilhelmklopp',
-          html_url: 'https://github.com/wilhelmklopp'
+          html_url: 'https://github.com/wilhelmklopp',
         },
-        starred_at: '2018-04-21T00:00:00Z'
+        starred_at: '2018-04-21T00:00:00Z',
       },
       {
         user: {
           login: 'abhijeetps',
-          html_url: 'https://github.com/abhijeetps'
+          html_url: 'https://github.com/abhijeetps',
         },
-        starred_at: '2018-04-20T00:00:00Z'
+        starred_at: '2018-04-20T00:00:00Z',
       },
       {
         user: {
           login: 'gr2m',
-          html_url: 'https://github.com/gr2m'
+          html_url: 'https://github.com/gr2m',
         },
-        starred_at: '2018-04-19T00:00:00Z'
-      }
-    ]
+        starred_at: '2018-04-19T00:00:00Z',
+      },
+    ],
   },
   allStargazers: {
     data: [
       {
         user: {
           login: 'wilhelmklopp',
-          html_url: 'https://github.com/wilhelmklopp'
+          html_url: 'https://github.com/wilhelmklopp',
         },
-        starred_at: '2018-04-24T00:00:00Z'
+        starred_at: '2018-04-24T00:00:00Z',
       },
       {
         user: {
           login: 'abhijeetps',
-          html_url: 'https://github.com/abhijeetps'
+          html_url: 'https://github.com/abhijeetps',
         },
-        starred_at: '2018-04-20T00:00:00Z'
+        starred_at: '2018-04-20T00:00:00Z',
       },
       {
         user: {
           login: 'gr2m',
-          html_url: 'https://github.com/gr2m'
+          html_url: 'https://github.com/gr2m',
         },
-        starred_at: '2018-04-16T00:00:00Z'
-      }
-    ]
-  }
-}
+        starred_at: '2018-04-16T00:00:00Z',
+      },
+    ],
+  },
+};

@@ -1,25 +1,25 @@
 
-const getSearchIssues = require('./../../src/bin/getSearchIssues')
+const moment = require('moment');
+const MockDate = require('mockdate');
+const getSearchIssues = require('../../src/bin/getSearchIssues');
 
-const moment = require('moment')
-const MockDate = require('mockdate')
-MockDate.set(moment.utc('2018-04-24'))
-const mock = jest.fn()
+MockDate.set(moment.utc('2018-04-24'));
+const mock = jest.fn();
 
 test('that getSearchIssues is working', async () => {
-  let context = {
+  const context = {
     log: {
       info: jest.fn(),
-      debug: jest.fn()
+      debug: jest.fn(),
     },
     github: {
       search: {
-        issues: mock.mockReturnValue()
-      }
-    }
-  }
+        issues: mock.mockReturnValue(),
+      },
+    },
+  };
   await getSearchIssues(context, {
-    q: `repo:abhijeetps/playground type:issues author:weekly-digest created:>=2018-04-17`
-  })
-  expect(context.github.search.issues).toHaveBeenCalled()
-})
+    q: 'repo:abhijeetps/playground type:issues author:weekly-digest created:>=2018-04-17',
+  });
+  expect(context.github.search.issues).toHaveBeenCalled();
+});

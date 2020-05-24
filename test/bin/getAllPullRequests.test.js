@@ -1,27 +1,27 @@
 
-const getAllPullRequests = require('./../../src/bin/getAllPullRequests')
+const moment = require('moment');
+const MockDate = require('mockdate');
+const getAllPullRequests = require('../../src/bin/getAllPullRequests');
 
-const moment = require('moment')
-const MockDate = require('mockdate')
-MockDate.set(moment.utc('2018-04-24'))
+MockDate.set(moment.utc('2018-04-24'));
 
 test('that getPullRequests is working', async () => {
-  let context = {
+  const context = {
     log: {
       info: jest.fn(),
-      debug: jest.fn()
+      debug: jest.fn(),
     },
     github: {
       paginate: jest.fn(),
       pullRequests: {
-        getAll: jest.fn()
-      }
-    }
-  }
+        getAll: jest.fn(),
+      },
+    },
+  };
   await getAllPullRequests(context, {
     owner: 'abhijeetps',
-    repo: 'playground'
-  })
-  expect(context.github.paginate).toHaveBeenCalled()
-  expect(context.github.pullRequests.getAll).toHaveBeenCalled()
-})
+    repo: 'playground',
+  });
+  expect(context.github.paginate).toHaveBeenCalled();
+  expect(context.github.pullRequests.getAll).toHaveBeenCalled();
+});

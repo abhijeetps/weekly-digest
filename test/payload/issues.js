@@ -1,10 +1,10 @@
 module.exports = {
   // empty issue payload
   nullIssue: {
-    data: null
+    data: null,
   },
   emptyIssue: {
-    data: []
+    data: [],
   },
   // Useless issue
   uselessIssue: {
@@ -16,7 +16,7 @@ module.exports = {
         user: {
           type: 'USER',
           login: 'abhijeetps',
-          html_url: 'https://github.com/abhijeetps'
+          html_url: 'https://github.com/abhijeetps',
         },
         created_at: '2018-04-24T00:00:00Z',
         state: 'open',
@@ -26,8 +26,8 @@ module.exports = {
           laugh: 0,
           hooray: 0,
           heart: 0,
-          total_count: 0
-        }
+          total_count: 0,
+        },
       },
       {
         html_url: 'https://github.com/abhijeetps/playground/issues/5',
@@ -36,7 +36,7 @@ module.exports = {
         user: {
           type: 'BOT',
           login: 'weekly-digest[bot]',
-          html_url: 'https://github.com/abhijeetps'
+          html_url: 'https://github.com/abhijeetps',
         },
         created_at: '2018-04-24T00:00:00Z',
         state: 'open',
@@ -46,8 +46,8 @@ module.exports = {
           laugh: 0,
           hooray: 0,
           heart: 0,
-          total_count: 0
-        }
+          total_count: 0,
+        },
       },
       {
         html_url: 'https://github.com/abhijeetps/playground/issues/3',
@@ -56,7 +56,7 @@ module.exports = {
         user: {
           type: 'BOT',
           login: 'weekly-digest[bot]',
-          html_url: 'https://github.com/abhijeetps'
+          html_url: 'https://github.com/abhijeetps',
         },
         created_at: '2018-04-21T00:00:00Z',
         state: 'open',
@@ -66,8 +66,8 @@ module.exports = {
           laugh: 0,
           hooray: 0,
           heart: 0,
-          total_count: 0
-        }
+          total_count: 0,
+        },
       },
       {
         html_url: 'https://github.com/abhijeetps/playground/issues/2',
@@ -76,7 +76,7 @@ module.exports = {
         user: {
           type: 'USER',
           login: 'abhijeetps',
-          html_url: 'https://github.com/abhijeetps'
+          html_url: 'https://github.com/abhijeetps',
         },
         created_at: '2018-04-16T00:00:00Z',
         state: 'open',
@@ -86,8 +86,8 @@ module.exports = {
           laugh: 0,
           hooray: 0,
           heart: 0,
-          total_count: 0
-        }
+          total_count: 0,
+        },
       },
       {
         html_url: 'https://github.com/abhijeetps/playground/issues/1',
@@ -96,7 +96,7 @@ module.exports = {
         user: {
           type: 'BOT',
           login: 'weekly-digest[bot]',
-          html_url: 'https://github.com/abhijeetps'
+          html_url: 'https://github.com/abhijeetps',
         },
         created_at: '2018-04-16T00:00:00Z',
         state: 'open',
@@ -106,10 +106,10 @@ module.exports = {
           laugh: 0,
           hooray: 0,
           heart: 0,
-          total_count: 0
-        }
-      }
-    ]
+          total_count: 0,
+        },
+      },
+    ],
   },
   // Open issue payload
   openIssue: {
@@ -121,7 +121,7 @@ module.exports = {
         user: {
           type: 'USER',
           login: 'abhijeetps',
-          html_url: 'https://github.com/abhijeetps'
+          html_url: 'https://github.com/abhijeetps',
         },
         created_at: '2018-04-24T00:00:00Z',
         state: 'open',
@@ -131,8 +131,8 @@ module.exports = {
           laugh: 0,
           hooray: 0,
           heart: 0,
-          total_count: 0
-        }
+          total_count: 0,
+        },
       },
       {
         html_url: 'https://github.com/abhijeetps/playground/issues/5',
@@ -141,7 +141,7 @@ module.exports = {
         user: {
           type: 'BOT',
           login: 'weekly-digest[bot]',
-          html_url: 'https://github.com/abhijeetps'
+          html_url: 'https://github.com/abhijeetps',
         },
         created_at: '2018-04-24T00:00:00Z',
         state: 'open',
@@ -151,8 +151,8 @@ module.exports = {
           laugh: 0,
           hooray: 0,
           heart: 0,
-          total_count: 0
-        }
+          total_count: 0,
+        },
       },
       {
         html_url: 'https://github.com/abhijeetps/playground/issues/4',
@@ -161,7 +161,7 @@ module.exports = {
         user: {
           type: 'USER',
           login: 'abhijeetps',
-          html_url: 'https://github.com/abhijeetps'
+          html_url: 'https://github.com/abhijeetps',
         },
         created_at: '2018-04-21T00:00:00Z',
         state: 'open',
@@ -171,8 +171,8 @@ module.exports = {
           laugh: 0,
           hooray: 0,
           heart: 0,
-          total_count: 0
-        }
+          total_count: 0,
+        },
       },
       {
         html_url: 'https://github.com/abhijeetps/playground/issues/3',
@@ -181,7 +181,7 @@ module.exports = {
         user: {
           type: 'BOT',
           login: 'weekly-digest[bot]',
-          html_url: 'https://github.com/abhijeetps'
+          html_url: 'https://github.com/abhijeetps',
         },
         created_at: '2018-04-21T00:00:00Z',
         state: 'open',
@@ -191,8 +191,8 @@ module.exports = {
           laugh: 0,
           hooray: 0,
           heart: 0,
-          total_count: 0
-        }
+          total_count: 0,
+        },
       },
       {
         html_url: 'https://github.com/abhijeetps/playground/issues/2',
@@ -201,7 +201,7 @@ module.exports = {
         user: {
           type: 'USER',
           login: 'abhijeetps',
-          html_url: 'https://github.com/abhijeetps'
+          html_url: 'https://github.com/abhijeetps',
         },
         created_at: '2018-04-16T00:00:00Z',
         state: 'open',
@@ -211,8 +211,8 @@ module.exports = {
           laugh: 0,
           hooray: 0,
           heart: 0,
-          total_count: 0
-        }
+          total_count: 0,
+        },
       },
       {
         html_url: 'https://github.com/abhijeetps/playground/issues/1',
@@ -221,7 +221,7 @@ module.exports = {
         user: {
           type: 'BOT',
           login: 'weekly-digest[bot]',
-          html_url: 'https://github.com/abhijeetps'
+          html_url: 'https://github.com/abhijeetps',
         },
         created_at: '2018-04-16T00:00:00Z',
         state: 'open',
@@ -231,10 +231,10 @@ module.exports = {
           laugh: 0,
           hooray: 0,
           heart: 0,
-          total_count: 0
-        }
-      }
-    ]
+          total_count: 0,
+        },
+      },
+    ],
   },
   // Closed issue payload
   closedIssue: {
@@ -246,7 +246,7 @@ module.exports = {
         user: {
           type: 'USER',
           login: 'abhijeetps',
-          html_url: 'https://github.com/abhijeetps'
+          html_url: 'https://github.com/abhijeetps',
         },
         created_at: '2018-04-24T00:00:00Z',
         state: 'closed',
@@ -256,8 +256,8 @@ module.exports = {
           laugh: 0,
           hooray: 0,
           heart: 0,
-          total_count: 0
-        }
+          total_count: 0,
+        },
       },
       {
         html_url: 'https://github.com/abhijeetps/playground/issues/5',
@@ -266,7 +266,7 @@ module.exports = {
         user: {
           type: 'BOT',
           login: 'weekly-digest[bot]',
-          html_url: 'https://github.com/abhijeetps'
+          html_url: 'https://github.com/abhijeetps',
         },
         created_at: '2018-04-24T00:00:00Z',
         state: 'closed',
@@ -276,8 +276,8 @@ module.exports = {
           laugh: 0,
           hooray: 0,
           heart: 0,
-          total_count: 0
-        }
+          total_count: 0,
+        },
       },
       {
         html_url: 'https://github.com/abhijeetps/playground/issues/4',
@@ -286,7 +286,7 @@ module.exports = {
         user: {
           type: 'USER',
           login: 'abhijeetps',
-          html_url: 'https://github.com/abhijeetps'
+          html_url: 'https://github.com/abhijeetps',
         },
         created_at: '2018-04-21T00:00:00Z',
         state: 'closed',
@@ -296,8 +296,8 @@ module.exports = {
           laugh: 0,
           hooray: 0,
           heart: 0,
-          total_count: 0
-        }
+          total_count: 0,
+        },
       },
       {
         html_url: 'https://github.com/abhijeetps/playground/issues/3',
@@ -306,7 +306,7 @@ module.exports = {
         user: {
           type: 'BOT',
           login: 'weekly-digest[bot]',
-          html_url: 'https://github.com/abhijeetps'
+          html_url: 'https://github.com/abhijeetps',
         },
         created_at: '2018-04-21T00:00:00Z',
         state: 'closed',
@@ -316,8 +316,8 @@ module.exports = {
           laugh: 0,
           hooray: 0,
           heart: 0,
-          total_count: 0
-        }
+          total_count: 0,
+        },
       },
       {
         html_url: 'https://github.com/abhijeetps/playground/issues/2',
@@ -326,7 +326,7 @@ module.exports = {
         user: {
           type: 'USER',
           login: 'abhijeetps',
-          html_url: 'https://github.com/abhijeetps'
+          html_url: 'https://github.com/abhijeetps',
         },
         created_at: '2018-04-16T00:00:00Z',
         state: 'closed',
@@ -336,8 +336,8 @@ module.exports = {
           laugh: 0,
           hooray: 0,
           heart: 0,
-          total_count: 0
-        }
+          total_count: 0,
+        },
       },
       {
         html_url: 'https://github.com/abhijeetps/playground/issues/1',
@@ -346,7 +346,7 @@ module.exports = {
         user: {
           type: 'BOT',
           login: 'weekly-digest[bot]',
-          html_url: 'https://github.com/abhijeetps'
+          html_url: 'https://github.com/abhijeetps',
         },
         created_at: '2018-04-16T00:00:00Z',
         state: 'closed',
@@ -356,10 +356,10 @@ module.exports = {
           laugh: 0,
           hooray: 0,
           heart: 0,
-          total_count: 0
-        }
-      }
-    ]
+          total_count: 0,
+        },
+      },
+    ],
   },
   noisyIssue: {
     data: [
@@ -370,7 +370,7 @@ module.exports = {
         user: {
           type: 'BOT',
           login: 'weekly-digest[bot]',
-          html_url: 'https://github.com/abhijeetps'
+          html_url: 'https://github.com/abhijeetps',
         },
         created_at: '2018-04-24T00:00:00Z',
         state: 'open',
@@ -380,8 +380,8 @@ module.exports = {
           laugh: 0,
           hooray: 0,
           heart: 0,
-          total_count: 0
-        }
+          total_count: 0,
+        },
       },
       {
         html_url: 'https://github.com/abhijeetps/playground/issues/8',
@@ -390,7 +390,7 @@ module.exports = {
         user: {
           type: 'USER',
           login: 'abhijeetps',
-          html_url: 'https://github.com/abhijeetps'
+          html_url: 'https://github.com/abhijeetps',
         },
         created_at: '2018-04-24T00:00:00Z',
         state: 'open',
@@ -400,8 +400,8 @@ module.exports = {
           laugh: 0,
           hooray: 0,
           heart: 0,
-          total_count: 0
-        }
+          total_count: 0,
+        },
       },
       {
         html_url: 'https://github.com/abhijeetps/playground/issues/7',
@@ -410,7 +410,7 @@ module.exports = {
         user: {
           type: 'USER',
           login: 'abhijeetps',
-          html_url: 'https://github.com/abhijeetps'
+          html_url: 'https://github.com/abhijeetps',
         },
         created_at: '2018-04-24T00:00:00Z',
         state: 'closed',
@@ -420,8 +420,8 @@ module.exports = {
           laugh: 0,
           hooray: 0,
           heart: 0,
-          total_count: 0
-        }
+          total_count: 0,
+        },
       },
       {
         html_url: 'https://github.com/abhijeetps/playground/issues/6',
@@ -430,7 +430,7 @@ module.exports = {
         user: {
           type: 'BOT',
           login: 'weekly-digest[bot]',
-          html_url: 'https://github.com/abhijeetps'
+          html_url: 'https://github.com/abhijeetps',
         },
         created_at: '2018-04-21T00:00:00Z',
         state: 'open',
@@ -440,8 +440,8 @@ module.exports = {
           laugh: 0,
           hooray: 0,
           heart: 0,
-          total_count: 0
-        }
+          total_count: 0,
+        },
       },
       {
         html_url: 'https://github.com/abhijeetps/playground/issues/5',
@@ -450,7 +450,7 @@ module.exports = {
         user: {
           type: 'USER',
           login: 'abhijeetps',
-          html_url: 'https://github.com/abhijeetps'
+          html_url: 'https://github.com/abhijeetps',
         },
         created_at: '2018-04-20T00:00:00Z',
         state: 'open',
@@ -460,8 +460,8 @@ module.exports = {
           laugh: 0,
           hooray: 0,
           heart: 0,
-          total_count: 0
-        }
+          total_count: 0,
+        },
       },
       {
         html_url: 'https://github.com/abhijeetps/playground/issues/4',
@@ -470,7 +470,7 @@ module.exports = {
         user: {
           type: 'USER',
           login: 'abhijeetps',
-          html_url: 'https://github.com/abhijeetps'
+          html_url: 'https://github.com/abhijeetps',
         },
         created_at: '2018-04-19T00:00:00Z',
         state: 'closed',
@@ -480,8 +480,8 @@ module.exports = {
           laugh: 0,
           hooray: 0,
           heart: 0,
-          total_count: 0
-        }
+          total_count: 0,
+        },
       },
       {
         html_url: 'https://github.com/abhijeetps/playground/issues/3',
@@ -490,7 +490,7 @@ module.exports = {
         user: {
           type: 'BOT',
           login: 'weekly-digest[bot]',
-          html_url: 'https://github.com/abhijeetps'
+          html_url: 'https://github.com/abhijeetps',
         },
         created_at: '2018-04-16T00:00:00Z',
         state: 'open',
@@ -500,8 +500,8 @@ module.exports = {
           laugh: 0,
           hooray: 0,
           heart: 0,
-          total_count: 0
-        }
+          total_count: 0,
+        },
       },
       {
         html_url: 'https://github.com/abhijeetps/playground/issues/2',
@@ -510,7 +510,7 @@ module.exports = {
         user: {
           type: 'USER',
           login: 'abhijeetps',
-          html_url: 'https://github.com/abhijeetps'
+          html_url: 'https://github.com/abhijeetps',
         },
         created_at: '2018-04-16T00:00:00Z',
         state: 'open',
@@ -520,8 +520,8 @@ module.exports = {
           laugh: 0,
           hooray: 0,
           heart: 0,
-          total_count: 0
-        }
+          total_count: 0,
+        },
       },
       {
         html_url: 'https://github.com/abhijeetps/playground/issues/1',
@@ -530,7 +530,7 @@ module.exports = {
         user: {
           type: 'USER',
           login: 'abhijeetps',
-          html_url: 'https://github.com/abhijeetps'
+          html_url: 'https://github.com/abhijeetps',
         },
         created_at: '2018-04-16T00:00:00Z',
         state: 'closed',
@@ -540,10 +540,10 @@ module.exports = {
           laugh: 0,
           hooray: 0,
           heart: 0,
-          total_count: 0
-        }
-      }
-    ]
+          total_count: 0,
+        },
+      },
+    ],
   },
   likedIssue: {
     data: [
@@ -554,7 +554,7 @@ module.exports = {
         user: {
           type: 'BOT',
           login: 'weekly-digest[bot]',
-          html_url: 'https://github.com/abhijeetps'
+          html_url: 'https://github.com/abhijeetps',
         },
         created_at: '2018-04-24T00:00:00Z',
         state: 'open',
@@ -564,8 +564,8 @@ module.exports = {
           laugh: 1,
           hooray: 1,
           heart: 1,
-          total_count: 5
-        }
+          total_count: 5,
+        },
       },
       {
         html_url: 'https://github.com/abhijeetps/playground/issues/8',
@@ -574,7 +574,7 @@ module.exports = {
         user: {
           type: 'USER',
           login: 'abhijeetps',
-          html_url: 'https://github.com/abhijeetps'
+          html_url: 'https://github.com/abhijeetps',
         },
         created_at: '2018-04-24T00:00:00Z',
         state: 'open',
@@ -584,8 +584,8 @@ module.exports = {
           laugh: 1,
           hooray: 1,
           heart: 1,
-          total_count: 5
-        }
+          total_count: 5,
+        },
       },
       {
         html_url: 'https://github.com/abhijeetps/playground/issues/7',
@@ -594,7 +594,7 @@ module.exports = {
         user: {
           type: 'USER',
           login: 'abhijeetps',
-          html_url: 'https://github.com/abhijeetps'
+          html_url: 'https://github.com/abhijeetps',
         },
         created_at: '2018-04-24T00:00:00Z',
         state: 'closed',
@@ -604,8 +604,8 @@ module.exports = {
           laugh: 1,
           hooray: 1,
           heart: 1,
-          total_count: 5
-        }
+          total_count: 5,
+        },
       },
       {
         html_url: 'https://github.com/abhijeetps/playground/issues/6',
@@ -614,7 +614,7 @@ module.exports = {
         user: {
           type: 'BOT',
           login: 'weekly-digest[bot]',
-          html_url: 'https://github.com/abhijeetps'
+          html_url: 'https://github.com/abhijeetps',
         },
         created_at: '2018-04-21T00:00:00Z',
         state: 'open',
@@ -624,8 +624,8 @@ module.exports = {
           laugh: 4,
           hooray: 4,
           heart: 4,
-          total_count: 20
-        }
+          total_count: 20,
+        },
       },
       {
         html_url: 'https://github.com/abhijeetps/playground/issues/5',
@@ -634,7 +634,7 @@ module.exports = {
         user: {
           type: 'USER',
           login: 'abhijeetps',
-          html_url: 'https://github.com/abhijeetps'
+          html_url: 'https://github.com/abhijeetps',
         },
         created_at: '2018-04-20T00:00:00Z',
         state: 'open',
@@ -644,8 +644,8 @@ module.exports = {
           laugh: 2,
           hooray: 1,
           heart: 3,
-          total_count: 10
-        }
+          total_count: 10,
+        },
       },
       {
         html_url: 'https://github.com/abhijeetps/playground/issues/4',
@@ -654,7 +654,7 @@ module.exports = {
         user: {
           type: 'USER',
           login: 'abhijeetps',
-          html_url: 'https://github.com/abhijeetps'
+          html_url: 'https://github.com/abhijeetps',
         },
         created_at: '2018-04-19T00:00:00Z',
         state: 'closed',
@@ -664,8 +664,8 @@ module.exports = {
           laugh: 2,
           hooray: 5,
           heart: 2,
-          total_count: 15
-        }
+          total_count: 15,
+        },
       },
       {
         html_url: 'https://github.com/abhijeetps/playground/issues/3',
@@ -674,7 +674,7 @@ module.exports = {
         user: {
           type: 'BOT',
           login: 'weekly-digest[bot]',
-          html_url: 'https://github.com/abhijeetps'
+          html_url: 'https://github.com/abhijeetps',
         },
         created_at: '2018-04-16T00:00:00Z',
         state: 'open',
@@ -684,8 +684,8 @@ module.exports = {
           laugh: 2,
           hooray: 2,
           heart: 2,
-          total_count: 10
-        }
+          total_count: 10,
+        },
       },
       {
         html_url: 'https://github.com/abhijeetps/playground/issues/2',
@@ -694,7 +694,7 @@ module.exports = {
         user: {
           type: 'USER',
           login: 'abhijeetps',
-          html_url: 'https://github.com/abhijeetps'
+          html_url: 'https://github.com/abhijeetps',
         },
         created_at: '2018-04-16T00:00:00Z',
         state: 'open',
@@ -704,8 +704,8 @@ module.exports = {
           laugh: 2,
           hooray: 2,
           heart: 2,
-          total_count: 10
-        }
+          total_count: 10,
+        },
       },
       {
         html_url: 'https://github.com/abhijeetps/playground/issues/1',
@@ -714,7 +714,7 @@ module.exports = {
         user: {
           type: 'USER',
           login: 'abhijeetps',
-          html_url: 'https://github.com/abhijeetps'
+          html_url: 'https://github.com/abhijeetps',
         },
         created_at: '2018-04-16T00:00:00Z',
         state: 'closed',
@@ -724,10 +724,10 @@ module.exports = {
           laugh: 2,
           hooray: 2,
           heart: 2,
-          total_count: 10
-        }
-      }
-    ]
+          total_count: 10,
+        },
+      },
+    ],
   },
   // All issues payload
   allIssueA: {
@@ -739,7 +739,7 @@ module.exports = {
         user: {
           type: 'BOT',
           login: 'weekly-digest[bot]',
-          html_url: 'https://github.com/abhijeetps'
+          html_url: 'https://github.com/abhijeetps',
         },
         created_at: '2018-04-24T00:00:00Z',
         state: 'open',
@@ -749,8 +749,8 @@ module.exports = {
           laugh: 1,
           hooray: 1,
           heart: 1,
-          total_count: 5
-        }
+          total_count: 5,
+        },
       },
       {
         html_url: 'https://github.com/abhijeetps/playground/issues/11',
@@ -760,7 +760,7 @@ module.exports = {
         user: {
           type: 'BOT',
           login: 'weekly-digest[bot]',
-          html_url: 'https://github.com/abhijeetps'
+          html_url: 'https://github.com/abhijeetps',
         },
         state: 'closed',
         comments: 3,
@@ -769,8 +769,8 @@ module.exports = {
           laugh: 1,
           hooray: 1,
           heart: 1,
-          total_count: 5
-        }
+          total_count: 5,
+        },
       },
       {
         html_url: 'https://github.com/abhijeetps/playground/issues/10',
@@ -780,7 +780,7 @@ module.exports = {
         user: {
           type: 'USER',
           login: 'abhijeetps',
-          html_url: 'https://github.com/abhijeetps'
+          html_url: 'https://github.com/abhijeetps',
         },
         state: 'open',
         comments: 4,
@@ -789,8 +789,8 @@ module.exports = {
           laugh: 1,
           hooray: 1,
           heart: 1,
-          total_count: 5
-        }
+          total_count: 5,
+        },
       },
       {
         html_url: 'https://github.com/abhijeetps/playground/issues/9',
@@ -800,7 +800,7 @@ module.exports = {
         user: {
           type: 'USER',
           login: 'abhijeetps',
-          html_url: 'https://github.com/abhijeetps'
+          html_url: 'https://github.com/abhijeetps',
         },
         state: 'closed',
         comments: 10,
@@ -809,8 +809,8 @@ module.exports = {
           laugh: 2,
           hooray: 2,
           heart: 2,
-          total_count: 8
-        }
+          total_count: 8,
+        },
       },
       {
         html_url: 'https://github.com/abhijeetps/playground/issues/8',
@@ -819,7 +819,7 @@ module.exports = {
         user: {
           type: 'BOT',
           login: 'weekly-digest[bot]',
-          html_url: 'https://github.com/abhijeetps'
+          html_url: 'https://github.com/abhijeetps',
         },
         created_at: '2018-04-22T00:00:00Z',
         state: 'open',
@@ -829,8 +829,8 @@ module.exports = {
           laugh: 4,
           hooray: 4,
           heart: 4,
-          total_count: 20
-        }
+          total_count: 20,
+        },
       },
       {
         html_url: 'https://github.com/abhijeetps/playground/issues/7',
@@ -840,7 +840,7 @@ module.exports = {
         user: {
           type: 'BOT',
           login: 'weekly-digest[bot]',
-          html_url: 'https://github.com/abhijeetps'
+          html_url: 'https://github.com/abhijeetps',
         },
         state: 'closed',
         comments: 15,
@@ -849,8 +849,8 @@ module.exports = {
           laugh: 3,
           hooray: 3,
           heart: 3,
-          total_count: 15
-        }
+          total_count: 15,
+        },
       },
       {
         html_url: 'https://github.com/abhijeetps/playground/issues/6',
@@ -860,7 +860,7 @@ module.exports = {
         user: {
           type: 'USER',
           login: 'abhijeetps',
-          html_url: 'https://github.com/abhijeetps'
+          html_url: 'https://github.com/abhijeetps',
         },
         state: 'open',
         comments: 6,
@@ -869,8 +869,8 @@ module.exports = {
           laugh: 0,
           hooray: 0,
           heart: 1,
-          total_count: 4
-        }
+          total_count: 4,
+        },
       },
       {
         html_url: 'https://github.com/abhijeetps/playground/issues/5',
@@ -880,7 +880,7 @@ module.exports = {
         user: {
           type: 'USER',
           login: 'abhijeetps',
-          html_url: 'https://github.com/abhijeetps'
+          html_url: 'https://github.com/abhijeetps',
         },
         state: 'closed',
         comments: 4,
@@ -889,8 +889,8 @@ module.exports = {
           laugh: 3,
           hooray: 1,
           heart: 2,
-          total_count: 10
-        }
+          total_count: 10,
+        },
       },
       {
         html_url: 'https://github.com/abhijeetps/playground/issues/4',
@@ -899,7 +899,7 @@ module.exports = {
         user: {
           type: 'BOT',
           login: 'weekly-digest[bot]',
-          html_url: 'https://github.com/abhijeetps'
+          html_url: 'https://github.com/abhijeetps',
         },
         created_at: '2018-04-16T00:00:00Z',
         state: 'open',
@@ -909,8 +909,8 @@ module.exports = {
           laugh: 4,
           hooray: 4,
           heart: 4,
-          total_count: 20
-        }
+          total_count: 20,
+        },
       },
       {
         html_url: 'https://github.com/abhijeetps/playground/issues/3',
@@ -920,7 +920,7 @@ module.exports = {
         user: {
           type: 'BOT',
           login: 'weekly-digest[bot]',
-          html_url: 'https://github.com/abhijeetps'
+          html_url: 'https://github.com/abhijeetps',
         },
         state: 'closed',
         comments: 3,
@@ -929,8 +929,8 @@ module.exports = {
           laugh: 3,
           hooray: 3,
           heart: 3,
-          total_count: 15
-        }
+          total_count: 15,
+        },
       },
       {
         html_url: 'https://github.com/abhijeetps/playground/issues/2',
@@ -940,7 +940,7 @@ module.exports = {
         user: {
           type: 'USER',
           login: 'abhijeetps',
-          html_url: 'https://github.com/abhijeetps'
+          html_url: 'https://github.com/abhijeetps',
         },
         state: 'open',
         comments: 4,
@@ -949,8 +949,8 @@ module.exports = {
           laugh: 2,
           hooray: 2,
           heart: 2,
-          total_count: 8
-        }
+          total_count: 8,
+        },
       },
       {
         html_url: 'https://github.com/abhijeetps/playground/issues/1',
@@ -960,7 +960,7 @@ module.exports = {
         user: {
           type: 'USER',
           login: 'abhijeetps',
-          html_url: 'https://github.com/abhijeetps'
+          html_url: 'https://github.com/abhijeetps',
         },
         state: 'closed',
         comments: 10,
@@ -969,10 +969,10 @@ module.exports = {
           laugh: 1,
           hooray: 1,
           heart: 1,
-          total_count: 4
-        }
-      }
-    ]
+          total_count: 4,
+        },
+      },
+    ],
   },
   allIssueB: {
     data: [
@@ -983,7 +983,7 @@ module.exports = {
         user: {
           type: 'BOT',
           login: 'weekly-digest[bot]',
-          html_url: 'https://github.com/abhijeetps'
+          html_url: 'https://github.com/abhijeetps',
         },
         created_at: '2018-04-24T00:00:00Z',
         state: 'open',
@@ -993,8 +993,8 @@ module.exports = {
           laugh: 1,
           hooray: 1,
           heart: 1,
-          total_count: 5
-        }
+          total_count: 5,
+        },
       },
       {
         html_url: 'https://github.com/abhijeetps/playground/issues/11',
@@ -1004,7 +1004,7 @@ module.exports = {
         user: {
           type: 'BOT',
           login: 'weekly-digest[bot]',
-          html_url: 'https://github.com/abhijeetps'
+          html_url: 'https://github.com/abhijeetps',
         },
         state: 'closed',
         comments: 3,
@@ -1013,8 +1013,8 @@ module.exports = {
           laugh: 1,
           hooray: 1,
           heart: 1,
-          total_count: 5
-        }
+          total_count: 5,
+        },
       },
       {
         html_url: 'https://github.com/abhijeetps/playground/issues/10',
@@ -1024,7 +1024,7 @@ module.exports = {
         user: {
           type: 'USER',
           login: 'abhijeetps',
-          html_url: 'https://github.com/abhijeetps'
+          html_url: 'https://github.com/abhijeetps',
         },
         state: 'open',
         comments: 4,
@@ -1033,8 +1033,8 @@ module.exports = {
           laugh: 1,
           hooray: 1,
           heart: 1,
-          total_count: 5
-        }
+          total_count: 5,
+        },
       },
       {
         html_url: 'https://github.com/abhijeetps/playground/issues/9',
@@ -1044,7 +1044,7 @@ module.exports = {
         user: {
           type: 'USER',
           login: 'abhijeetps',
-          html_url: 'https://github.com/abhijeetps'
+          html_url: 'https://github.com/abhijeetps',
         },
         state: 'closed',
         comments: 10,
@@ -1053,8 +1053,8 @@ module.exports = {
           laugh: 2,
           hooray: 2,
           heart: 2,
-          total_count: 8
-        }
+          total_count: 8,
+        },
       },
       {
         html_url: 'https://github.com/abhijeetps/playground/issues/8',
@@ -1063,7 +1063,7 @@ module.exports = {
         user: {
           type: 'BOT',
           login: 'weekly-digest[bot]',
-          html_url: 'https://github.com/abhijeetps'
+          html_url: 'https://github.com/abhijeetps',
         },
         created_at: '2018-04-22T00:00:00Z',
         state: 'open',
@@ -1073,8 +1073,8 @@ module.exports = {
           laugh: 4,
           hooray: 4,
           heart: 4,
-          total_count: 20
-        }
+          total_count: 20,
+        },
       },
       {
         html_url: 'https://github.com/abhijeetps/playground/issues/7',
@@ -1084,7 +1084,7 @@ module.exports = {
         user: {
           type: 'BOT',
           login: 'weekly-digest[bot]',
-          html_url: 'https://github.com/abhijeetps'
+          html_url: 'https://github.com/abhijeetps',
         },
         state: 'closed',
         comments: 15,
@@ -1093,8 +1093,8 @@ module.exports = {
           laugh: 3,
           hooray: 3,
           heart: 3,
-          total_count: 15
-        }
+          total_count: 15,
+        },
       },
       {
         html_url: 'https://github.com/abhijeetps/playground/issues/6',
@@ -1104,7 +1104,7 @@ module.exports = {
         user: {
           type: 'USER',
           login: 'abhijeetps',
-          html_url: 'https://github.com/abhijeetps'
+          html_url: 'https://github.com/abhijeetps',
         },
         state: 'open',
         comments: 4,
@@ -1113,8 +1113,8 @@ module.exports = {
           laugh: 3,
           hooray: 1,
           heart: 2,
-          total_count: 10
-        }
+          total_count: 10,
+        },
       },
       {
         html_url: 'https://github.com/abhijeetps/playground/issues/5',
@@ -1124,7 +1124,7 @@ module.exports = {
         user: {
           type: 'USER',
           login: 'abhijeetps',
-          html_url: 'https://github.com/abhijeetps'
+          html_url: 'https://github.com/abhijeetps',
         },
         state: 'closed',
         comments: 6,
@@ -1133,8 +1133,8 @@ module.exports = {
           laugh: 0,
           hooray: 0,
           heart: 1,
-          total_count: 4
-        }
+          total_count: 4,
+        },
       },
       {
         html_url: 'https://github.com/abhijeetps/playground/issues/4',
@@ -1143,7 +1143,7 @@ module.exports = {
         user: {
           type: 'BOT',
           login: 'weekly-digest[bot]',
-          html_url: 'https://github.com/abhijeetps'
+          html_url: 'https://github.com/abhijeetps',
         },
         created_at: '2018-04-16T00:00:00Z',
         state: 'open',
@@ -1153,8 +1153,8 @@ module.exports = {
           laugh: 4,
           hooray: 4,
           heart: 4,
-          total_count: 20
-        }
+          total_count: 20,
+        },
       },
       {
         html_url: 'https://github.com/abhijeetps/playground/issues/3',
@@ -1164,7 +1164,7 @@ module.exports = {
         user: {
           type: 'BOT',
           login: 'weekly-digest[bot]',
-          html_url: 'https://github.com/abhijeetps'
+          html_url: 'https://github.com/abhijeetps',
         },
         state: 'closed',
         comments: 3,
@@ -1173,8 +1173,8 @@ module.exports = {
           laugh: 3,
           hooray: 3,
           heart: 3,
-          total_count: 15
-        }
+          total_count: 15,
+        },
       },
       {
         html_url: 'https://github.com/abhijeetps/playground/issues/2',
@@ -1184,7 +1184,7 @@ module.exports = {
         user: {
           type: 'USER',
           login: 'abhijeetps',
-          html_url: 'https://github.com/abhijeetps'
+          html_url: 'https://github.com/abhijeetps',
         },
         state: 'open',
         comments: 4,
@@ -1193,8 +1193,8 @@ module.exports = {
           laugh: 2,
           hooray: 2,
           heart: 2,
-          total_count: 8
-        }
+          total_count: 8,
+        },
       },
       {
         html_url: 'https://github.com/abhijeetps/playground/issues/1',
@@ -1204,7 +1204,7 @@ module.exports = {
         user: {
           type: 'USER',
           login: 'abhijeetps',
-          html_url: 'https://github.com/abhijeetps'
+          html_url: 'https://github.com/abhijeetps',
         },
         state: 'closed',
         comments: 10,
@@ -1213,9 +1213,9 @@ module.exports = {
           laugh: 1,
           hooray: 1,
           heart: 1,
-          total_count: 4
-        }
-      }
-    ]
-  }
-}
+          total_count: 4,
+        },
+      },
+    ],
+  },
+};

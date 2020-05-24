@@ -11,7 +11,7 @@ module.exports = (month) => {
     'September',
     'October',
     'November',
-    'December'
-  ]
-  return longMonth[month]
-}
+    'December',
+  ];
+  return longMonth[month];
+};
