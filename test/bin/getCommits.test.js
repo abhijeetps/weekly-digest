@@ -15,7 +15,7 @@ test('that getCommits is working', async () => {
     github: {
       paginate: jest.fn(),
       repos: {
-        getCommits: jest.fn(),
+        listCommits: jest.fn(),
       },
     },
 
@@ -26,5 +26,5 @@ test('that getCommits is working', async () => {
     tailDate,
   });
   expect(context.github.paginate).toHaveBeenCalled();
-  expect(context.github.repos.getCommits).toHaveBeenCalled();
+  expect(context.github.repos.listCommits).toHaveBeenCalled();
 });

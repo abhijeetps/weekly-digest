@@ -2,7 +2,7 @@
 module.exports = async (context, { owner, repo, tailDate }) => {
   context.log.debug('In getCommits.js...');
   const commits = await context.github.paginate(
-    context.github.repos.getCommits({
+    context.github.repos.listCommits({
       owner,
       repo,
       since: tailDate,
