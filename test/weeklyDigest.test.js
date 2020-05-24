@@ -22,18 +22,18 @@ test('that weekly digest is working when configs are defined and is false', asyn
     github: {
       paginate: jest.fn(),
       issues: {
-        getForRepo: jest.fn(),
+        listForRepo: jest.fn(),
         create: jest.fn(),
       },
       pullRequests: {
-        getAll: jest.fn(),
+        list: jest.fn(),
       },
       repos: {
-        getCommits: jest.fn(),
-        getReleases: jest.fn(),
+        listCommits: jest.fn(),
+        listReleases: jest.fn(),
       },
       activity: {
-        getStargazersForRepo: jest.fn(),
+        listStargazersForRepo: jest.fn(),
       },
     },
   };
@@ -56,18 +56,18 @@ test('that weekly digest is working when configs are defined and is true', async
     github: {
       paginate: jest.fn(),
       issues: {
-        getForRepo: jest.fn(),
+        listForRepo: jest.fn(),
         create: jest.fn(),
       },
       pullRequests: {
-        getAll: jest.fn(),
+        list: jest.fn(),
       },
       repos: {
-        getCommits: jest.fn(),
-        getReleases: jest.fn(),
+        listCommits: jest.fn(),
+        listReleases: jest.fn(),
       },
       activity: {
-        getStargazersForRepo: jest.fn(),
+        listStargazersForRepo: jest.fn(),
       },
     },
   };

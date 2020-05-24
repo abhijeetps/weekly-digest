@@ -20,18 +20,18 @@ test('that markdownBody works', () => {
     github: {
       paginate: jest.fn(),
       issues: {
-        getForRepo: jest.fn(),
+        listForRepo: jest.fn(),
         create: jest.fn(),
       },
       pullRequests: {
-        getAll: jest.fn(),
+        list: jest.fn(),
       },
       repos: {
-        getCommits: jest.fn(),
-        getReleases: jest.fn(),
+        listCommits: jest.fn(),
+        listReleases: jest.fn(),
       },
       activity: {
-        getStargazersForRepo: jest.fn(),
+        listStargazersForRepo: jest.fn(),
       },
     },
   };
@@ -51,18 +51,18 @@ test('that markdownBody works when the configs defined are all false', () => {
     github: {
       paginate: jest.fn(),
       issues: {
-        getForRepo: jest.fn(),
+        listForRepo: jest.fn(),
         create: jest.fn(),
       },
       pullRequests: {
-        getAll: jest.fn(),
+        list: jest.fn(),
       },
       repos: {
-        getCommits: jest.fn(),
-        getReleases: jest.fn(),
+        listCommits: jest.fn(),
+        listReleases: jest.fn(),
       },
       activity: {
-        getStargazersForRepo: jest.fn(),
+        listStargazersForRepo: jest.fn(),
       },
     },
   };
