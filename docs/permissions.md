@@ -25,5 +25,5 @@ List of Permissions Weekly Digest App is seeking.
 - [context.github.repos.listCommits](https://octokit.github.io/rest.js/#repos-list-commits)
 - [context.github.repos.listContributors](https://octokit.github.io/rest.js/#repos-list-contributors)
 - [context.github.repos.listReleases](https://octokit.github.io/rest.js/#repos-list-releases)
-- [context.github.search.issuesAndPullRequests](https://octokit.github.io/rest.js/#search-issues-and-pull-requests)
+- [context.github.search.issues](https://octokit.github.io/rest.js/#search-issues-and-pull-requests)
 - [context.github.activity.listStargazersForRepo](https://octokit.github.io/rest.js/#activity-list-stargazers-for-repo)

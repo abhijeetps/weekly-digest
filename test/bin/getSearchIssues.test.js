@@ -14,12 +14,12 @@ test('that getSearchIssues is working', async () => {
     },
     github: {
       search: {
-        issuesAndPullRequests: mock.mockReturnValue(),
+        issues: mock.mockReturnValue(),
       },
     },
   };
   await getSearchIssues(context, {
     q: 'repo:abhijeetps/playground type:issues author:weekly-digest created:>=2018-04-17',
   });
-  expect(context.github.search.issuesAndPullRequests).toHaveBeenCalled();
+  expect(context.github.search.issues).toHaveBeenCalled();
 });
