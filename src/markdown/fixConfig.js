@@ -1,31 +1,34 @@
-const defaultConfig = require('./defaultConfig')
+const { isUndefined } = require('../bin/typeCheck');
+const { DEFAULT_CONFIG } = require('../bin/constants');
+
 
 module.exports = (config) => {
-  if (config === null) {
-    config = defaultConfig
+  let modifiedConfig = config;
+
+  if (isUndefined(modifiedConfig)) {
+    modifiedConfig = DEFAULT_CONFIG;
   } else {
-    if (!config.hasOwnProperty('publishDay')) {
-      config.publishDay = 0
+    if (isUndefined(modifiedConfig.publishDay)) {
+      modifiedConfig.publishDay = DEFAULT_CONFIG.publishDay;
     }
-    if (!config.hasOwnProperty('canPublishIssues')) {
-      config.canPublishIssues = true
+    if (isUndefined(modifiedConfig.canPublishIssues)) {
+      modifiedConfig.canPublishIssues = DEFAULT_CONFIG.canPublishIssues;
     }
-    if (!config.hasOwnProperty('canPublishPullRequests')) {
-      config.canPublishPullRequests = true
+    if (isUndefined(modifiedConfig.canPublishPullRequests)) {
+      modifiedConfig.canPublishPullRequests = DEFAULT_CONFIG.canPublishPullRequests;
     }
-    if (!config.hasOwnProperty('canPublishContributors')) {
-      config.canPublishContributors = true
+    if (isUndefined(modifiedConfig.canPublishContributors)) {
+      modifiedConfig.canPublishContributors = DEFAULT_CONFIG.canPublishContributors;
     }
-    if (!config.hasOwnProperty('canPublishStargazers')) {
-      config.canPublishStargazers = true
+    if (isUndefined(modifiedConfig.canPublishStargazers)) {
+      modifiedConfig.canPublishStargazers = DEFAULT_CONFIG.canPublishContributors;
     }
-    if (!config.hasOwnProperty('canPublishCommits')) {
-      config.canPublishCommits = true
+    if (isUndefined(modifiedConfig.canPublishCommits)) {
+      modifiedConfig.canPublishCommits = DEFAULT_CONFIG.canPublishCommits;
     }
-    if (!config.hasOwnProperty('canPublishReleases')) {
-      config.canPublishReleases = true
+    if (isUndefined(modifiedConfig.canPublishReleases)) {
+      modifiedConfig.canPublishReleases = DEFAULT_CONFIG.canPublishReleases;
     }
   }
-
-  return config
-}
+  return modifiedConfig;
+};

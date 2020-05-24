@@ -1,92 +1,91 @@
 
-const moment = require('moment')
+const moment = require('moment');
 
 module.exports = (issues, headDate, tailDate) => {
-  let issuesString = `# ISSUES\n`
-  let data = issues
+  let issuesString = '# ISSUES\n';
+  let data = issues;
   if (!data) {
-    data = []
+    data = [];
   }
   data = data.filter((item) => {
     if (moment(item.created_at).isBetween(tailDate, headDate) && (item.user.login !== 'weekly-digest[bot]')) {
-      return true
-    } else {
-      return false
+      return true;
     }
-  })
+    return false;
+  });
   if (data.length === 0) {
-    issuesString += `Last week, no issues were created.\n`
+    issuesString += 'Last week, no issues were created.\n';
   } else {
-    let openIssueString
-    let closedIssueString
-    let likedIssueString
-    let noisyIssueString
+    let openIssueString;
+    let closedIssueString;
+    let likedIssueString;
+    let noisyIssueString;
     if (data.length === 1) {
-      issuesString += `Last week ${data.length} issue was created.\n`
+      issuesString += `Last week ${data.length} issue was created.\n`;
     } else {
-      issuesString += `Last week ${data.length} issues were created.\n`
+      issuesString += `Last week ${data.length} issues were created.\n`;
     }
-    let openIssue = data.filter((item) => item.state === 'open')
+    const openIssue = data.filter((item) => item.state === 'open');
     if (openIssue.length > 0) {
-      openIssueString = `## OPEN ISSUES\n`
+      openIssueString = '## OPEN ISSUES\n';
     }
-    let closedIssue = data.filter((item) => item.state === 'closed')
+    const closedIssue = data.filter((item) => item.state === 'closed');
     if (closedIssue.length > 0) {
-      closedIssueString = `## CLOSED ISSUES\n`
+      closedIssueString = '## CLOSED ISSUES\n';
     }
     if (data.length === 1 && openIssue.length === 1) {
-      issuesString += `It is still open.\n`
+      issuesString += 'It is still open.\n';
     } else if (data.length === 1 && closedIssue.length === 1) {
-      issuesString += `It is closed now.\n`
+      issuesString += 'It is closed now.\n';
     } else {
-      issuesString += `Of these, ${closedIssue.length} issues have been closed and ${openIssue.length} issues are still open.\n`
+      issuesString += `Of these, ${closedIssue.length} issues have been closed and ${openIssue.length} issues are still open.\n`;
     }
     openIssue.forEach((item) => {
-      openIssueString += `:green_heart: #${item.number} [${item.title.replace(/\n/g, ' ')}](${item.html_url}), by [${item.user.login}](${item.user.html_url})\n`
-    })
+      openIssueString += `:green_heart: #${item.number} [${item.title.replace(/\n/g, ' ')}](${item.html_url}), by [${item.user.login}](${item.user.html_url})\n`;
+    });
     closedIssue.forEach((item) => {
-      closedIssueString += `:heart: #${item.number} [${item.title.replace(/\n/g, ' ')}](${item.html_url}), by [${item.user.login}](${item.user.html_url})\n`
-    })
+      closedIssueString += `:heart: #${item.number} [${item.title.replace(/\n/g, ' ')}](${item.html_url}), by [${item.user.login}](${item.user.html_url})\n`;
+    });
     if (openIssueString) {
-      issuesString += openIssueString
+      issuesString += openIssueString;
     }
     if (closedIssueString) {
-      issuesString += closedIssueString
+      issuesString += closedIssueString;
     }
     // To get the most recent liked or noisy issue
-    data.reverse()
+    data.reverse();
     // For Liked issue
-    let likedIssue = data.filter((item) => (item.reactions['+1'] + item.reactions.laugh + item.reactions.hooray + item.reactions.heart) > 0)
+    const likedIssue = data.filter((item) => (item.reactions['+1'] + item.reactions.laugh + item.reactions.hooray + item.reactions.heart) > 0);
     if (likedIssue.length > 0) {
-      likedIssueString = '## LIKED ISSUE\n'
-      let likedIssueItem = likedIssue[0]
+      likedIssueString = '## LIKED ISSUE\n';
+      let likedIssueItem = likedIssue[0];
       likedIssue.forEach((item) => {
         if ((item.reactions['+1'] + item.reactions.laugh + item.reactions.hooray + item.reactions.heart) > (likedIssueItem.reactions['+1'] + likedIssueItem.reactions.laugh + likedIssueItem.reactions.hooray + likedIssueItem.reactions.heart)) {
-          likedIssueItem = item
+          likedIssueItem = item;
         }
-      })
-      likedIssueString += `:+1: #${likedIssueItem.number} [${likedIssueItem.title.replace(/\n/g, ' ')}](${likedIssueItem.html_url}), by [${likedIssueItem.user.login}](${likedIssueItem.user.html_url})\n`
-      likedIssueString += `It received :+1: x${likedIssueItem.reactions['+1']}, :smile: x${likedIssueItem.reactions.laugh}, :tada: x${likedIssueItem.reactions.hooray} and :heart: x${likedIssueItem.reactions.heart}.\n`
+      });
+      likedIssueString += `:+1: #${likedIssueItem.number} [${likedIssueItem.title.replace(/\n/g, ' ')}](${likedIssueItem.html_url}), by [${likedIssueItem.user.login}](${likedIssueItem.user.html_url})\n`;
+      likedIssueString += `It received :+1: x${likedIssueItem.reactions['+1']}, :smile: x${likedIssueItem.reactions.laugh}, :tada: x${likedIssueItem.reactions.hooray} and :heart: x${likedIssueItem.reactions.heart}.\n`;
     }
     if (likedIssueString) {
-      issuesString += likedIssueString
+      issuesString += likedIssueString;
     }
     // For Noisy issue
-    let noisyIssue = data.filter((item) => (item.comments > 0))
+    const noisyIssue = data.filter((item) => (item.comments > 0));
     if (noisyIssue.length > 0) {
-      noisyIssueString = '## NOISY ISSUE\n'
-      let noisyIssueItem = noisyIssue[0]
+      noisyIssueString = '## NOISY ISSUE\n';
+      let noisyIssueItem = noisyIssue[0];
       noisyIssue.forEach((item) => {
         if ((item.comments) > (noisyIssueItem.comments)) {
-          noisyIssueItem = item
+          noisyIssueItem = item;
         }
-      })
-      noisyIssueString += `:speaker: #${noisyIssueItem.number} [${noisyIssueItem.title.replace(/\n/g, ' ')}](${noisyIssueItem.html_url}), by [${noisyIssueItem.user.login}](${noisyIssueItem.user.html_url})\n`
-      noisyIssueString += `It received ${noisyIssueItem.comments} comments.\n`
+      });
+      noisyIssueString += `:speaker: #${noisyIssueItem.number} [${noisyIssueItem.title.replace(/\n/g, ' ')}](${noisyIssueItem.html_url}), by [${noisyIssueItem.user.login}](${noisyIssueItem.user.html_url})\n`;
+      noisyIssueString += `It received ${noisyIssueItem.comments} comments.\n`;
     }
     if (noisyIssueString) {
-      issuesString += noisyIssueString
+      issuesString += noisyIssueString;
     }
   }
-  return issuesString
-}
+  return issuesString;
+};
