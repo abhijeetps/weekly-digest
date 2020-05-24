@@ -19,8 +19,8 @@
     "mockdate": "2.0.2",
     "moment": "2.22.2",
     "nock": "9.4.4",
-    "probot": "7.1.1",
-    "probot-config": "0.2.0",
+    "probot": "7.5.3",
+    "probot-config": "1.1.0",
     "probot-scheduler": "1.2.0"
   },
   "devDependencies": {
@@ -38,21 +38,5 @@
   },
   "engines": {
     "node": ">= 8.3.0"
-  },
-  "standard": {
-    "env": [
-      "jest"
-    ]
-  },
-  "jest": {
-    "testEnvironment": "node",
-    "verbose": true,
-    "testURL": "http://localhost/",
-    "collectCoverageFrom": [
-      "src/**/*.js",
-      "index.js"
-    ],
-    "coverageDirectory": "./coverage/",
-    "collectCoverage": true
   }
 }
