@@ -14,7 +14,7 @@ test('that getStargazers is working', async () => {
     github: {
       paginate: jest.fn(),
       activity: {
-        getStargazersForRepo: jest.fn(),
+        listStargazersForRepo: jest.fn(),
       },
     },
   };
@@ -23,5 +23,5 @@ test('that getStargazers is working', async () => {
     repo: 'playground',
   });
   expect(context.github.paginate).toHaveBeenCalled();
-  expect(context.github.activity.getStargazersForRepo).toHaveBeenCalled();
+  expect(context.github.activity.listStargazersForRepo).toHaveBeenCalled();
 });

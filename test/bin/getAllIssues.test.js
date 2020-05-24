@@ -15,7 +15,7 @@ test('that getAllIssues is working', async () => {
     github: {
       paginate: jest.fn(),
       issues: {
-        getForRepo: jest.fn(),
+        listForRepo: jest.fn(),
       },
     },
   };
@@ -25,5 +25,5 @@ test('that getAllIssues is working', async () => {
     tailDate,
   });
   expect(context.github.paginate).toHaveBeenCalled();
-  expect(context.github.issues.getForRepo).toHaveBeenCalled();
+  expect(context.github.issues.listForRepo).toHaveBeenCalled();
 });

@@ -14,7 +14,7 @@ test('that getPullRequests is working', async () => {
     github: {
       paginate: jest.fn(),
       pullRequests: {
-        getAll: jest.fn(),
+        list: jest.fn(),
       },
     },
   };
@@ -23,5 +23,5 @@ test('that getPullRequests is working', async () => {
     repo: 'playground',
   });
   expect(context.github.paginate).toHaveBeenCalled();
-  expect(context.github.pullRequests.getAll).toHaveBeenCalled();
+  expect(context.github.pullRequests.list).toHaveBeenCalled();
 });

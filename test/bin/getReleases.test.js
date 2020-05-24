@@ -14,7 +14,7 @@ test('that getReleases is working', async () => {
     github: {
       paginate: jest.fn(),
       repos: {
-        getReleases: jest.fn(),
+        listReleases: jest.fn(),
       },
     },
   };
@@ -23,5 +23,5 @@ test('that getReleases is working', async () => {
     repo: 'playground',
   });
   expect(context.github.paginate).toHaveBeenCalled();
-  expect(context.github.repos.getReleases).toHaveBeenCalled();
+  expect(context.github.repos.listReleases).toHaveBeenCalled();
 });
