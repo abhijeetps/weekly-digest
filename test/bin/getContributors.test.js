@@ -14,7 +14,7 @@ test('that getContributors is working', async () => {
     github: {
       paginate: jest.fn(),
       repos: {
-        getContributors: jest.fn(),
+        listContributors: jest.fn(),
       },
     },
   };
@@ -23,5 +23,5 @@ test('that getContributors is working', async () => {
     repo: 'playground',
   });
   expect(context.github.paginate).toHaveBeenCalled();
-  expect(context.github.repos.getContributors).toHaveBeenCalled();
+  expect(context.github.repos.listContributors).toHaveBeenCalled();
 });

@@ -1,22 +1,29 @@
-# Webhook Events
-  - `installation.created`
-  - `installation_repositories`
-  
-# Addtional Events 
-  - schedule.repository ([probot-scheduler](https://www.npmjs.com/package/probot-scheduler))
-  
-# Extentions Used
-  - probot-scheduler (https://www.npmjs.com/package/probot-scheduler)
-  - probot-config (https://www.npmjs.com/package/probot-config)
+# Permissions
 
-# Octokit REST APIs
-  - [context.github.issues.createLabel](https://octokit.github.io/rest.js/#api-Issues-createLabel)
-  - [context.github.issues.create](https://octokit.github.io/rest.js/#api-Issues-create)
-  - [context.github.issues.getForRepo](https://octokit.github.io/rest.js/#api-Issues-getForRepo)
-  - [context.github.pullRequests.getAll](https://octokit.github.io/rest.js/#api-PullRequests-getAll)
-  - [context.github.repos.getCommits](https://octokit.github.io/rest.js/#api-Repos-getCommits)
-  - [context.github.repos.getContributors](https://octokit.github.io/rest.js/#api-Repos-getContributors)
-  - [context.github.repos.getReleases](https://octokit.github.io/rest.js/#api-Repos-getReleases)
-  - [context.github.search.issues](https://octokit.github.io/rest.js/#api-Search-issues)
-  - [context.github.activity.getStargazersForRepo](https://octokit.github.io/rest.js/#api-Activity-getStargazersForRepo)
-      
+List of Permissions Weekly Digest App is seeking.
+
+## Webhook Events
+
+- `installation.created`
+- `installation_repositories`
+
+## Addtional Events
+
+- schedule.repository ([probot-scheduler](https://www.npmjs.com/package/probot-scheduler))
+
+## Extentions Used
+
+- probot-scheduler (<https://www.npmjs.com/package/probot-scheduler>)
+- probot-config (<https://www.npmjs.com/package/probot-config>)
+
+## Octokit REST APIs
+
+- [context.github.issues.createLabel](https://octokit.github.io/rest.js#issues-create-label)
+- [context.github.issues.create](https://octokit.github.io/rest.js/#issues-create)
+- [context.github.issues.listForRepo](https://octokit.github.io/rest.js/#issues-list-for-repo)
+- [context.github.pullRequests.list](https://octokit.github.io/rest.js/#pulls-list)
+- [context.github.repos.listCommits](https://octokit.github.io/rest.js/#repos-list-commits)
+- [context.github.repos.listContributors](https://octokit.github.io/rest.js/#repos-list-contributors)
+- [context.github.repos.listReleases](https://octokit.github.io/rest.js/#repos-list-releases)
+- [context.github.search.issues](https://octokit.github.io/rest.js/#search-issues-and-pull-requests)
+- [context.github.activity.listStargazersForRepo](https://octokit.github.io/rest.js/#activity-list-stargazers-for-repo)
