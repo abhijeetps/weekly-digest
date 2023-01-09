@@ -19,7 +19,7 @@
     "mockdate": "2.0.2",
     "moment": "2.22.2",
     "nock": "9.4.4",
-    "probot": "7.5.3",
+    "probot": "12.2.8",
     "probot-config": "1.1.0",
     "probot-scheduler": "1.2.0"
   },
